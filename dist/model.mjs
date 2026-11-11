@@ -56,12 +56,24 @@ export function validateBundle(data, analysis, dataPointer, analysisPointer) {
   if (data.schema_version !== 1 || analysis.schema_version !== 1 || data.manifest_sha256 !== id || analysis.source_snapshot_id !== id || analysisPointer.source_snapshot_id !== id || analysis.analysis_manifest.source_snapshot_id !== id || data.as_of !== analysis.as_of) throw new Error('Source and analysis snapshots do not match. Rebuild the analysis before displaying this data.');
   for (const id of IDS) if (!data.series.some(s=>s.id===id) || !analysis.series.some(s=>s.id===id)) throw new Error('A required series is missing from this snapshot.');
 }
+export function validatePointers(data, analysis) {
+  const hash=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
+  if(data?.schema_version!==1||analysis?.schema_version!==1||!hash(data.snapshot_id)||!hash(analysis.analysis_id)||!hash(analysis.source_snapshot_id))throw new Error('Invalid snapshot reference.');
+  const check=(path,digest,id,name)=>{
+    if(path!==`snapshots/${id}/${name}`||!hash(digest))throw new Error('Invalid snapshot reference.');
+  };
+  for(const [key,name] of Object.entries({dataset:'dataset.json',csv:'views.csv',health:'health.json',manifest:'manifest.json'}))check(data[key],data.files_sha256?.[name],data.snapshot_id,name);
+  for(const name of ['analysis.json','comparisons.csv','predictions.csv','findings.md','manifest.json','protocol.md'])check(analysis.files?.[name],analysis.files_sha256?.[name],analysis.analysis_id,name);
+  if(data.snapshot_id!==analysis.source_snapshot_id)throw new Error('Source and analysis snapshots do not match. Rebuild the analysis before displaying this data.');
+}
 export async function loadBundle(fetcher = fetch) {
-  async function json(url) {const response = await fetcher(url, {cache:'no-store'});if (!response.ok) throw new Error(`Snapshot request failed (HTTP ${response.status}).`);return response.json();}
+  const request=(url,cache)=>fetcher(url,{cache,signal:AbortSignal.timeout(15000)});
+  async function json(url) {const response = await request(url,'no-store');if (!response.ok) throw new Error(`Snapshot request failed (HTTP ${response.status}).`);return response.json();}
   const [dataPointer, analysisPointer] = await Promise.all([json('./data/current.json'),json('./analysis/current.json')]);
+  validatePointers(dataPointer,analysisPointer);
   async function verified(base, relative, hash) {
     if (!/^snapshots\/[a-f0-9]{64}\/[a-z.-]+$/.test(relative) || !/^[a-f0-9]{64}$/.test(hash)) throw new Error('Invalid snapshot reference.');
-    const response = await fetcher(`${base}/${relative}`, {cache:'no-cache'});
+    const response = await request(`${base}/${relative}`,'no-cache');
     if (!response.ok) throw new Error(`Snapshot request failed (HTTP ${response.status}).`);
     const bytes = await response.arrayBuffer();
     const actual = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');

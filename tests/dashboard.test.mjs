@@ -63,3 +63,16 @@ test('invalid snapshot path is rejected before requesting that path',async()=>{
 test('HTTP errors are visible, not treated as an empty successful dataset',async()=>{
   await assert.rejects(()=>loadBundle(async()=>({ok:false,status:503})),/HTTP 503/);
 });
+test('download traversal references are rejected even when display data is valid',async()=>{
+  const altered=async url=>{const response=await localFetch(url);if(url==='./data/current.json'){const original=response.json;response.json=async()=>({...await original(),csv:'../../private.csv'});}return response;};
+  await assert.rejects(()=>loadBundle(altered),/Invalid snapshot reference/);
+});
+test('analysis download references must belong to the declared analysis version',async()=>{
+  const altered=async url=>{const response=await localFetch(url);if(url==='./analysis/current.json'){const original=response.json;response.json=async()=>{const data=await original();data.files['predictions.csv']=`snapshots/${'0'.repeat(64)}/predictions.csv`;return data;};}return response;};
+  await assert.rejects(()=>loadBundle(altered),/Invalid snapshot reference/);
+});
+test('requests have a bounded timeout signal',async()=>{
+  let requests=0;
+  await loadBundle(async(url,options)=>{assert.ok(options.signal instanceof AbortSignal);requests++;return localFetch(url);});
+  assert.equal(requests,4);
+});
