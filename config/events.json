@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-11",
+  "events": [
+    {
+      "id": "gta-vi-date-update-2025",
+      "series_id": "gta-vi",
+      "date": "2025-11-06",
+      "kind": "announcement",
+      "status": "occurred",
+      "label": "November 2026 launch date announced",
+      "source_url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "verification": "Publisher announcement, independently corroborated by dated Take-Two material. The linked announcement is JavaScript-rendered and was not fully extractable."
+    },
+    {
+      "id": "gta-vi-scheduled-release",
+      "series_id": "gta-vi",
+      "date": "2026-11-19",
+      "kind": "release",
+      "status": "scheduled",
+      "label": "GTA VI scheduled launch",
+      "source_url": "https://ir.take2games.com/node/32311/pdf",
+      "verification": "Dated publisher press release explicitly states November 19, 2026."
+    },
+    {
+      "id": "gta-v-console-release-2022",
+      "series_id": "gta-v-2022",
+      "date": "2022-03-15",
+      "kind": "rerelease",
+      "status": "occurred",
+      "label": "GTA V PS5 / Xbox Series console re-release",
+      "source_url": "https://ir.take2games.com/node/28526/pdf",
+      "verification": "Publisher release dated March 15, 2022."
+    },
+    {
+      "id": "rdr2-console-launch",
+      "series_id": "rdr2",
+      "date": "2018-10-26",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Red Dead Redemption 2 console launch",
+      "source_url": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+      "verification": "Publisher announcement date visible in indexed result; official trailer also confirms October 26, 2018. Full page extraction unavailable."
+    },
+    {
+      "id": "cyberpunk-launch",
+      "series_id": "cyberpunk",
+      "date": "2020-12-10",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Cyberpunk 2077 launch",
+      "source_url": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+      "verification": "Directly readable publisher announcement dated December 10, 2020."
+    }
+  ]
+}

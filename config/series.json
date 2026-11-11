@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "project": "en.wikipedia.org",
+  "access": "all-access",
+  "agent": "user",
+  "granularity": "daily",
+  "baseline_days": [-28, -8],
+  "series": [
+    {
+      "id": "gta-vi",
+      "label": "Grand Theft Auto VI",
+      "article": "Grand_Theft_Auto_VI",
+      "release_date": "2026-11-19",
+      "release_kind": "original_launch",
+      "release_status": "scheduled",
+      "start_date": "2023-11-01",
+      "end_date": null,
+      "release_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "notes": "Exact article-title series; earlier titles and redirects are not merged. Scheduled release date last checked 2026-11-11. Passing this date does not automatically verify that a launch occurred."
+    },
+    {
+      "id": "gta-v-2022",
+      "label": "GTA V · 2022 console re-release",
+      "article": "Grand_Theft_Auto_V",
+      "release_date": "2022-03-15",
+      "release_kind": "console_rerelease",
+      "release_status": "released",
+      "start_date": "2021-12-15",
+      "end_date": "2022-06-13",
+      "release_source": "https://ir.take2games.com/node/28526/pdf",
+      "notes": "PS5/Xbox Series X|S re-release, not the original 2013 launch. The Wikipedia article measures attention to the whole game, not only these platforms."
+    },
+    {
+      "id": "rdr2",
+      "label": "Red Dead Redemption 2",
+      "article": "Red_Dead_Redemption_2",
+      "release_date": "2018-10-26",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2018-07-28",
+      "end_date": "2019-01-24",
+      "release_source": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+      "notes": "Original console launch. PC release is a different event."
+    },
+    {
+      "id": "cyberpunk",
+      "label": "Cyberpunk 2077",
+      "article": "Cyberpunk_2077",
+      "release_date": "2020-12-10",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2020-09-11",
+      "end_date": "2021-03-10",
+      "release_source": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+      "notes": "Launch across PC and the then-current console editions; not a later dedicated console upgrade."
+    }
+  ]
+}
