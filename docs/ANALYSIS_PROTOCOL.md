@@ -28,7 +28,7 @@ Analyze the verified Phase 1 manifest and exact-title daily observations. Do not
 
 Question: how well do two fixed, simple methods predict the next day's pageviews around historical launches?
 
-Included series: all three configured historical released series. GTA VI is excluded because its launch window is not observed. The GTA V re-release is included and labeled separately.
+Expansion protocol (2026-11-11), fixed before acquiring the added histories: include all 19 configured historical released series. GTA VI is excluded because its launch window is not observed. The GTA V re-release is included and labeled separately.
 
 - Evaluation targets: release-relative days -14 through +30 inclusive, exactly 45 per complete historical series.
 - Before the evaluation interval, source dates -90 through -15 supply past context. No future target or post-launch value may enter a prediction for an earlier date.
@@ -39,7 +39,7 @@ Included series: all three configured historical released series. GTA VI is excl
 - Secondary scale-normalized score: total absolute error divided by total actual views (WAPE). Zero total actual views makes it unavailable. This is a scale-adjusted diagnostic, not accuracy or confidence.
 - Report aggregate pooled MAE with its scale limitation and a macro-average WAPE giving each game equal weight. Do not declare a universal winner from a pooled number alone.
 - Report three fixed regimes: pre-launch (-14 to -1), launch days (0 to +2), and post-launch (+3 to +30). They use the same prediction rows as the full window.
-- No significance claim or generalization to unseen game launches is supported by three examples. Post-launch observations are retrospectively evaluated, never prospective evidence.
+- No significance claim or generalization to unseen game launches is supported by this purposive cohort. Post-launch observations are retrospectively evaluated, never prospective evidence.
 
 ## Validation and publication
 

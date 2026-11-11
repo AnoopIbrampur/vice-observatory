@@ -51,6 +51,216 @@
       "label": "Cyberpunk 2077 launch",
       "source_url": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
       "verification": "Directly readable publisher announcement dated December 10, 2020."
+    },
+    {
+      "id": "elden-ring-launch",
+      "series_id": "elden-ring",
+      "date": "2022-02-25",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Elden Ring original launch",
+      "source_url": "https://www.bandainamcoent.com/news/elden-ring-now-available-adventure-arrives-for-the-brave",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "ghost-launch",
+      "series_id": "ghost",
+      "date": "2020-07-17",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Ghost of Tsushima original launch",
+      "source_url": "https://blog.playstation.com/2020/07/16/ghost-of-tsushima-the-road-to-launch/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "odyssey-launch",
+      "series_id": "odyssey",
+      "date": "2017-10-27",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Super Mario Odyssey original launch",
+      "source_url": "https://www.nintendo.co.jp/ir/pdf/2017/171030_4e.pdf",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "botw-launch",
+      "series_id": "botw",
+      "date": "2017-03-03",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Zelda: Breath of the Wild original launch",
+      "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "totk-launch",
+      "series_id": "totk",
+      "date": "2023-05-12",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Zelda: Tears of the Kingdom original launch",
+      "source_url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "animal-crossing-launch",
+      "series_id": "animal-crossing",
+      "date": "2020-03-20",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Animal Crossing: New Horizons original launch",
+      "source_url": "https://www.nintendo.com/ph/switch/acba/products/soft.html",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "smash-launch",
+      "series_id": "smash",
+      "date": "2018-12-07",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Super Smash Bros. Ultimate original launch",
+      "source_url": "https://www.nintendo.com/US/store/products/super-smash-bros-ultimate-switch/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "splatoon-3-launch",
+      "series_id": "splatoon-3",
+      "date": "2022-09-09",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Splatoon 3 original launch",
+      "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Splatoon-3-1924751.html",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "luigi-3-launch",
+      "series_id": "luigi-3",
+      "date": "2019-10-31",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Luigi’s Mansion 3 original launch",
+      "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Luigi-s-Mansion-3-1437312.html",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "horizon-zero-launch",
+      "series_id": "horizon-zero",
+      "date": "2017-02-28",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Horizon Zero Dawn original launch",
+      "source_url": "https://sonyinteractive.com/en/press-releases/horizon-zero-dawn-surpasses-76-million-sales-worldwide/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "horizon-west-launch",
+      "series_id": "horizon-west",
+      "date": "2022-02-18",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Horizon Forbidden West original launch",
+      "source_url": "https://blog.playstation.com/2022/02/17/horizon-forbidden-west-is-available-tonight/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "god-of-war-launch",
+      "series_id": "god-of-war",
+      "date": "2018-04-20",
+      "kind": "release",
+      "status": "occurred",
+      "label": "God of War (2018) original launch",
+      "source_url": "https://www.playstation.com/en-us/games/god-of-war/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "ragnarok-launch",
+      "series_id": "ragnarok",
+      "date": "2022-11-09",
+      "kind": "release",
+      "status": "occurred",
+      "label": "God of War Ragnarök original launch",
+      "source_url": "https://blog.playstation.com/2022/07/06/god-of-war-ragnarok-launches-november-9-new-cg-trailer-revealed/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "spider-man-launch",
+      "series_id": "spider-man",
+      "date": "2018-09-07",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Marvel’s Spider-Man (2018) original launch",
+      "source_url": "https://blog.playstation.com/2018/09/07/marvels-spider-man-swings-into-stores/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "last-of-us-2-launch",
+      "series_id": "last-of-us-2",
+      "date": "2020-06-19",
+      "kind": "release",
+      "status": "occurred",
+      "label": "The Last of Us Part II original launch",
+      "source_url": "https://blog.playstation.com/2020/05/06/watch-the-new-the-last-of-us-part-ii-story-trailer/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "death-stranding-launch",
+      "series_id": "death-stranding",
+      "date": "2019-11-08",
+      "kind": "release",
+      "status": "occurred",
+      "label": "Death Stranding original launch",
+      "source_url": "https://blog.playstation.com/2019/09/24/introducing-the-limited-edition-death-stranding-ps4-pro-bundle/",
+      "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+    },
+    {
+      "id": "gta-vi-trailer-1",
+      "series_id": "gta-vi",
+      "date": "2023-12-04",
+      "kind": "trailer",
+      "status": "occurred",
+      "label": "GTA VI Trailer 1",
+      "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+      "verification": "Current publisher video index dates Trailer 1 December 4; older standalone video page shows December 5. Day-level attribution is ambiguous; use index date and do not interpret one-day timing as causal."
+    },
+    {
+      "id": "gta-vi-trailer-2",
+      "series_id": "gta-vi",
+      "date": "2025-05-06",
+      "kind": "trailer",
+      "status": "occurred",
+      "label": "GTA VI Trailer 2",
+      "source_url": "https://www.rockstargames.com/VI/trailer-2",
+      "verification": "Publisher video page explicitly dates May 6, 2025."
+    },
+    {
+      "id": "gta-vi-extended-look",
+      "series_id": "gta-vi",
+      "date": "2026-08-27",
+      "kind": "trailer",
+      "status": "occurred",
+      "label": "GTA VI extended gameplay look",
+      "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+      "verification": "Publisher video index explicitly dates extended look August 27, 2026."
+    },
+    {
+      "id": "gta-vi-launch-trailer",
+      "series_id": "gta-vi",
+      "date": "2026-10-15",
+      "kind": "trailer",
+      "status": "occurred",
+      "label": "GTA VI launch trailer",
+      "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+      "verification": "Publisher video page explicitly dates October 15, 2026."
+    },
+    {
+      "id": "gta-vi-preload",
+      "series_id": "gta-vi",
+      "date": "2026-11-10",
+      "kind": "announcement",
+      "status": "occurred",
+      "label": "GTA VI pre-load announcement",
+      "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+      "verification": "Publisher video index explicitly dates pre-load announcement November 10, 2026; post window remains incomplete."
     }
   ]
 }

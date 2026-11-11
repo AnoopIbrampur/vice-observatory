@@ -4,7 +4,10 @@
   "access": "all-access",
   "agent": "user",
   "granularity": "daily",
-  "baseline_days": [-28, -8],
+  "baseline_days": [
+    -28,
+    -8
+  ],
   "series": [
     {
       "id": "gta-vi",
@@ -53,6 +56,198 @@
       "end_date": "2021-03-10",
       "release_source": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
       "notes": "Launch across PC and the then-current console editions; not a later dedicated console upgrade."
+    },
+    {
+      "id": "elden-ring",
+      "label": "Elden Ring",
+      "article": "Elden_Ring",
+      "release_date": "2022-02-25",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2021-11-27",
+      "end_date": "2022-05-26",
+      "release_source": "https://www.bandainamcoent.com/news/elden-ring-now-available-adventure-arrives-for-the-brave",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "ghost",
+      "label": "Ghost of Tsushima",
+      "article": "Ghost_of_Tsushima",
+      "release_date": "2020-07-17",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2020-04-18",
+      "end_date": "2020-10-15",
+      "release_source": "https://blog.playstation.com/2020/07/16/ghost-of-tsushima-the-road-to-launch/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "odyssey",
+      "label": "Super Mario Odyssey",
+      "article": "Super_Mario_Odyssey",
+      "release_date": "2017-10-27",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2017-07-29",
+      "end_date": "2018-01-25",
+      "release_source": "https://www.nintendo.co.jp/ir/pdf/2017/171030_4e.pdf",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "botw",
+      "label": "Zelda: Breath of the Wild",
+      "article": "The_Legend_of_Zelda:_Breath_of_the_Wild",
+      "release_date": "2017-03-03",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2016-12-03",
+      "end_date": "2017-06-01",
+      "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "totk",
+      "label": "Zelda: Tears of the Kingdom",
+      "article": "The_Legend_of_Zelda:_Tears_of_the_Kingdom",
+      "release_date": "2023-05-12",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2023-02-11",
+      "end_date": "2023-08-10",
+      "release_source": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "animal-crossing",
+      "label": "Animal Crossing: New Horizons",
+      "article": "Animal_Crossing:_New_Horizons",
+      "release_date": "2020-03-20",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2019-12-21",
+      "end_date": "2020-06-18",
+      "release_source": "https://www.nintendo.com/ph/switch/acba/products/soft.html",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "smash",
+      "label": "Super Smash Bros. Ultimate",
+      "article": "Super_Smash_Bros._Ultimate",
+      "release_date": "2018-12-07",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2018-09-08",
+      "end_date": "2019-03-07",
+      "release_source": "https://www.nintendo.com/US/store/products/super-smash-bros-ultimate-switch/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "splatoon-3",
+      "label": "Splatoon 3",
+      "article": "Splatoon_3",
+      "release_date": "2022-09-09",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2022-06-11",
+      "end_date": "2022-12-08",
+      "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Splatoon-3-1924751.html",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "luigi-3",
+      "label": "Luigi’s Mansion 3",
+      "article": "Luigi's_Mansion_3",
+      "release_date": "2019-10-31",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2019-08-02",
+      "end_date": "2020-01-29",
+      "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Luigi-s-Mansion-3-1437312.html",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "horizon-zero",
+      "label": "Horizon Zero Dawn",
+      "article": "Horizon_Zero_Dawn",
+      "release_date": "2017-02-28",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2016-11-30",
+      "end_date": "2017-05-29",
+      "release_source": "https://sonyinteractive.com/en/press-releases/horizon-zero-dawn-surpasses-76-million-sales-worldwide/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits. North American first release; other regions followed on different dates."
+    },
+    {
+      "id": "horizon-west",
+      "label": "Horizon Forbidden West",
+      "article": "Horizon_Forbidden_West",
+      "release_date": "2022-02-18",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2021-11-20",
+      "end_date": "2022-05-19",
+      "release_source": "https://blog.playstation.com/2022/02/17/horizon-forbidden-west-is-available-tonight/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "god-of-war",
+      "label": "God of War (2018)",
+      "article": "God_of_War_(2018_video_game)",
+      "release_date": "2018-04-20",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2018-01-20",
+      "end_date": "2018-07-19",
+      "release_source": "https://www.playstation.com/en-us/games/god-of-war/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "ragnarok",
+      "label": "God of War Ragnarök",
+      "article": "God_of_War_Ragnarök",
+      "release_date": "2022-11-09",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2022-08-11",
+      "end_date": "2023-02-07",
+      "release_source": "https://blog.playstation.com/2022/07/06/god-of-war-ragnarok-launches-november-9-new-cg-trailer-revealed/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "spider-man",
+      "label": "Marvel’s Spider-Man (2018)",
+      "article": "Spider-Man_(2018_video_game)",
+      "release_date": "2018-09-07",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2018-06-09",
+      "end_date": "2018-12-06",
+      "release_source": "https://blog.playstation.com/2018/09/07/marvels-spider-man-swings-into-stores/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "last-of-us-2",
+      "label": "The Last of Us Part II",
+      "article": "The_Last_of_Us_Part_II",
+      "release_date": "2020-06-19",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2020-03-21",
+      "end_date": "2020-09-17",
+      "release_source": "https://blog.playstation.com/2020/05/06/watch-the-new-the-last-of-us-part-ii-story-trailer/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+    },
+    {
+      "id": "death-stranding",
+      "label": "Death Stranding",
+      "article": "Death_Stranding",
+      "release_date": "2019-11-08",
+      "release_kind": "original_launch",
+      "release_status": "released",
+      "start_date": "2019-08-10",
+      "end_date": "2020-02-06",
+      "release_source": "https://blog.playstation.com/2019/09/24/introducing-the-limited-edition-death-stranding-ps4-pro-bundle/",
+      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
     }
   ]
 }
