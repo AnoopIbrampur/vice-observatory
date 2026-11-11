@@ -1,5 +1,17 @@
 # Data operations
 
+## Local dashboard
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
+```
+
+Open `http://127.0.0.1:8765/`. The buildless browser application reads only same-origin static snapshots; use HTTPS or localhost for Web Crypto. It verifies dataset/analysis SHA-256 values and matching source identities before display. Source/analysis mismatches or failed requests show an error rather than a partially populated dashboard.
+
+The dashboard provides a saved view, not a live feed. Its query parameters preserve ranges and comparison filters; invalid values receive safe defaults. A pending 20/21-day GTA VI baseline is an explicit unavailable index, while raw data remains selectable.
+
+Frontend checks use Node 22+ with no installed packages: `node --test tests/dashboard.test.mjs`. Browser QA and screenshots for Phase 3 are documented in `docs/PHASE_3.md`. Production deployment remains a later phase.
+
 ## Requirements and entry points
 
 Use Python 3.11+ and curl. Run commands from the repository root. There are no pip dependencies, API keys, or paid services. Acquisition requires network access to Wikimedia; tests, verification, and replay do not.

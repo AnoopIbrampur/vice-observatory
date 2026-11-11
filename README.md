@@ -2,7 +2,19 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** Phases 0–2 complete: source audit, reproducible data foundation, and evaluated analysis. **1,649 actual daily observations across four series**, with preserved sources, CSV/JSON exports, release-aligned comparisons, **135 retrospectively scored predictions**, and **53 passing tests**. The dashboard is not implemented or publicly deployed yet. Follow [phase checkpoints](docs/PHASES.md) for actual progress.
+**Status:** Phases 0–3 complete: source audit, reproducible data foundation, evaluated analysis, and a working responsive dashboard. **1,649 actual daily observations**, **135 retrospectively scored predictions**, and **65 passing tests**. The application is ready to run locally; production publication is planned for Phase 5. Follow [phase checkpoints](docs/PHASES.md) for actual progress.
+
+![Verified desktop dashboard](docs/screenshots/desktop.jpg)
+
+## Open the dashboard locally
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
+```
+
+Open [http://127.0.0.1:8765/](http://127.0.0.1:8765/) in a modern browser. No build, npm install, API key, or paid service is needed. Serve over localhost or HTTPS; opening the HTML with `file://` is unsupported.
+
+The interface includes time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
 
 ## The question
 
@@ -10,7 +22,7 @@ How does attention change around GTA VI announcements and launch, and how does i
 
 The measured signal is daily **English Wikipedia article pageviews**, not sales, unique people, sentiment, or active players. Event annotations describe timing; they do not establish causation. Future GTA VI launch outcomes remain unobserved.
 
-## What is planned
+## What is included
 
 - An interactive attention explorer with daily values, trailing averages, verified event annotations, and accessible data tables.
 - Release-aligned historical comparisons in raw and indexed units.
@@ -38,6 +50,9 @@ cd vice-observatory
 # Tests run without network access; test data is synthetic and clearly isolated.
 python3 -m unittest discover -s tests -v
 
+# Dashboard state and snapshot-integrity tests (Node 22+, no npm packages).
+node --test tests/dashboard.test.mjs
+
 # Verify the committed real-data snapshot without network access.
 python3 -m scripts.pipeline verify
 
@@ -56,7 +71,7 @@ Without `--as-of`, refresh uses the current UTC date and requests only earlier d
 
 ## Inspect the data
 
-[`data/current.json`](data/current.json) is the current version pointer. Its `dataset`, `csv`, `health`, and `manifest` fields resolve relative to `data/`. Each references an immutable snapshot directory. Browser-ready copies are in `dist/data/`; they are ready for the dashboard, not an already-deployed application.
+[`data/current.json`](data/current.json) is the current version pointer. Its `dataset`, `csv`, `health`, and `manifest` fields resolve relative to `data/`. Each references an immutable snapshot directory. The dashboard loads browser-ready copies in `dist/data/` and `dist/analysis/` and verifies their hashes and matching source identities before display.
 
 - `data/raw/`: exact Wikimedia response bytes, named by SHA-256.
 - `data/receipts/`: request URLs, requested intervals, acquisition times, selected response headers, and payload checksums.
