@@ -1,6 +1,6 @@
 # Vice Observatory — project plan
 
-Status: Phases 0 and 1 complete. Source audit and reproducible data foundation are implemented; analysis and dashboard phases remain. See `docs/PHASES.md` for checkpoints and `docs/PHASE_1.md` for verification evidence.
+Status: Phases 0–2 complete. Source audit, reproducible data foundation, and evaluated analysis are implemented. Dashboard work is next. See `docs/PHASES.md` for checkpoints and `docs/PHASE_2.md` for analysis verification evidence.
 
 ## Objective
 

@@ -1,0 +1,22 @@
+{
+  "analysis_id": "668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507",
+  "as_of": "2026-11-11",
+  "files": {
+    "analysis.json": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/analysis.json",
+    "comparisons.csv": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/comparisons.csv",
+    "findings.md": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/findings.md",
+    "manifest.json": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/manifest.json",
+    "predictions.csv": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/predictions.csv",
+    "protocol.md": "snapshots/668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507/protocol.md"
+  },
+  "files_sha256": {
+    "analysis.json": "67a857e930de359b60c079c669b5fc140f94374ce5ccdc3db72dc22ed5cef8d6",
+    "comparisons.csv": "a1bf6e0c1548da2ae28e1c996165b2053aa92b3a27372dc8067e1c141994d4ae",
+    "findings.md": "2c20d33290df627dce59b62526c2809c61a2d65fdbb63038a134b2f0c41e018f",
+    "manifest.json": "668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507",
+    "predictions.csv": "142061a7a2ec751faa5226756c6722a05111a46e34e4892d3ee5ddd32cafbbb9",
+    "protocol.md": "22eb66bbf1f3cebeefaf4223b978d85a0e325488370c1dfb955c666ce4e6830c"
+  },
+  "schema_version": 1,
+  "source_snapshot_id": "73ecfa4562de20fb39627963ab85f8e2cf666ba825697af6c90de454f5590415"
+}

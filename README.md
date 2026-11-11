@@ -2,7 +2,7 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** Phases 0 and 1 complete: source audit and reproducible data foundation. **1,649 actual daily observations across four series**, with preserved raw responses, checksummed acquisition receipts, CSV/JSON exports, and offline replay. The dashboard is not implemented or publicly deployed yet. Follow [phase checkpoints](docs/PHASES.md) for actual progress.
+**Status:** Phases 0–2 complete: source audit, reproducible data foundation, and evaluated analysis. **1,649 actual daily observations across four series**, with preserved sources, CSV/JSON exports, release-aligned comparisons, **135 retrospectively scored predictions**, and **53 passing tests**. The dashboard is not implemented or publicly deployed yet. Follow [phase checkpoints](docs/PHASES.md) for actual progress.
 
 ## The question
 
@@ -19,6 +19,14 @@ The measured signal is daily **English Wikipedia article pageviews**, not sales,
 
 See the [full project plan](PROJECT_PLAN.md), [source audit](docs/SOURCE_AUDIT.md), [data contract](docs/DATA_CONTRACT.md), and [Phase 1 verification report](docs/PHASE_1.md).
 
+## Findings so far
+
+- In the saved snapshot, GTA VI's article received **250,621 views during November 4–10, 2026**, versus 149,783 during the preceding seven days: **+67.3%**. This is article attention, not sales or unique people.
+- A yesterday-only predictor has lower full-window MAE than a trailing-week mean in all three historical evaluation windows. The weekly mean does better in the three-day GTA V re-release regime; the [full findings report](docs/FINDINGS.md) includes that exception and all per-game scores.
+- GTA VI's fixed normalization baseline has **20/21 observed dates** at this cutoff. Its indexed curve is unavailable until the baseline completes; launch-day and post-launch observations remain null.
+
+Rules were fixed before computing results in the [analysis protocol](docs/ANALYSIS_PROTOCOL.md). See [Phase 2 verification](docs/PHASE_2.md). These historical scores are retrospective; no predictive claim about GTA VI launch outcomes is made.
+
 ## Run and reproduce
 
 Requirements: **Python 3.11+** and **curl** on your PATH. No pip packages, API keys, account, or paid services are required. curl uses verified TLS and your system's certificate trust store.
@@ -32,6 +40,10 @@ python3 -m unittest discover -s tests -v
 
 # Verify the committed real-data snapshot without network access.
 python3 -m scripts.pipeline verify
+
+# Recompute and verify analysis from that exact snapshot, without network access.
+python3 -m scripts.analysis build
+python3 -m scripts.analysis verify
 
 # Rebuild identical JSON/CSV from preserved responses into a separate directory.
 python3 -m scripts.pipeline replay --output /tmp/vice-observatory-replay
@@ -52,6 +64,8 @@ Without `--as-of`, refresh uses the current UTC date and requests only earlier d
 - `config/`: explicit article identities, release dates, source evidence, and event status.
 - `scripts/pipeline.py`: collection, validation, atomic publication, and offline replay.
 - `tests/`: fault injection and end-to-end checks for provenance and safe publication.
+
+[`analysis/current.json`](analysis/current.json) points to derived JSON, release-aligned CSV, per-day prediction CSV, the exact analysis protocol, and the findings report. Resolve its `files` paths relative to `analysis/`. Each analysis manifest records the source snapshot, protocol hash, and analysis-code hash; a source refresh makes previous analysis stale until rebuilt. Browser-ready copies live in `dist/analysis/`.
 
 Initial snapshot: GTA VI from November 1, 2023 through November 10, 2026 (1,106 days), and 181-day historical windows for GTA V's 2022 console re-release, Red Dead Redemption 2, and Cyberpunk 2077. No GTA VI launch-day or post-launch observation is fabricated.
 

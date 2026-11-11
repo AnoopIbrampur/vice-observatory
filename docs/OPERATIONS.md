@@ -45,6 +45,20 @@ Raw files and receipts include only public API responses and selected non-sensit
 
 ## Refresh is separate from deployment
 
+### Rebuild analysis after a successful data refresh
+
+```sh
+python3 -m scripts.pipeline verify
+python3 -m scripts.analysis build
+python3 -m scripts.analysis verify
+```
+
+Analysis is an offline step over the exact verified source snapshot. `analysis/current.json` and `dist/analysis/current.json` identify the analysis version and its `source_snapshot_id`. A source refresh, protocol edit, or analysis-code edit requires rebuilding; `scripts.analysis verify` detects stale or altered artifacts. The dashboard must also compare source IDs before displaying derived numbers.
+
+Analysis exports include complete daily statistics, release-aligned comparison records, every historical benchmark prediction, full-precision scores, the generated findings report, and the exact protocol. `docs/FINDINGS.md` is a readable copy of the generated report and is verified too. Never edit the generated report to change a result; change a justified rule in the protocol, document the reason, and rebuild. Historical analysis snapshots remain immutable.
+
+The fixed normalization baseline can be incomplete even when source coverage is complete: GTA VI needs all 21 dates from release-relative day -28 through -8. As of the initial November 11 snapshot, only 20 are observed. Leave the index unavailable until all required source observations exist. This is distinct from an ingestion failure.
+
 Refreshing local data changes files only. Pushing them updates the public source repository. Neither action currently deploys a website. No cron job, GitHub Actions schedule, paid infrastructure, or background automation is active. CI and a manually dispatched refresh workflow are planned for Phase 4, and a verified Site deployment for Phase 5.
 
 Keep public GitHub phase commits/tags separate from private Site publication. The existing `.openai/hosting.json` is local deployment identity, not a secret and not part of this public source checkpoint.
