@@ -72,16 +72,16 @@ def check(root: Path) -> dict:
                 raise p.PipelineError(f"Download checksum mismatch: {folder}/{name}")
             verified_downloads += 1
     dist = root / "dist"
-    html = (dist / "index.html").read_text()
-    page = Page()
-    page.feed(html)
-    if page.duplicate_ids:
-        raise p.PipelineError(f"Duplicate HTML IDs: {page.duplicate_ids}")
-    if set(page.labels + page.anchors) - page.ids:
-        raise p.PipelineError("A label or in-page link has no target")
-    for asset in page.assets:
-        if not asset.startswith("./") or ".." in Path(asset).parts or not (dist / asset).is_file():
-            raise p.PipelineError(f"Nonlocal or missing startup asset: {asset}")
+    for filename in ("index.html", "case-study.html"):
+        page = Page()
+        page.feed((dist / filename).read_text())
+        if page.duplicate_ids:
+            raise p.PipelineError(f"Duplicate HTML IDs in {filename}: {page.duplicate_ids}")
+        if set(page.labels + page.anchors) - page.ids:
+            raise p.PipelineError(f"A label or in-page link has no target in {filename}")
+        for asset in page.assets:
+            if not asset.startswith("./") or ".." in Path(asset).parts or not (dist / asset).is_file():
+                raise p.PipelineError(f"Nonlocal or missing startup asset: {asset}")
     css = (dist / "style.css").read_text()
     if re.search(r"@import|url\([\"']?https?://", css):
         raise p.PipelineError("External runtime CSS dependency")
