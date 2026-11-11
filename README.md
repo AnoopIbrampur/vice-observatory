@@ -2,7 +2,9 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** Phases 0–3 complete: source audit, reproducible data foundation, evaluated analysis, and a working responsive dashboard. **1,649 actual daily observations**, **135 retrospectively scored predictions**, and **65 passing tests**. The application is ready to run locally; production publication is planned for Phase 5. Follow [phase checkpoints](docs/PHASES.md) for actual progress.
+**Status:** Phases 0–4 complete: reproducible data and analysis, a responsive dashboard, verified GitHub CI, and an isolated manual-refresh workflow. **1,649 actual daily observations**, **135 retrospectively scored predictions**, and **79 passing tests**. Production publication is Phase 5. Follow [phase checkpoints](docs/PHASES.md) for progress.
+
+[![Verify project](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml/badge.svg)](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml)
 
 ![Verified desktop dashboard](docs/screenshots/desktop.jpg)
 
@@ -15,6 +17,10 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 Open [http://127.0.0.1:8765/](http://127.0.0.1:8765/) in a modern browser. No build, npm install, API key, or paid service is needed. Serve over localhost or HTTPS; opening the HTML with `file://` is unsupported.
 
 The interface includes time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
+
+## Reliability and operating workflows
+
+GitHub CI actually passes on Python 3.11 and 3.13 with Node 22. It checks unit tests, source/analysis replay, all versioned downloads, static payload budgets, and loopback HTTP serving without requiring Wikimedia access. A separately tested manual workflow fetches a validated candidate artifact; it does not push or deploy automatically. See [Phase 4 evidence](docs/PHASE_4.md) and [workflow operations](docs/WORKFLOWS.md).
 
 ## The question
 
@@ -60,6 +66,12 @@ python3 -m scripts.pipeline verify
 python3 -m scripts.analysis build
 python3 -m scripts.analysis verify
 
+# Validate startup/download integrity and payload budgets without external APIs.
+python3 -m scripts.check_release
+
+# Exercise actual HTTP serving on a short-lived local loopback server.
+python3 -m scripts.smoke_http
+
 # Rebuild identical JSON/CSV from preserved responses into a separate directory.
 python3 -m scripts.pipeline replay --output /tmp/vice-observatory-replay
 
@@ -84,7 +96,7 @@ Without `--as-of`, refresh uses the current UTC date and requests only earlier d
 
 Initial snapshot: GTA VI from November 1, 2023 through November 10, 2026 (1,106 days), and 181-day historical windows for GTA V's 2022 console re-release, Red Dead Redemption 2, and Cyberpunk 2077. No GTA VI launch-day or post-launch observation is fabricated.
 
-No scheduled refresh or automatic hosted-site deployment has been enabled. Phase 4 will document and verify the operating workflow.
+No scheduled refresh or automatic hosted-site deployment is enabled. The manual refresh workflow produces a candidate for review. Publishing a refreshed hosted application remains a separate verified deployment step.
 
 ## Sources and credit
 

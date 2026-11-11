@@ -71,6 +71,6 @@ Analysis exports include complete daily statistics, release-aligned comparison r
 
 The fixed normalization baseline can be incomplete even when source coverage is complete: GTA VI needs all 21 dates from release-relative day -28 through -8. As of the initial November 11 snapshot, only 20 are observed. Leave the index unavailable until all required source observations exist. This is distinct from an ingestion failure.
 
-Refreshing local data changes files only. Pushing them updates the public source repository. Neither action currently deploys a website. No cron job, GitHub Actions schedule, paid infrastructure, or background automation is active. CI and a manually dispatched refresh workflow are planned for Phase 4, and a verified Site deployment for Phase 5.
+Refreshing local data changes files only. Pushing them updates the public source repository and runs CI. Neither action currently deploys a website. The [manual refresh workflow](WORKFLOWS.md) has been tested on GitHub and emits an isolated validated candidate artifact. No cron job or scheduled refresh is active. A verified Site deployment remains Phase 5.
 
 Keep public GitHub phase commits/tags separate from private Site publication. The existing `.openai/hosting.json` is local deployment identity, not a secret and not part of this public source checkpoint.

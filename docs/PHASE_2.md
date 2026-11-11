@@ -16,7 +16,7 @@ The [analysis protocol](ANALYSIS_PROTOCOL.md) was committed in `6dcb9fa` before 
 
 The normalization mean uses exactly release-relative days -28 through -8. Evaluation targets are exactly -14 through +30. Yesterday uses t-1, and trailing-week uses t-7 through t-1. No parameters were tuned or learned. The index is a retrospective descriptive transformation and is excluded from forecasting inputs.
 
-Each analysis manifest identifies its source snapshot, protocol hash, and implementation hash. The current analysis ID is:
+Each analysis manifest identifies its source snapshot, protocol hash, and implementation hash. The analysis ID at the Phase 2 checkpoint was:
 
 ```text
 668d329664b5b808625ac6b919068f8003305363ca414f01195178b1d1718507
