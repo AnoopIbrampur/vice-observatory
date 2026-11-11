@@ -1,6 +1,6 @@
 # Vice Observatory — project plan
 
-Status: Phases 0–4 complete. Data, evaluated analysis, dashboard, verified CI, and an isolated manual-refresh workflow are implemented. Deployment and the portfolio package are next. See `docs/PHASES.md` and `docs/PHASE_4.md` for evidence.
+Status: All five planned build phases complete. The verified dashboard and case study are deployed privately, with public source, portable packages, CI, operating documentation, and portfolio copy. See `docs/PHASES.md`, `docs/PHASE_5.md`, and `docs/DEPLOYMENT.md` for evidence and access boundaries.
 
 ## Objective
 

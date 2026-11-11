@@ -1,0 +1,17 @@
+{
+  "status": "succeeded",
+  "url": "https://vice-observatory-anoop.poeticskink11.chatgpt.site",
+  "access": "owner_only",
+  "github_runtime_commit": "6e32337a02c8d2fccdd99abf7e5b4ff720d9ed50",
+  "sites_source_commit": "e2fe02e18ea01dc9d06fef07050f8237e0b7ca5c",
+  "source_snapshot_id": "73ecfa4562de20fb39627963ab85f8e2cf666ba825697af6c90de454f5590415",
+  "analysis_id": "6b1e954c561eab1a0afc35bf0263190402603838f8a240e05791ee9d3b73f970",
+  "deployment_confirmed_at": "2026-11-11T16:50:57.826862+00:00",
+  "browser_checks": {
+    "dashboard_rendered": true,
+    "selected_30_day_rows": 30,
+    "index_pending_days": "20/21",
+    "case_study_navigation": true
+  },
+  "scheduled_refresh": false
+}

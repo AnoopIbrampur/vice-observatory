@@ -10,7 +10,7 @@ Open `http://127.0.0.1:8765/`. The buildless browser application reads only same
 
 The dashboard provides a saved view, not a live feed. Its query parameters preserve ranges and comparison filters; invalid values receive safe defaults. A pending 20/21-day GTA VI baseline is an explicit unavailable index, while raw data remains selectable.
 
-Frontend checks use Node 22+ with no installed packages: `node --test tests/dashboard.test.mjs`. Browser QA and screenshots for Phase 3 are documented in `docs/PHASE_3.md`. Production deployment remains a later phase.
+Frontend checks use Node 22+ with no installed packages: `node --test tests/dashboard.test.mjs`. Browser QA and screenshots are documented in the phase reports. The verified owner-only production deployment and portable hosting instructions are in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Requirements and entry points
 
@@ -71,6 +71,6 @@ Analysis exports include complete daily statistics, release-aligned comparison r
 
 The fixed normalization baseline can be incomplete even when source coverage is complete: GTA VI needs all 21 dates from release-relative day -28 through -8. As of the initial November 11 snapshot, only 20 are observed. Leave the index unavailable until all required source observations exist. This is distinct from an ingestion failure.
 
-Refreshing local data changes files only. Pushing them updates the public source repository and runs CI. Neither action currently deploys a website. The [manual refresh workflow](WORKFLOWS.md) has been tested on GitHub and emits an isolated validated candidate artifact. No cron job or scheduled refresh is active. A verified Site deployment remains Phase 5.
+Refreshing local data changes files only. Pushing them updates the public source repository and runs CI; deployment is still a separate explicit operation. The [manual refresh workflow](WORKFLOWS.md) has been tested on GitHub and emits an isolated validated candidate artifact. No cron job or scheduled refresh is active. Phase 5's owner-only deployment is recorded in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 Keep public GitHub phase commits/tags separate from private Site publication. The existing `.openai/hosting.json` is local deployment identity, not a secret and not part of this public source checkpoint.

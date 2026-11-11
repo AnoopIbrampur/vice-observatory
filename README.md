@@ -2,7 +2,11 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** Phases 0–4 complete: reproducible data and analysis, a responsive dashboard, verified GitHub CI, and an isolated manual-refresh workflow. **1,649 actual daily observations**, **135 retrospectively scored predictions**, and **79 passing tests**. Production publication is Phase 5. Follow [phase checkpoints](docs/PHASES.md) for progress.
+**Status:** All five build phases complete. **1,649 actual daily observations**, **135 retrospectively scored predictions**, **79 passing tests**, verified CI, and a deployed private review Site.
+
+**[Private dashboard](https://vice-observatory-anoop.poeticskink11.chatgpt.site)** (owner-only) · **[Case study](docs/CASE_STUDY.md)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Portfolio copy](docs/PORTFOLIO_COPY.md)**
+
+The source repository is public. The hosted Site preserves owner-only access; a recruiter-accessible public demo requires a separate hosting/audience configuration. The static runtime is portable and requires no paid API key. See [deployment](docs/DEPLOYMENT.md) and [phase checkpoints](docs/PHASES.md).
 
 [![Verify project](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml/badge.svg)](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml)
 
