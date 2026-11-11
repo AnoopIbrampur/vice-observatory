@@ -60,6 +60,6 @@ Keyboard inspection and expandable tables provide an alternative to chart clicks
 
 ## Delivery and limits
 
-The repository is public, and the static build is portable. The Sites deployment is an owner-only review environment; recruiters need a public hosting configuration before using that URL. A manual refresh artifact is not a push or deployment, and no scheduled update is active.
+The repository and [live dashboard](https://vice-observatory-anoop.poeticskink11.chatgpt.site) are public, and the static build is portable. The initial owner-only review deployment was opened to the public at the owner's explicit request. A manual refresh artifact is not a push or deployment, and no scheduled update is active.
 
 Three selected historical windows do not establish generalization across game launches. Calendar-aligned event changes do not establish causation. No trained ML model, GTA VI launch forecast, or proprietary telemetry is claimed. Useful next steps are title-history reconciliation, more comparison releases under fixed rules, and a verified publication path for refreshes.

@@ -1,6 +1,6 @@
 # Portfolio and interview copy
 
-Use after choosing a recruiter-accessible demo URL. The public repository and case study are usable now. Do not label the private Sites preview as a public live demo, and do not claim scheduled updates are active.
+The live demo is now public and recruiter-accessible at https://vice-observatory-anoop.poeticskink11.chatgpt.site. The repository and case study are also public. No scheduled updates are active.
 
 ## Portfolio card
 
@@ -12,7 +12,7 @@ A source-linked dashboard exploring how attention changes around major game laun
 
 **Stack:** Python · JavaScript · SVG · GitHub Actions.
 
-**Links:** public demo when configured · [case study](https://github.com/AnoopIbrampur/vice-observatory/blob/main/docs/CASE_STUDY.md) · [source](https://github.com/AnoopIbrampur/vice-observatory)
+**Links:** [live demo](https://vice-observatory-anoop.poeticskink11.chatgpt.site) · [case study](https://github.com/AnoopIbrampur/vice-observatory/blob/main/docs/CASE_STUDY.md) · [source](https://github.com/AnoopIbrampur/vice-observatory)
 
 For a shorter stack label, use “Python · JavaScript · GitHub Actions.” Do not add SQL, a trained ML model, or a database to the stack: none was used.
 
@@ -38,4 +38,4 @@ Project owner: Anoop Ibrampur. Implementation was AI-assisted with Codex. Presen
 - **How is leakage prevented?** A forecast for day t uses t-1 or t-7 through t-1. The descriptive trailing mean includes t and is kept separate. Tests mutate future outcomes and check earlier forecasts.
 - **Why not add an LLM?** The core tasks are collection, validation, transparent arithmetic, and visualization. Paid inference adds neither a necessary data source nor a better-evidenced conclusion here.
 - **What did CI catch?** Different float accumulation between Python versions, fixed with accurate summation and a regression example.
-- **What is still limited?** Exact-title history, three selected comparisons, the re-release/original distinction, retrospective evaluation, private preview access, and no scheduled refresh.
+- **What is still limited?** Exact-title history, three selected comparisons, the re-release/original distinction, retrospective evaluation, and no scheduled refresh.

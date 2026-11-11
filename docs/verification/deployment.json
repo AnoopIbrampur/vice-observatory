@@ -1,7 +1,10 @@
 {
   "status": "succeeded",
   "url": "https://vice-observatory-anoop.poeticskink11.chatgpt.site",
-  "access": "owner_only",
+  "access": "public",
+  "initial_access": "owner_only",
+  "public_access_revision": 2,
+  "anonymous_http_verified": true,
   "github_runtime_commit": "6e32337a02c8d2fccdd99abf7e5b4ff720d9ed50",
   "sites_source_commit": "e2fe02e18ea01dc9d06fef07050f8237e0b7ca5c",
   "source_snapshot_id": "73ecfa4562de20fb39627963ab85f8e2cf666ba825697af6c90de454f5590415",

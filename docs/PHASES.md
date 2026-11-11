@@ -11,7 +11,7 @@ One public repository is used for the entire project. Each completed phase gets 
 | 4 · Reliability and release verification | Complete | 79 tests, passing two-version GitHub CI, validated cloud refresh artifact, HTTP/integrity/contrast/keyboard checks; [verification](PHASE_4.md) |
 | 5 · Deployment and portfolio package | Complete | Confirmed owner-only deployment, hosted case study, portable archives, architecture and portfolio copy; [verification](PHASE_5.md) |
 
-Public source publication is authorized. The dashboard is deployed at https://vice-observatory-anoop.poeticskink11.chatgpt.site with owner-only access preserved. Its public GitHub source and portable static package are separate from that private deployment.
+The dashboard at https://vice-observatory-anoop.poeticskink11.chatgpt.site is now public following an explicit audience-change request after Phase 5. Anonymous access and data hashes were verified. Phase reports and original release archives retain the history of the initial owner-only deployment.
 
 Public repository: https://github.com/AnoopIbrampur/vice-observatory
 

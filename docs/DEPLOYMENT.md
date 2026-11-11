@@ -6,7 +6,7 @@ The verified application is deployed at:
 
 **https://vice-observatory-anoop.poeticskink11.chatgpt.site**
 
-Audience: **owner-only**. This is a working private review environment, not a recruiter-accessible public demo. The public [GitHub repository](https://github.com/AnoopIbrampur/vice-observatory), [case study](CASE_STUDY.md), and source package remain shareable.
+Audience: **public**. Anyone with the URL can open the dashboard and case study without an owner login. Public access was explicitly requested after the initial Phase 5 owner-only deployment. Anonymous HTTP requests verified both pages, source/analysis identity matching, and payload checksums without cookies or authorization. The [GitHub repository](https://github.com/AnoopIbrampur/vice-observatory), [case study](CASE_STUDY.md), and source package are also public.
 
 The deployed runtime was prepared from GitHub commit `6e32337a02c8d2fccdd99abf7e5b4ff720d9ed50`. The separate Sites source commit is `e2fe02e18ea01dc9d06fef07050f8237e0b7ca5c`. Later public documentation/release-packaging commits do not change these deployed application assets. The deployment contains the dashboard, a static case-study page, and verified saved data/analysis.
 
@@ -34,7 +34,7 @@ Open `http://127.0.0.1:8765/`. The browser requires HTTP on localhost or HTTPS f
 
 ## Recruiter-accessible hosting
 
-A public demo requires an explicit public audience for this Site or a public static host serving the portable `dist/` package. No audience change, public hosting activation, or edit to the existing personal portfolio was performed in this release. Until then, use the public repository/case study as portfolio links, and keep the owner-only URL labeled as a private preview.
+The Site now has an explicitly authorized public audience, so the live URL is suitable for a portfolio card or recruiter message. The original Phase 5 ZIPs and phase report preserve the earlier private-review checkpoint; current access is public. The user's existing personal portfolio has not been edited.
 
 ## Future data publications
 
