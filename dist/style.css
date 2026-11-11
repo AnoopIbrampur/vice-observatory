@@ -10,3 +10,9 @@
 select,.button,.download-links a{border-color:#607782}
 :where(a,button,input,select,summary,[tabindex]){scroll-margin-top:115px;scroll-margin-bottom:24px}
 @media(max-width:600px){:where(a,button,input,select,summary,[tabindex]){scroll-margin-top:92px}}
+
+/* Expansion: bounded comparison choices and readable evidence details. */
+input[type=search]{font:inherit;color:var(--text);background:#1b232a;border:1px solid #607782;border-radius:4px;padding:10px;min-height:44px;max-width:100%;width:260px}
+.game-select{max-height:290px;overflow:auto}.events .caption{max-width:65ch;margin:10px 0;line-height:1.6}.benchmark{align-items:start}.benchmark .table-wrap{max-height:450px}#benchmark-groups{margin:20px 0}.events>li>div{min-width:0}.events a{overflow-wrap:anywhere}
+
+details{min-width:0}.table-wrap{contain:inline-size;width:100%;min-width:0}

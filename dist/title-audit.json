@@ -1,0 +1,1249 @@
+{
+  "checked_at": "2026-11-11T17:13:05.707961+00:00",
+  "limitation": "Current redirects and title-filtered move logs are a bounded audit, not a complete historical title reconstruction. Logs can include unrelated former occupants of a title. Aliases are not merged. Counts remain exact-title pageviews.",
+  "schema_version": 1,
+  "series": [
+    {
+      "canonical_article": "Grand_Theft_Auto_VI",
+      "configured_article": "Grand_Theft_Auto_VI",
+      "created_at": "2022-02-11T04:11:05Z",
+      "evidence": [
+        {
+          "sha256": "b1bfce161f61f54fc65311bcc80b7ee8638733d01f708cd8696ef5d8d0a67ac7",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Grand_Theft_Auto_VI&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "461caad8eb43751080cde3ec04c1b922536dc8bc5ed77d5d452674ae9380bf79",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=70042775&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "9faeb2e8a1cac010d5f970f75da527a15ceec9210acb20bd0b224dc1f69d48d0",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Grand+Theft+Auto+VI&lelimit=500"
+        }
+      ],
+      "flags": [
+        "visible_move_in_requested_window"
+      ],
+      "incoming_redirects": [
+        "$CYBERLEEK",
+        "2022 Grand Theft Auto VI content leak",
+        "2022 Grand Theft Auto VI leak",
+        "2022 Grand Theft Auto content leak",
+        "2022 Grand Theft Auto leak",
+        "Bae Luxe",
+        "Bae-Luxe",
+        "Baeluxe",
+        "Before GTA 6",
+        "Before GTA VI",
+        "Before gta 6",
+        "Before gta vi",
+        "Boobie Ike",
+        "Brian (Grand Theft Auto)",
+        "Brian Heder",
+        "Cal Hampton",
+        "Characters of Grand Theft Auto VI",
+        "Child Support (Zenglen song)",
+        "CyberLeek",
+        "Cyberleak",
+        "Cyberleek",
+        "Development of Grand Theft Auto 6",
+        "Development of Grand Theft Auto VI",
+        "Draft:Grand Theft Auto VI",
+        "Draft:Grand Theft Auto VI Leaks",
+        "Draft:Untitled Grand Theft Auto game",
+        "Dre'Quan Priest",
+        "Dre'quan Priest",
+        "DreQuan Priest",
+        "Drequan Priest",
+        "GTA 6",
+        "GTA 6 leak",
+        "GTA 6 leaks",
+        "GTA Six",
+        "GTA VI",
+        "GTA VI Leak",
+        "GTA VI leaks",
+        "GTA six",
+        "GTA6",
+        "GTASix",
+        "GTAVI",
+        "Grand Theft Auto 6",
+        "Grand Theft Auto 6 (game)",
+        "Grand Theft Auto Six",
+        "Grand Theft Auto VI Launch Trailer",
+        "Grand Theft Auto VI Trailer 1",
+        "Grand Theft Auto VI Trailer 2",
+        "Grand Theft Auto VI content leak",
+        "Grand Theft Auto VI leak",
+        "Grand Theft Auto VI leaks",
+        "Grand Theft Auto VI: The Goodtime State",
+        "Grand Theft Auto VI: The Goodtime State - Vice City Collection",
+        "Grand Theft Auto VI: The Goodtime State – Vice City Collection",
+        "Grand Theft Auto Vi",
+        "Grand Theft Auto content leak",
+        "Grand Theft Auto6",
+        "Grand Theft AutoVI",
+        "Grand theft auto 6",
+        "Grand theft auto VI",
+        "Grand theft auto vi",
+        "Grandtheftauto6",
+        "Gta 6",
+        "Gta VI",
+        "Gta vi",
+        "Gta6",
+        "GtaVI",
+        "Gtavi",
+        "Jason (Grand Theft Auto)",
+        "Jason Duval",
+        "Jason Duval and Lucia Caminos",
+        "Jason Duvall",
+        "Jason and Lucia",
+        "Leonida (Grand Theft Auto 6)",
+        "Leonida (Grand Theft Auto VI)",
+        "Leonida (Grand Theft Auto)",
+        "Leonida (state)",
+        "Leonida Keys",
+        "Leonida Penitentiary",
+        "List of characters in Grand Theft Auto VI",
+        "Lu Caminos",
+        "Lucia (Grand Theft Auto)",
+        "Lucia Caminos",
+        "Lucia Camiños",
+        "Lucia Camínos",
+        "Lucia and Jason",
+        "Lucía Caminos",
+        "Lucía Camiños",
+        "Lucía Camínos",
+        "Lucía Camíños",
+        "Michael Wiafe",
+        "Mount Kalaga",
+        "Music of Grand Theft Auto VI",
+        "Oh, just fixing some leaks.",
+        "Only Raw Records",
+        "Port Gellhorn",
+        "Project Americas",
+        "Raul Bautista",
+        "Real Dimez",
+        "Rockstar Los Angeles",
+        "September 2022 Grand Theft Auto VI content leak",
+        "September 2022 Grand Theft Auto VI leak",
+        "September 2022 Grand Theft Auto content leak",
+        "September 2022 Grand Theft Auto leak",
+        "Snapmatic",
+        "Teapotuberhacker",
+        "Zenglen"
+      ],
+      "page_id": 70042775,
+      "series_id": "gta-vi",
+      "visible_move_logs": [
+        {
+          "action": "move",
+          "comment": "[[WP:PMRC#4|Round-robin history swap]] step 1 using [[:en:User:Ahecht/sandbox/Scripts/pageswap.js|pageswap]]",
+          "logid": 156148553,
+          "logpage": 75486185,
+          "ns": 0,
+          "pageid": 70042775,
+          "params": {
+            "suppressredirect": "",
+            "target_ns": 118,
+            "target_title": "Draft:Move/Untitled Grand Theft Auto game"
+          },
+          "revid": 1188363793,
+          "timestamp": "2023-12-04T23:15:45Z",
+          "title": "Grand Theft Auto VI",
+          "type": "move",
+          "user": "2pou"
+        },
+        {
+          "action": "move",
+          "comment": "trailer released",
+          "logid": 156148548,
+          "logpage": 41814096,
+          "ns": 0,
+          "pageid": 70042775,
+          "params": {
+            "target_ns": 118,
+            "target_title": "Draft:Grand Theft Auto VI 2"
+          },
+          "revid": 1188363779,
+          "timestamp": "2023-12-04T23:15:39Z",
+          "title": "Grand Theft Auto VI",
+          "type": "move",
+          "user": "Ebbedlila"
+        },
+        {
+          "action": "move_redir",
+          "comment": "rvv",
+          "logid": 26629203,
+          "logpage": 25632916,
+          "ns": 0,
+          "pageid": 70042775,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Barney's Hide and Seek"
+          },
+          "timestamp": "2009-12-31T20:30:54Z",
+          "title": "Grand Theft Auto VI",
+          "type": "move",
+          "user": "HelloAnnyong"
+        }
+      ]
+    },
+    {
+      "canonical_article": "Grand_Theft_Auto_V",
+      "configured_article": "Grand_Theft_Auto_V",
+      "created_at": "2004-10-20T13:57:37Z",
+      "evidence": [
+        {
+          "sha256": "37e6ce4126430ac332107c9aa5c74bb02b9aea9a08ad530fb92c848b5a6651f6",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Grand_Theft_Auto_V&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "c9c435e2c7bddce2de30837d45e971272e98ed9e797a2c221c7b8d6d1c33b36d",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=31795249&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Grand+Theft+Auto+V&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Accolades received by Grand Theft Auto V",
+        "Blaine County (Grand Theft Auto)",
+        "Blaine County, San Andreas",
+        "Brad Snider",
+        "Controversies surrounding GTA 5",
+        "Controversies surrounding GTA V",
+        "Controversies surrounding Grand Theft Auto 5",
+        "Controversies surrounding Grand Theft Auto V",
+        "Dave Norton (Grand Theft Auto)",
+        "Devin Weston",
+        "Dr Isiah Friedlander",
+        "Draft:Controversies surrounding Grand Theft Auto V",
+        "Draft:Grand Theft Auto V (re-release)",
+        "Draft:Michael De Santa (redirect)",
+        "Draft:Michael de Santa",
+        "Federal Investigation Bureau",
+        "Franklin Clinton",
+        "G t a v",
+        "GTA 5",
+        "GTA 5 Legacy",
+        "GTA 5 controversies",
+        "GTA 5: Premium Edition",
+        "GTA Five",
+        "GTA V",
+        "GTA V Enhanced",
+        "GTA V Legacy",
+        "GTA V controversies",
+        "GTA V: Premium Edition",
+        "GTA five",
+        "GTA v",
+        "GTA-V",
+        "GTA5",
+        "GTA: 5",
+        "GTA: V",
+        "GTA:5",
+        "GTA:V",
+        "GTAV",
+        "Grand Theft Auto 5",
+        "Grand Theft Auto 5 Legacy",
+        "Grand Theft Auto 5 controversies",
+        "Grand Theft Auto 5: Premium Edition",
+        "Grand Theft Auto Five",
+        "Grand Theft Auto V (re-release)",
+        "Grand Theft Auto V Enhanced",
+        "Grand Theft Auto V Legacy",
+        "Grand Theft Auto V controversies",
+        "Grand Theft Auto V: Premium Edition",
+        "Grand Theft Auto: 5",
+        "Grand Theft Auto: V",
+        "Grand theft auto 5",
+        "Grand theft auto V",
+        "Grand theft auto v",
+        "Grand theft auto:V",
+        "Grandtheftauto5",
+        "GtA5",
+        "GtAv",
+        "Gta 5",
+        "Gta V",
+        "Gta five",
+        "Gta v",
+        "Gta5",
+        "Gta: 5",
+        "GtaV",
+        "Gtav",
+        "Ifruit",
+        "Lacey Jonas",
+        "Lamar Davis (Grand Theft Auto)",
+        "Lester Crest",
+        "List of Grand Theft Auto V characters",
+        "List of accolades received by GTA V",
+        "List of accolades received by Grand Theft Auto V",
+        "Michael De Santa",
+        "Michael Townley (Grand Theft Auto)",
+        "North Yankton",
+        "Reception of Grand Theft Auto V",
+        "Rockstar Editor",
+        "Sandy shores",
+        "User:X201/Marketing for Grand Theft Auto V",
+        "V (GTA)",
+        "V (Grand Theft Auto)"
+      ],
+      "page_id": 31795249,
+      "series_id": "gta-v-2022",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Red_Dead_Redemption_2",
+      "configured_article": "Red_Dead_Redemption_2",
+      "created_at": "2016-10-17T20:08:39Z",
+      "evidence": [
+        {
+          "sha256": "5310868d07fea888fefe468fd2c87b8ecdeda3198acea8833556477fab310b5b",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Red_Dead_Redemption_2&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "ddaeefa56b9d84c5ace2c4402bf2bb8cb3c0dc7e15110afbb6e53ebb51d067d7",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=52023256&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "8c0500cf84a7cc5a427d6861a2d3f1bcf7c8fe981b39977709efc3a478c7ba27",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Red+Dead+Redemption+2&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Ambarino",
+        "RDR 2",
+        "RDR II",
+        "RDR2",
+        "RDRII",
+        "RED DEAD REDEMPTION 2",
+        "RED DEAD REDEMPTION II",
+        "Rdr2",
+        "Red Dead 3",
+        "Red Dead III",
+        "Red Dead Redemption II",
+        "Red Dead Revolver 3",
+        "Red Dead Three",
+        "Red dead redemption two"
+      ],
+      "page_id": 52023256,
+      "series_id": "rdr2",
+      "visible_move_logs": [
+        {
+          "action": "move_redir",
+          "comment": "I got 50 upvotes and you got -3 that is the consensus do not further change the page",
+          "logid": 86072881,
+          "logpage": 52023256,
+          "ns": 0,
+          "pageid": 52023256,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Red Dead Redemption II"
+          },
+          "revid": 804030218,
+          "timestamp": "2017-10-06T07:38:53Z",
+          "title": "Red Dead Redemption 2",
+          "type": "move",
+          "user": "Snipershot325"
+        },
+        {
+          "action": "move_redir",
+          "comment": "The game is now named \"Red Dead Redemption II\", not \"Red Dead Redemption 2\" this was revealed in the most recent trailer for the game",
+          "logid": 86072060,
+          "logpage": 52023256,
+          "ns": 0,
+          "pageid": 52023256,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Red Dead Redemption II"
+          },
+          "revid": 804026446,
+          "timestamp": "2017-10-06T06:42:42Z",
+          "title": "Red Dead Redemption 2",
+          "type": "move",
+          "user": "Snipershot325"
+        },
+        {
+          "action": "move",
+          "comment": "",
+          "logid": 85918205,
+          "logpage": 52023256,
+          "ns": 0,
+          "pageid": 52023256,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Red Dead Redemption II"
+          },
+          "revid": 802823574,
+          "timestamp": "2017-09-28T18:13:14Z",
+          "title": "Red Dead Redemption 2",
+          "type": "move",
+          "user": "IceWelder"
+        }
+      ]
+    },
+    {
+      "canonical_article": "Cyberpunk_2077",
+      "configured_article": "Cyberpunk_2077",
+      "created_at": "2012-08-11T04:09:41Z",
+      "evidence": [
+        {
+          "sha256": "6e22bd60f4d811d97f8580317082f3bd4452e771c5938b18f9f9c1fdb5ffd237",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Cyberpunk_2077&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "86ff4bd4c724e4a457e33f03654df6e8485cf897087fd5be48a9b158b86b5f0c",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=36691288&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Cyberpunk+2077&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Adam Smasher",
+        "CP 2077",
+        "CP2077",
+        "Cyberpunk 2",
+        "Cyberpunk 2077 (video game)",
+        "Cyberpunk 2077 2",
+        "Cyberpunk 2077 Night City Wire",
+        "Cyberpunk 2077 Ultimate Edition",
+        "Cyberpunk 2077: Radio, Vol. 2 (Original Soundtrack)",
+        "Cyberpunk 2077: Ultimate Edition",
+        "Development and release of Cyberpunk 2077",
+        "Development of Cyberpunk 2077",
+        "Johnny Silverhand",
+        "Mateusz Kanik",
+        "Night City (Cyberpunk 2077)",
+        "The game is fixed"
+      ],
+      "page_id": 36691288,
+      "series_id": "cyberpunk",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Elden_Ring",
+      "configured_article": "Elden_Ring",
+      "created_at": "2019-06-09T21:22:10Z",
+      "evidence": [
+        {
+          "sha256": "8263ecad48dd63ef102445c29b442a7270adad11e68ce256bd84c822c1587f9a",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Elden_Ring&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "fc6637cb68f67e4cfd048667b92ff676198080b9e1533a42277ac46e0de7d676",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=61002621&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Elden+Ring&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Caelid",
+        "Elden Ring (franchise)",
+        "Elden Ring - Tarnished Edition",
+        "Elden Ring speedrunning",
+        "Elden Ring: Tarnished Edition",
+        "Elden ring",
+        "Eruden Ringu",
+        "List of accolades received by Elden Ring",
+        "Maliketh",
+        "Maliketh (Elden Ring)",
+        "Maliketh The Black Blade",
+        "Maliketh, The Black Blade",
+        "Shadow of the erd tree",
+        "Zip glitch"
+      ],
+      "page_id": 61002621,
+      "series_id": "elden-ring",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Ghost_of_Tsushima",
+      "configured_article": "Ghost_of_Tsushima",
+      "created_at": "2017-10-30T16:33:42Z",
+      "evidence": [
+        {
+          "sha256": "d3164008c57f89ed0db8964942a486daafb8f18b46f2918d7cb396a415b5218c",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Ghost_of_Tsushima&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "07772d963742fb7ff0bea716ef463e78579e3160fb47544a6b1603afbbcf2d53",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=55667140&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Ghost+of+Tsushima&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Ghost of Sushi",
+        "Ghost of Tsushima (film)",
+        "Ghost of Tsushima Director's Cut",
+        "Ghosts of Tsushima",
+        "Jin Sakai",
+        "The Ghost of Tsushima"
+      ],
+      "page_id": 55667140,
+      "series_id": "ghost",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Super_Mario_Odyssey",
+      "configured_article": "Super_Mario_Odyssey",
+      "created_at": "2017-01-13T04:35:30Z",
+      "evidence": [
+        {
+          "sha256": "1c0909a3181d345ecfd19af3a9a1d398b8e118a29fbd8d24a9a5cb463be2eb3e",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Super_Mario_Odyssey&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "40aa488352ee3efa70b27e5eacc60423cf1099d44505cad69e48d97de0880aa8",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=52854402&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Super+Mario+Odyssey&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Balloon World",
+        "Bonneter",
+        "Break Free (Lead the Way)",
+        "Broodals",
+        "Cap Kingdom",
+        "Cappy (Mario)",
+        "Cascade Kingdom",
+        "Darker Side",
+        "Delicious Amiibo",
+        "Development of Super Mario Odyssey",
+        "Draft:Jump Up, Super Star!",
+        "I'll Be Your 1-Up Girl",
+        "Jump Up Super Star",
+        "Jump Up Superstar",
+        "Jump Up, Super Star",
+        "Jump Up, Super Star!",
+        "Jump Up, Superstar",
+        "Let's Do the Odyssey",
+        "Luigi's Balloon World",
+        "Mario Odyssey",
+        "Mecha-Broodal",
+        "Metro Kingdom",
+        "New Donk City",
+        "Power Moon",
+        "Power Moons",
+        "Spark Pylon",
+        "Super Mario 2017",
+        "Super Mario Bros. Odyssey",
+        "Super Mario Cereal",
+        "Super Mario Switch",
+        "Super mario odyssey",
+        "Sūpā Mario Odessei"
+      ],
+      "page_id": 52854402,
+      "series_id": "odyssey",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "The_Legend_of_Zelda:_Breath_of_the_Wild",
+      "configured_article": "The_Legend_of_Zelda:_Breath_of_the_Wild",
+      "created_at": "2011-07-04T20:30:04Z",
+      "evidence": [
+        {
+          "sha256": "2ddf215c5b5faceb6fdacdf78eed2bcd694256ad42e4048eaf93ca7126f69c5d",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Legend_of_Zelda%3A_Breath_of_the_Wild&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "f1e66022f634a968075d2761db842ad6bb5a435c8ea9e828cbbeccd6be42db08",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=32307637&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=The+Legend+of+Zelda%3A+Breath+of+the+Wild&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "BOTW",
+        "BOTW Switch 2",
+        "BotW",
+        "BotW Switch 2",
+        "Breadth of the Wild",
+        "Breath of the Wild",
+        "Breath of the wild",
+        "Breathe of the Wild",
+        "Guardian (The Legend of Zelda)",
+        "Korok Seed",
+        "LOZBOTW",
+        "Legend of Zelda: Breath of the Wild",
+        "Sheikah Slate",
+        "TLOZBOTW",
+        "The Champion's Ballad",
+        "The Champions' Ballad",
+        "The Legend Of Zelda: Breath Of The Wild",
+        "The Legend of Zelda (2017 video game)",
+        "The Legend of Zelda (Wii U game)",
+        "The Legend of Zelda (Wii U video game)",
+        "The Legend of Zelda (Wii U)",
+        "The Legend of Zelda Breath of the Wild",
+        "The Legend of Zelda Wii U",
+        "The Legend of Zelda: Breath of The Wild",
+        "The Legend of Zelda: Breath of the Wild - Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Breath of the Wild - Switch 2",
+        "The Legend of Zelda: Breath of the Wild - Switch 2 Edition",
+        "The Legend of Zelda: Breath of the Wild – Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Breath of the Wild – Switch 2",
+        "The Legend of Zelda: Breath of the Wild – Switch 2 Edition",
+        "The Legend of Zelda: Breath of the Wild — Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Breath of the Wind",
+        "The Legend of Zelda: Breathe of the Wild",
+        "The Master Trials",
+        "Tlozbotw",
+        "Wii U Zelda",
+        "Zelda 2017",
+        "Zelda BOTW",
+        "Zelda BoTW",
+        "Zelda Breath of the Wild",
+        "Zelda U",
+        "Zelda Wii U",
+        "Zelda breath of the wild",
+        "Zelda: Breath of the Wild",
+        "Zeruda no Densetsu: Buresu obu za Wairudo",
+        "ゼルダの伝説 ブレス オブ ザ ワイルド"
+      ],
+      "page_id": 32307637,
+      "series_id": "botw",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "The_Legend_of_Zelda:_Tears_of_the_Kingdom",
+      "configured_article": "The_Legend_of_Zelda:_Tears_of_the_Kingdom",
+      "created_at": "2021-05-25T13:05:58Z",
+      "evidence": [
+        {
+          "sha256": "47720d33b8d0b10402539b633b0ee8ecab81af9ef525c9ad2d343bafd404f532",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Legend_of_Zelda%3A_Tears_of_the_Kingdom&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "190db944ca89e67439abbe329c4ce0527c682b029a329a44234daf3e1b6c01b4",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=67760003&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=The+Legend+of+Zelda%3A+Tears+of+the+Kingdom&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "BOTW 2",
+        "BOTW2",
+        "Breath of the Wild 2",
+        "Construct (Legend of Zelda)",
+        "Great Sky Island",
+        "Legend of Zelda Tears of the Kingdom",
+        "Legend of Zelda: Tears of the Kingdom",
+        "Legend of zelda tears of the kingdom",
+        "Light Dragon",
+        "Sequel to The Legend of Zelda: Breath of the Wild",
+        "TOTK",
+        "Tears of the Kingdom",
+        "The Legend of Zelda Tears of the Kingdom",
+        "The Legend of Zelda: Breath of the Wild 2",
+        "The Legend of Zelda: Breath of the Wild sequel",
+        "The Legend of Zelda: TOTK",
+        "The Legend of Zelda: Tears of The Kingdom — Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Tears of the Kingdom - Switch 2 Edition",
+        "The Legend of Zelda: Tears of the Kingdom – Nintendo Switch 2 Edition",
+        "The Legend of Zelda: Tears of the Kingdom – Switch 2 Edition",
+        "The Legend of Zelda: TotK",
+        "TotK",
+        "Untitled Breath of the Wild sequel",
+        "Zelda TOTK",
+        "Zelda Tears of the Kingdom",
+        "Zelda: Tears of the Kingdom",
+        "Zelda: TotK",
+        "Zeruda no Densetsu: Tiāzu obu za Kingudamu"
+      ],
+      "page_id": 67760003,
+      "series_id": "totk",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Animal_Crossing:_New_Horizons",
+      "configured_article": "Animal_Crossing:_New_Horizons",
+      "created_at": "2019-06-11T16:47:29Z",
+      "evidence": [
+        {
+          "sha256": "daea5d40b882d2dc7a7eb3cccc94a30eac383bc990fe4b428edee74021d2710b",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Animal_Crossing%3A_New_Horizons&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "a3cd05c94c4b86a46984c37767f13a4075fe62d2e84c22045b33633524301309",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=61017442&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Animal+Crossing%3A+New+Horizons&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "AC New Horizons",
+        "AC: NH",
+        "AC:NH",
+        "ACHHP",
+        "ACNH",
+        "ACNH DLC",
+        "ACNH HHP",
+        "Animal Crossing (2020 video game)",
+        "Animal Crossing 5",
+        "Animal Crossing NH",
+        "Animal Crossing New Horizons",
+        "Animal Crossing Switch",
+        "Animal Crossing for Switch",
+        "Animal Crossing switch 2",
+        "Animal Crossing: Happy Home Paradise",
+        "Animal Crossing: New Horizons - Happy Home Paradise",
+        "Animal Crossing: New Horizons - Nintendo Switch 2 Edition",
+        "Animal Crossing: New Horizons DLC",
+        "Animal Crossing: New Horizons – Happy Home Paradise",
+        "Animal Crossing: New Horizons – Nintendo Switch 2 Edition",
+        "Animal Forest: Gather",
+        "Atsumare Dobutsu no Mori",
+        "Atsumare Dōbutsu no Mori",
+        "Gather Animal's Forest",
+        "Happy Home Paradise",
+        "Nook miles"
+      ],
+      "page_id": 61017442,
+      "series_id": "animal-crossing",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Super_Smash_Bros._Ultimate",
+      "configured_article": "Super_Smash_Bros._Ultimate",
+      "created_at": "2018-06-12T16:22:10Z",
+      "evidence": [
+        {
+          "sha256": "968c3d7160f1b79310f7be97312f29ffc48dbe4aa411d85bea91d32f5aa70a65",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Super_Smash_Bros._Ultimate&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "e2fe099521481a8d34cbc57380d98c7e5c655a753193af613a2c6ab88f85205e",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=57665928&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Super+Smash+Bros.+Ultimate&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Draft:Super Smash Bros.",
+        "Draft:Super Smash Bros. (Nintendo Switch game)",
+        "Draft:Super Smash Bros. (video game, 2018)",
+        "Draft:Super Smash Bros. Switch",
+        "Draft:Super Smash Bros. for Nintendo Switch",
+        "Echo fighter",
+        "SSB5",
+        "SSBU",
+        "Smash 5",
+        "Smash 6",
+        "Smash Bros Ultimate",
+        "Smash Bros. 5",
+        "Smash Bros. Ultimate",
+        "Smash Brothers Ultimate",
+        "Smash Ultimate",
+        "Smash bros switch",
+        "Smash bros. ultimate",
+        "Smash switch",
+        "Smash ultimate",
+        "Ssbu",
+        "Super Smash Bros Ultimate",
+        "Super Smash Bros. (Nintendo Switch game)",
+        "Super Smash Bros. (video game, 2018)",
+        "Super Smash Bros. 5",
+        "Super Smash Bros. Special",
+        "Super Smash Bros. for Nintendo Switch",
+        "Super Smash Bros. for Switch",
+        "Super Smash Bros.: Ultimate",
+        "Super Smash Bros: Ultimate",
+        "Super Smash Brothers Ultimate",
+        "Super Smash Ultimate",
+        "Super smash brothers ultimate",
+        "Ultimate (video game)",
+        "User:AESblazingstar/sandbox"
+      ],
+      "page_id": 57665928,
+      "series_id": "smash",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Splatoon_3",
+      "configured_article": "Splatoon_3",
+      "created_at": "2021-02-17T22:50:47Z",
+      "evidence": [
+        {
+          "sha256": "d6249030ca4a8c8a01fea5e6c5c2fb7a49e6539070f4f11ef3dce7f976c02dd7",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Splatoon_3&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "dbf401dc41d14fcbacd0fcb2aac81aa4ab5985ed90b182073b2b73ad4c2152b8",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=68802923&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Splatoon+3&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Draft:Splatoon 3",
+        "Smallfry",
+        "Splatlands",
+        "Splatoon III",
+        "Splatsville"
+      ],
+      "page_id": 68802923,
+      "series_id": "splatoon-3",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Luigi's_Mansion_3",
+      "configured_article": "Luigi's_Mansion_3",
+      "created_at": "2018-09-14T00:08:54Z",
+      "evidence": [
+        {
+          "sha256": "2903b0049ae281cbe24b928d49d4c012552579d9fc3e7327230f884e899e2a43",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Luigi%27s_Mansion_3&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "998982d54c835cea9c0ae0ede6a46356ac7605d2d431ccf556b438c8ef65f209",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=58480009&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Luigi%27s+Mansion+3&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Gooigi",
+        "Helen Gravely",
+        "Hellen Gravely",
+        "Luigi Mansion 3",
+        "Luigis Mansion 3",
+        "Luigi’s Mansion 3",
+        "Luigi’s Mansion III",
+        "Luigi’s Mansion Three",
+        "The Last Resort (Mario)"
+      ],
+      "page_id": 58480009,
+      "series_id": "luigi-3",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Horizon_Zero_Dawn",
+      "configured_article": "Horizon_Zero_Dawn",
+      "created_at": "2015-06-16T02:40:06Z",
+      "evidence": [
+        {
+          "sha256": "18a84d41f11b51b9a13c1a7ee97caed90cb781cc3c4be15fef07a38154476cef",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Zero_Dawn&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "00c8f19c2a205f4e10134af97868f81879f5522233e6589be126821af5fd5428",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=46991545&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Horizon+Zero+Dawn&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Horizon Zero Dawn (film)",
+        "Horizon Zero Dawn - The Frozen Wilds",
+        "Horizon Zero Dawn Complete Edition",
+        "Horizon Zero Dawn Remastered",
+        "Horizon Zero Dawn: Complete Edition",
+        "Horizon: Zero Dawn",
+        "Sylens",
+        "Zero Dawn"
+      ],
+      "page_id": 46991545,
+      "series_id": "horizon-zero",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Horizon_Forbidden_West",
+      "configured_article": "Horizon_Forbidden_West",
+      "created_at": "2020-06-11T21:11:43Z",
+      "evidence": [
+        {
+          "sha256": "0071c47ef2fa8b368a175e248afe2cde4f47ce0c94f5cc3bc5cc3e783eb59b61",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Forbidden_West&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "7821178813737dd50f06ab9a011c4476cf87ee203854f2ff666f603765eab92e",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=64249090&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "8a9213d1a65018b2a19779ec070d60d235f1fab0b0a62ef879dc0b567f85a04e",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Horizon+Forbidden+West&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Forbidden west",
+        "Horizon 2",
+        "Horizon 3",
+        "Horizon Forbidden West Complete Edition",
+        "Horizon Forbidden West: Complete Edition",
+        "Horizon II",
+        "Horizon II: Forbidden West",
+        "Horizon Zero Dawn 2",
+        "Horizon: Forbidden West"
+      ],
+      "page_id": 64249090,
+      "series_id": "horizon-west",
+      "visible_move_logs": [
+        {
+          "action": "move_redir",
+          "comment": "title correction",
+          "logid": 108898074,
+          "logpage": 64249090,
+          "ns": 0,
+          "pageid": 64249090,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Horizon II: Forbidden West"
+          },
+          "revid": 962092573,
+          "timestamp": "2020-06-12T01:57:25Z",
+          "title": "Horizon Forbidden West",
+          "type": "move",
+          "user": "Assassin1503"
+        },
+        {
+          "action": "move_redir",
+          "comment": "proper title",
+          "logid": 108895393,
+          "logpage": 64249090,
+          "ns": 0,
+          "pageid": 64249090,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Horizon II: Forbidden West"
+          },
+          "revid": 962068634,
+          "timestamp": "2020-06-11T23:02:00Z",
+          "title": "Horizon Forbidden West",
+          "type": "move",
+          "user": "Dissident93"
+        }
+      ]
+    },
+    {
+      "canonical_article": "God_of_War_(2018_video_game)",
+      "configured_article": "God_of_War_(2018_video_game)",
+      "created_at": "2016-06-14T19:06:41Z",
+      "evidence": [
+        {
+          "sha256": "1381a76d8619acfed487a9ed638a9ca93515d4f4823d450ad7dbbe02376e1bc8",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=God_of_War_%282018_video_game%29&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "d249faa80b26d5c413cae6078e9353d9c36ed6c5cf6bb81dc9b0f7f79b0a06f0",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=50810460&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=God+of+War+%282018+video+game%29&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "A Call from the Wilds",
+        "GoWIV",
+        "God of War (2018 comic series)",
+        "God of War (2018)",
+        "God of War (Dark Horse Comics)",
+        "God of War (PlayStation 4 video game)",
+        "God of War (PlayStation Soundtrack)",
+        "God of War 2018",
+        "God of War 4",
+        "God of War IV",
+        "God of War PS4",
+        "God of War: A Call from the Wilds"
+      ],
+      "page_id": 50810460,
+      "series_id": "god-of-war",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "God_of_War_Ragnarök",
+      "configured_article": "God_of_War_Ragnarök",
+      "created_at": "2020-09-16T20:57:07Z",
+      "evidence": [
+        {
+          "sha256": "3b75908565d6543bd61adcf8e55419f5bcdd5b1b0aad9a81da2ec4faf849bbe0",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=God_of_War_Ragnar%C3%B6k&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "1445472b78e1ad4877e59f9805f483e6757c933dade645f8ab92ed45d8a20a51",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=65333536&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "411ec6972d5893c76aa3058934d257df2d03f2d16c84f25890136553e3931772",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=God+of+War+Ragnar%C3%B6k&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Blood Upon the Snow",
+        "God of War 5",
+        "God of War Ragnarok",
+        "God of War Ragnarök (Original Soundtrack)",
+        "God of War Ragnarök: Valhalla",
+        "God of War V",
+        "God of War Valhalla",
+        "God of War v",
+        "God of War: Ragnarok",
+        "God of War: Ragnarök",
+        "Gow ragnarok"
+      ],
+      "page_id": 65333536,
+      "series_id": "ragnarok",
+      "visible_move_logs": [
+        {
+          "action": "move",
+          "comment": "Corrected title. If you don't know how to move a page, don't move it.",
+          "logid": 121358668,
+          "logpage": 65333536,
+          "ns": 0,
+          "pageid": 65333536,
+          "params": {
+            "target_ns": 0,
+            "target_title": "God of War: Ragnarök"
+          },
+          "revid": 1043385581,
+          "timestamp": "2021-09-09T21:11:10Z",
+          "title": "God of War Ragnarök",
+          "type": "move",
+          "user": "JDC808"
+        }
+      ]
+    },
+    {
+      "canonical_article": "Marvel's_Spider-Man_(video_game)",
+      "configured_article": "Spider-Man_(2018_video_game)",
+      "created_at": "2016-06-19T08:51:11Z",
+      "evidence": [
+        {
+          "sha256": "1271f0c711fe63c6934894ffd1d3e3c04418afbec6e341094b26c423131e5da4",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Spider-Man_%282018_video_game%29&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "eb8dc1b63932d73c57bc032d036c18320d82096264786e885295bf8dea057cd4",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=50870289&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "d102479ff7419cf16e8111c08bcfa38b0136425433dc2fff557fcf6646baac41",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Marvel%27s+Spider-Man+%28video+game%29&lelimit=500"
+        }
+      ],
+      "flags": [
+        "configured_title_is_redirect"
+      ],
+      "incoming_redirects": [
+        "Draft:Spider-Man (PlayStation 4 video game)",
+        "Marvel's Spider Man (video game)",
+        "Marvel's Spider-Man (2018 video game)",
+        "Marvel's Spider-Man Remastered",
+        "Marvel's Spiderman (video game)",
+        "Marvel: Spider-Man",
+        "Marvel’s Spider-Man (2018 video game)",
+        "Spider-Man (2017 video game)",
+        "Spider-Man (2018 video game)",
+        "Spider-Man (2018)",
+        "Spider-Man (PS4)",
+        "Spider-Man 2018",
+        "Spider-Man PS4",
+        "Spider-Man Remastered",
+        "Spider-Man: Remastered",
+        "Spiderman PS4"
+      ],
+      "page_id": 50870289,
+      "series_id": "spider-man",
+      "visible_move_logs": [
+        {
+          "action": "move_redir",
+          "comment": "Disputed page move.",
+          "logid": 140917786,
+          "logpage": 50870289,
+          "ns": 0,
+          "pageid": 50870289,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Spider-Man (2018 video game)"
+          },
+          "revid": 1130206990,
+          "timestamp": "2022-12-29T03:12:38Z",
+          "title": "Marvel's Spider-Man (video game)",
+          "type": "move",
+          "user": "Ferret"
+        },
+        {
+          "action": "move",
+          "comment": "Rv page title change on FA; This certainly doesn't seem Uncontroversial, and the sources (and indeed the poster) don't generally seem to. Use the \"Marvel's Spider-Man\" title",
+          "logid": 140866136,
+          "logpage": 50870289,
+          "ns": 0,
+          "pageid": 50870289,
+          "params": {
+            "target_ns": 0,
+            "target_title": "Spider-Man (2018 video game)"
+          },
+          "revid": 1129721993,
+          "timestamp": "2022-12-26T20:42:58Z",
+          "title": "Marvel's Spider-Man (video game)",
+          "type": "move",
+          "user": "Amakuru"
+        },
+        {
+          "action": "move",
+          "comment": "[[WP:PMRC#4|Round-robin history swap]] step 1 using [[User:Andy M. Wang/pageswap|pageswap]]",
+          "logid": 140574939,
+          "logpage": 54291803,
+          "ns": 0,
+          "pageid": 50870289,
+          "params": {
+            "suppressredirect": "",
+            "target_ns": 118,
+            "target_title": "Draft:Move/Marvel's Spider-Man (2018 video game)"
+          },
+          "revid": 1128026403,
+          "timestamp": "2022-12-18T00:25:39Z",
+          "title": "Marvel's Spider-Man (video game)",
+          "type": "move",
+          "user": "Ravenpuff"
+        },
+        {
+          "action": "move",
+          "comment": "Per [[WP:RM|requested move discussion]] at [[Talk:Spider-Man (2018 video game)#Requested move 14 June 2017]].",
+          "logid": 83728775,
+          "logpage": 50870289,
+          "ns": 0,
+          "pageid": 50870289,
+          "params": {
+            "suppressredirect": "",
+            "target_ns": 0,
+            "target_title": "Spider-Man (2018 video game)"
+          },
+          "revid": 786874871,
+          "timestamp": "2017-06-22T03:13:25Z",
+          "title": "Marvel's Spider-Man (video game)",
+          "type": "move",
+          "user": "GTrang"
+        }
+      ]
+    },
+    {
+      "canonical_article": "The_Last_of_Us_Part_II",
+      "configured_article": "The_Last_of_Us_Part_II",
+      "created_at": "2016-12-03T19:42:06Z",
+      "evidence": [
+        {
+          "sha256": "423042ccdda05a1478699c25a51afcf0490a26f4c96c80b1af4dc83cecdc0e27",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Last_of_Us_Part_II&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "72fa6bacaaec727f0a2943ebec1cdf436ca364259d8312d4b0d7218b75f706e4",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=52464953&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=The+Last+of+Us+Part+II&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Last of Us 2",
+        "Last of Us Part 2 Remastered",
+        "Last of us part 2",
+        "TLOU 2",
+        "TLOU II",
+        "TLOU2",
+        "TLOUII",
+        "TLOUP2",
+        "TLU 2",
+        "TLU II",
+        "TLU2",
+        "TLUII",
+        "TLoU 2",
+        "TLoU II",
+        "TLoU Part II",
+        "TLoU2",
+        "TLoUII",
+        "The Last Of Us 2",
+        "The Last Of Us Part II",
+        "The Last of Us 2",
+        "The Last of Us II",
+        "The Last of Us Part 2",
+        "The Last of Us Part II Remastered",
+        "The Last of Us: Part 2",
+        "The Last of Us: Part II",
+        "The Last of us 2",
+        "The last of us 2"
+      ],
+      "page_id": 52464953,
+      "series_id": "last-of-us-2",
+      "visible_move_logs": []
+    },
+    {
+      "canonical_article": "Death_Stranding",
+      "configured_article": "Death_Stranding",
+      "created_at": "2016-06-14T02:14:17Z",
+      "evidence": [
+        {
+          "sha256": "a363fde22c1dd53f55657b02fa2554e85cb00f76d9f37e1e7749c724ce449c61",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Death_Stranding&prop=info%7Credirects&rdlimit=500"
+        },
+        {
+          "sha256": "ec2f2cde766014048deef540a4fbbda2015b31808a0c822f65bd04bcfb959bb5",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&pageids=50802695&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp"
+        },
+        {
+          "sha256": "c2e572d4c7ad46a8e5ec1abc96b6bb0fe1812392537c5de0f4b8e98e521d4647",
+          "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letype=move&letitle=Death+Stranding&lelimit=500"
+        }
+      ],
+      "flags": [],
+      "incoming_redirects": [
+        "Death Stranding (film)",
+        "Death Stranding Director's Cut",
+        "Death Stranding Director's Plus",
+        "Death Stranding: Director's Cut",
+        "Death Stranding: Director's Plus",
+        "Death Stranding: Isolations",
+        "Death stranding",
+        "Die-Hardman",
+        "Diehardman",
+        "Strand game"
+      ],
+      "page_id": 50802695,
+      "series_id": "death-stranding",
+      "visible_move_logs": []
+    }
+  ]
+}

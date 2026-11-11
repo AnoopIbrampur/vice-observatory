@@ -1,0 +1,16 @@
+{
+  "byte_count": 28752,
+  "fetched_at": "2026-11-11T17:12:05.458900+00:00",
+  "http_status": 200,
+  "payload_sha256": "13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2",
+  "raw_path": "raw/13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2.json",
+  "requested_end": "2019-01-24",
+  "requested_start": "2018-07-28",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:12:05 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Red_Dead_Redemption_2/daily/2018072800/2019012400"
+}

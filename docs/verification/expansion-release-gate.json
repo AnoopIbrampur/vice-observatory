@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "source_snapshot_id": "3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600",
+  "analysis_id": "1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894",
+  "verified_download_files": 10,
+  "initial_request_count_including_favicon": 9,
+  "initial_bytes": 1906259,
+  "estimated_gzip_bytes": 219921,
+  "budgets": {
+    "raw_bytes": 2500000,
+    "gzip_bytes": 300000
+  },
+  "contrast_ratios": {
+    "primary_text": 15.25,
+    "muted_text": 8.98,
+    "dim_text": 6.08,
+    "pink_signal": 10.35,
+    "mint_signal": 10.33,
+    "violet_signal": 8.36,
+    "gold_signal": 11.47,
+    "control_border": 3.38
+  },
+  "note": "Gzip is an estimate, not an assertion that the preview/host enables compression. Color-pair checks are not a complete accessibility audit."
+}

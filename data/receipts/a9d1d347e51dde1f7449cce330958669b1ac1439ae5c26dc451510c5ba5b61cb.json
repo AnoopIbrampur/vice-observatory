@@ -1,0 +1,16 @@
+{
+  "byte_count": 27932,
+  "fetched_at": "2026-11-11T17:13:07.842923+00:00",
+  "http_status": 200,
+  "payload_sha256": "ab3c2f7eee0a1bf969e9f5498c4faa374435957d247cac30d0aaee4d246a8907",
+  "raw_path": "raw/ab3c2f7eee0a1bf969e9f5498c4faa374435957d247cac30d0aaee4d246a8907.json",
+  "requested_end": "2017-05-29",
+  "requested_start": "2016-11-30",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:12:08 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Horizon_Zero_Dawn/daily/2016113000/2017052900"
+}

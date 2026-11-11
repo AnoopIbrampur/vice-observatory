@@ -2,9 +2,9 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** All five build phases complete. **1,649 actual daily observations**, **135 retrospectively scored predictions**, **79 passing tests**, verified CI, and a public live demo.
+**Status:** Expansion release. **20 series**, **4,545 actual daily observations**, **855 retrospectively scored predictions**, **88 passing tests**, verified CI, and a public live demo.
 
-**[Live dashboard](https://vice-observatory-anoop.poeticskink11.chatgpt.site)** (public, no login required) · **[Case study](docs/CASE_STUDY.md)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Portfolio copy](docs/PORTFOLIO_COPY.md)**
+**[Daily GitHub Pages mirror](https://anoopibrampur.github.io/vice-observatory/)** · **[Live dashboard](https://vice-observatory-anoop.poeticskink11.chatgpt.site)** (public, no login required) · **[Case study](docs/CASE_STUDY.md)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Portfolio copy](docs/PORTFOLIO_COPY.md)**
 
 The source repository and hosted demo are public. Anonymous requests verified both pages and the source/analysis payload hashes without cookies or authorization. The static runtime is portable and requires no paid API key. See [deployment](docs/DEPLOYMENT.md) and [phase checkpoints](docs/PHASES.md).
 
@@ -20,11 +20,11 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 
 Open [http://127.0.0.1:8765/](http://127.0.0.1:8765/) in a modern browser. No build, npm install, API key, or paid service is needed. Serve over localhost or HTTPS; opening the HTML with `file://` is unsupported.
 
-The interface includes time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
+The interface includes 26 sourced events with searchable type/status filters and window coverage, an exact-title identity audit, daily publication history, and time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
 
 ## Reliability and operating workflows
 
-GitHub CI actually passes on Python 3.11 and 3.13 with Node 22. It checks unit tests, source/analysis replay, all versioned downloads, static payload budgets, and loopback HTTP serving without requiring Wikimedia access. A separately tested manual workflow fetches a validated candidate artifact; it does not push or deploy automatically. See [Phase 4 evidence](docs/PHASE_4.md) and [workflow operations](docs/WORKFLOWS.md).
+GitHub CI actually passes on Python 3.11 and 3.13 with Node 22. It checks unit tests, source/analysis replay, all versioned downloads, static payload budgets, and loopback HTTP serving without requiring Wikimedia access. Daily publication at 12:23 UTC uses an isolated candidate, full checks, GitHub commits and GitHub Pages deployment. Failed acquisition retains the last good observations and records the failure. The Sites demo reads this same publication, with an explicit verified bundled fallback. A separate manual workflow still offers a candidate artifact. See [Phase 4 evidence](docs/PHASE_4.md) and [workflow operations](docs/WORKFLOWS.md).
 
 ## The question
 
@@ -44,10 +44,10 @@ See the [full project plan](PROJECT_PLAN.md), [source audit](docs/SOURCE_AUDIT.m
 ## Findings so far
 
 - In the saved snapshot, GTA VI's article received **250,621 views during November 4–10, 2026**, versus 149,783 during the preceding seven days: **+67.3%**. This is article attention, not sales or unique people.
-- A yesterday-only predictor has lower full-window MAE than a trailing-week mean in all three historical evaluation windows. The weekly mean does better in the three-day GTA V re-release regime; the [full findings report](docs/FINDINGS.md) includes that exception and all per-game scores.
+- A yesterday-only predictor has lower full-window MAE than a trailing-week mean in all 19 historical evaluation windows. The weekly mean does better in the three-day GTA V re-release regime; the [full findings report](docs/FINDINGS.md) includes that exception and all per-game scores.
 - GTA VI's fixed normalization baseline has **20/21 observed dates** at this cutoff. Its indexed curve is unavailable until the baseline completes; launch-day and post-launch observations remain null.
 
-Rules were fixed before computing results in the [analysis protocol](docs/ANALYSIS_PROTOCOL.md). See [Phase 2 verification](docs/PHASE_2.md). These historical scores are retrospective; no predictive claim about GTA VI launch outcomes is made.
+The original rules and expanded cohort were fixed before their respective benchmark computations in the [analysis protocol](docs/ANALYSIS_PROTOCOL.md). See [Phase 2 verification](docs/PHASE_2.md). These historical scores are retrospective; no predictive claim about GTA VI launch outcomes is made.
 
 ## Run and reproduce
 
@@ -57,7 +57,7 @@ Requirements: **Python 3.11+** and **curl** on your PATH. No pip packages, API k
 git clone https://github.com/AnoopIbrampur/vice-observatory.git
 cd vice-observatory
 
-# Tests run without network access; test data is synthetic and clearly isolated.
+# Tests use isolated synthetic fixtures and committed real snapshots, without network access.
 python3 -m unittest discover -s tests -v
 
 # Dashboard state and snapshot-integrity tests (Node 22+, no npm packages).
@@ -69,6 +69,8 @@ python3 -m scripts.pipeline verify
 # Recompute and verify analysis from that exact snapshot, without network access.
 python3 -m scripts.analysis build
 python3 -m scripts.analysis verify
+python3 -m scripts.publication record
+python3 -m scripts.title_audit verify
 
 # Validate startup/download integrity and payload budgets without external APIs.
 python3 -m scripts.check_release

@@ -1,5 +1,7 @@
 # Architecture
 
+Current expansion: 20 series, 4,545 daily observations at the November 11 checkpoint, 855 fixed retrospective targets, 26 sourced events, 88 tests, title-audit evidence and daily GitHub Actions/Pages publication with explicit last-good retention. No paid API keys. See [expansion protocol](EXPANSION.md) and [operations](OPERATIONS.md). Earlier measurements below describe the initial release.
+
 ```mermaid
 flowchart LR
     W[Wikimedia Analytics API] --> I[Python + curl collector]

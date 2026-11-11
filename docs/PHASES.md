@@ -16,3 +16,6 @@ The dashboard at https://vice-observatory-anoop.poeticskink11.chatgpt.site is no
 Public repository: https://github.com/AnoopIbrampur/vice-observatory
 
 Completed phase tags: `phase-0`, `phase-1`, `phase-2`, `phase-3`, `phase-4`, `phase-5`. A new repository is not created for each phase; checkpoints preserve the history of this one project.
+
+## Phase 6 — Expanded observatory
+20 series (19 historical releases), 26 sourced events, 855 fixed benchmark targets, bounded title audit, daily publication with last-good retention, and cloud readback. See [expansion protocol](EXPANSION.md). Existing phase tags remain immutable.

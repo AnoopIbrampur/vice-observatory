@@ -16,13 +16,17 @@ from scripts import pipeline as p
 
 
 def fault(scenario: str, path: str, payload: bytes) -> tuple[int, bytes]:
-    if scenario == "missing" and path == "/data/current.json":
+    if scenario == "missing" and path in {"/data/current.json", "/publication.json"}:
         return 503, b'{"error":"deliberate local QA outage"}'
     if scenario == "tampered" and path.endswith("/dataset.json"):
         return 200, payload + b"\n "
     if scenario == "stale" and path == "/analysis/current.json":
         value = json.loads(payload)
         value["source_snapshot_id"] = "0" * 64
+        return 200, p.encoded(value)
+    if scenario == "stale" and path == "/publication.json":
+        value = json.loads(payload)
+        value["analysis_pointer"]["source_snapshot_id"] = "0" * 64
         return 200, p.encoded(value)
     return 200, payload
 
@@ -40,7 +44,7 @@ class Handler(SimpleHTTPRequestHandler):
             scenario, path = parts[2], "/" + parts[3]
         self.path = path
         try:
-            if scenario != "valid" and (path.endswith("/current.json") or path.endswith("/dataset.json")):
+            if scenario != "valid" and (path.endswith("/current.json") or path.endswith("/dataset.json") or path == "/publication.json"):
                 actual = self.translate_path(path)
                 try:
                     with open(actual, "rb") as stream:

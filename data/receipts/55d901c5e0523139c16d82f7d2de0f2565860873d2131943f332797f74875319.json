@@ -1,0 +1,16 @@
+{
+  "byte_count": 28512,
+  "fetched_at": "2026-11-11T17:12:10.675823+00:00",
+  "http_status": 200,
+  "payload_sha256": "b9fb72912ba1b550f6649a936a7f76435ef211606713ba49ee123ff9cb3ca0dd",
+  "raw_path": "raw/b9fb72912ba1b550f6649a936a7f76435ef211606713ba49ee123ff9cb3ca0dd.json",
+  "requested_end": "2023-02-07",
+  "requested_start": "2022-08-11",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:12:10 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/God_of_War_Ragnar%C3%B6k/daily/2022081100/2023020700"
+}

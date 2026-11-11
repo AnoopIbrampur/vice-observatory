@@ -1,5 +1,20 @@
 # Verification, refresh, and deployment are separate operations
 
+## Expansion release: current operating path
+
+The daily publication now runs in `.github/workflows/publish.yml` at **12:23 UTC**, on main pushes (publish only), and manual dispatch (refresh by default). GitHub may delay scheduled runs. Pages is enabled with the Actions publishing source. No user-supplied API key or paid service is needed.
+
+An isolated candidate collects source data and the bounded MediaWiki title audit, rebuilds analysis, records a checkpoint and passes the release gate. Only then are artifacts overlaid, tested on the workflow runner, committed and uploaded to Pages. Acquisition failure records `failed_retained_last_good` with unchanged active source/analysis pointers; the last good data and failure record can still deploy, and the workflow ends failed to surface the problem. A later test, commit or deployment failure leaves the previous live artifact in place. Push races fail safely instead of force-pushing.
+
+`dist/publication.json` is a single checkpoint containing both immutable pointers, the title-audit checksum and the last 30 attempt records. The browser verifies the matching bundle before rendering. The public Sites demo reads this checkpoint from GitHub Pages, including all matching downloads. If retrieval or integrity checks fail, it shows its complete bundled snapshot with an explicit fallback notice. A runtime fallback never silently mixes remote and local data. Code/UI updates still require a Sites deployment.
+
+Manual current refresh: `python3 -m scripts.publication refresh`. Rebuild without acquisition: analysis build → publication record → check_release. Changing the audit or either pointer requires regenerating the publication checkpoint. Automated tests and `python -m scripts.verify_publication <public-base-url>` verify published download hashes. Use Actions run status to distinguish validated attempts from successful deployments.
+
+All 20 pageview histories are currently refetched daily, including fixed historical windows, to retain fresh acquisition evidence. This increases immutable archive size over time; monitor repository growth before long-term use. Events are manually verified source entries and are not inferred to have occurred merely because a scheduled date passed. No automatic news ingestion or prospective ML claim is made.
+
+The sections below preserve the initial release workflow where relevant.
+
+
 ## Continuous integration
 
 `.github/workflows/ci.yml` runs on main-branch pushes, pull requests, and manual dispatch. Each matrix job uses Node 22 and one of Python 3.11/3.13. It runs all unit tests, JavaScript syntax checks, the deterministic release gate, and a loopback HTTP smoke check. After GitHub's runner/setup downloads, the checks need no external data API or paid service. No third-party package installation is needed.

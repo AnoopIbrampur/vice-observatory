@@ -140,3 +140,6 @@ Complete when: deployment is confirmed; source runs from documented commands; ca
 Work sequentially through these phases, sharing findings and phase completion in chat. Source feasibility and correct analysis precede visual claims. Do not require Anoop to write code, collect gameplay, label clips, or administer a paid service. Ask only when a real product choice, missing external access, or audience decision blocks dependent work; continue independent authorized work where possible.
 
 The initial release is finished when an employer can open the intended shareable version, understand its question, interact with real data, inspect the evidence, and reproduce the analysis. The first private release is ready for review before that public-sharing step.
+
+## Accepted expansion
+The follow-on release is defined and phased in [docs/EXPANSION.md](docs/EXPANSION.md): title audit, expanded fixed cohort, source-linked event explorer, daily publication, and end-to-end verification. The original phase checkpoints remain historical records.

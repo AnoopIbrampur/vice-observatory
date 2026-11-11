@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "requests": 20,
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 12489,
+      "mime": "text/html",
+      "hash_verified": false
+    },
+    {
+      "path": "case-study.html",
+      "status": 200,
+      "bytes": 5653,
+      "mime": "text/html",
+      "hash_verified": false
+    },
+    {
+      "path": "app.mjs",
+      "status": 200,
+      "bytes": 20120,
+      "mime": "text/javascript",
+      "hash_verified": false
+    },
+    {
+      "path": "model.mjs",
+      "status": 200,
+      "bytes": 9497,
+      "mime": "text/javascript",
+      "hash_verified": false
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 14681,
+      "mime": "text/css",
+      "hash_verified": false
+    },
+    {
+      "path": "favicon.svg",
+      "status": 200,
+      "bytes": 205,
+      "mime": "image/svg+xml",
+      "hash_verified": false
+    },
+    {
+      "path": "data/current.json",
+      "status": 200,
+      "bytes": 918,
+      "mime": "application/json",
+      "hash_verified": false
+    },
+    {
+      "path": "analysis/current.json",
+      "status": 200,
+      "bytes": 1481,
+      "mime": "application/json",
+      "hash_verified": false
+    },
+    {
+      "path": "publication.json",
+      "status": 200,
+      "bytes": 3408,
+      "mime": "application/json",
+      "hash_verified": false
+    },
+    {
+      "path": "title-audit.json",
+      "status": 200,
+      "bytes": 46923,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "data/snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/dataset.json",
+      "status": 200,
+      "bytes": 399597,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "data/snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/views.csv",
+      "status": 200,
+      "bytes": 393304,
+      "mime": "text/csv",
+      "hash_verified": true
+    },
+    {
+      "path": "data/snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/health.json",
+      "status": 200,
+      "bytes": 9315,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "data/snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/manifest.json",
+      "status": 200,
+      "bytes": 33307,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/analysis.json",
+      "status": 200,
+      "bytes": 1399339,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/comparisons.csv",
+      "status": 200,
+      "bytes": 292740,
+      "mime": "text/csv",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/findings.md",
+      "status": 200,
+      "bytes": 16525,
+      "mime": "text/markdown",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/manifest.json",
+      "status": 200,
+      "bytes": 580,
+      "mime": "application/json",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/predictions.csv",
+      "status": 200,
+      "bytes": 105942,
+      "mime": "text/csv",
+      "hash_verified": true
+    },
+    {
+      "path": "analysis/snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/protocol.md",
+      "status": 200,
+      "bytes": 5833,
+      "mime": "text/markdown",
+      "hash_verified": true
+    }
+  ],
+  "external_requests": 0
+}

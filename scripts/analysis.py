@@ -180,11 +180,12 @@ def benchmark(series_list: list[dict], value_maps: dict[str, dict], as_of: date)
                          "eligible_series": sum(value is not None for value in values), "expected_series": len(reports)}
     return {
         "question": "Predict the next UTC day's article pageviews using only preceding observations.",
+        "release_groups": {kind: score([row for row in all_rows if row["release_kind"] == kind]) for kind in ("original_launch", "console_rerelease")},
         "evaluation_relative_days": [EVAL_START, EVAL_END], "series": reports,
         "pooled": score(all_rows), "macro_average": macro,
         "excluded_series": [{"series_id": series["id"], "reason": "release_not_verified_as_occurred"} for series in series_list if series["release_status"] != "released"],
         "limitations": ["Fixed retrospective benchmark, not prospective evidence.",
-                        "Three selected releases do not establish generalization to unseen launches.",
+                        "This purposive cohort does not establish generalization to unseen launches.",
                         "Pooled MAE is dominated by series with larger pageview counts.",
                         "GTA V 2022 is a console re-release; article traffic is not platform-specific."],
     }, all_rows

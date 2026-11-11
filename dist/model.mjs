@@ -1,4 +1,5 @@
-export const IDS = ['gta-vi', 'gta-v-2022', 'rdr2', 'cyberpunk'];
+export const IDS = ["gta-vi", "gta-v-2022", "rdr2", "cyberpunk", "elden-ring", "ghost", "odyssey", "botw", "totk", "animal-crossing", "smash", "splatoon-3", "luigi-3", "horizon-zero", "horizon-west", "god-of-war", "ragnarok", "spider-man", "last-of-us-2", "death-stranding"];
+export const DEFAULT_IDS = IDS.slice(0,4);
 export const COLORS = ['#f6b8ca', '#ead09a', '#99d4c7', '#b7acf2'];
 export const DASHES = ['', '9 5', '3 5', '12 4 2 4'];
 export const DAY = 86400000;
@@ -14,12 +15,14 @@ export function parseState(search) {
   const parsed = (params.get('games') || '').split(',').filter(id => IDS.includes(id));
   return {range:allowed('range', ['30','90','365','all'], '90'), metric:allowed('metric', ['views','mean','both'], 'both'),
     mode:allowed('mode', ['raw','index'], 'index'), originals:params.get('originals') === '1',
-    events:allowed('events', ['gta-vi','all'], 'gta-vi'),
-    games:params.get('games') === 'none' ? [] : parsed.length ? [...new Set(parsed)] : [...IDS]};
+    events:allowed('events', [...IDS,'all'], 'gta-vi'),
+    kind:allowed('kind',['all','trailer','announcement','release','rerelease'],'all'), status:allowed('status',['all','occurred','scheduled'],'all'), query:(params.get('q')||'').slice(0,200),
+    games:params.get('games') === 'none' ? [] : parsed.length ? [...new Set(parsed)].slice(0,4) : [...DEFAULT_IDS]};
 }
 export function stateQuery(state) {
   const params = new URLSearchParams();
-  for (const key of ['range','metric','mode','events']) params.set(key, state[key]);
+  for (const key of ['range','metric','mode','events','kind','status']) params.set(key, state[key]);
+  if(state.query)params.set('q',state.query);
   params.set('games', state.games.length ? state.games.join(',') : 'none');
   if (state.originals) params.set('originals','1');
   return params.toString();
@@ -85,4 +88,38 @@ export async function loadBundle(fetcher = fetch) {
     verified('./analysis', analysisPointer.files['analysis.json'], analysisPointer.files_sha256['analysis.json'])]);
   validateBundle(data, analysis, dataPointer, analysisPointer);
   return {data,analysis,dataPointer,analysisPointer};
+}
+
+export function filterEvents(events, {series='gta-vi',kind='all',status='all',query=''}) {
+  const search=query.trim().toLocaleLowerCase('en-US');
+  return events.filter(event=>(series==='all'||event.series_id===series)&&
+    (kind==='all'||event.kind===kind)&&(status==='all'||event.status===status)&&
+    (!search||`${event.label} ${event.verification} ${event.date}`.toLocaleLowerCase('en-US').includes(search)))
+    .sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
+}
+
+export async function loadPublished(fetcher=fetch, remote='') {
+  async function load(base) {
+    const options={cache:'no-store',signal:AbortSignal.timeout(15000)};
+    const response=await fetcher(`${base}/publication.json`,options);
+    if(!response.ok)throw new Error('Publication checkpoint unavailable.');
+    const publication=await response.json();
+    if(publication.schema_version!==1||!Array.isArray(publication.history)||!publication.history.length)throw new Error('Invalid publication checkpoint.');
+    validatePointers(publication.data_pointer,publication.analysis_pointer);
+    const bundle=await loadBundle((url,opts)=>{
+      if(url==='./data/current.json')return Promise.resolve({ok:true,json:async()=>publication.data_pointer});
+      if(url==='./analysis/current.json')return Promise.resolve({ok:true,json:async()=>publication.analysis_pointer});
+      return fetcher(base+url.slice(1),opts);
+    });
+    const auditResponse=await fetcher(`${base}/title-audit.json`,options);
+    if(!auditResponse.ok)throw new Error('Title audit unavailable.');
+    const bytes=await auditResponse.arrayBuffer();
+    const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');
+    if(hash!==publication.title_audit_sha256)throw new Error('Title audit integrity check failed.');
+    const audit=JSON.parse(new TextDecoder().decode(bytes));
+    if(audit.series.length!==bundle.data.series.length||!bundle.data.series.every(s=>audit.series.some(item=>item.series_id===s.id&&item.configured_article===s.article)))throw new Error('Title audit and data cohort differ.');
+    return {...bundle,publication,audit,base};
+  }
+  if(remote){try{return {...await load(remote),fallback:false};}catch(error){return {...await load('.'),fallback:true,remoteError:error.message};}}
+  return {...await load('.'),fallback:false};
 }

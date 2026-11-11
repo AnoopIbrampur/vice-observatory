@@ -1,0 +1,16 @@
+{
+  "byte_count": 29547,
+  "fetched_at": "2026-11-11T17:13:07.427350+00:00",
+  "http_status": 200,
+  "payload_sha256": "b4363da12efc776974a8bb255ea03b3477908065fd4c9913c680b1b27ab3de60",
+  "raw_path": "raw/b4363da12efc776974a8bb255ea03b3477908065fd4c9913c680b1b27ab3de60.json",
+  "requested_end": "2019-03-07",
+  "requested_start": "2018-09-08",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:12:07 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Super_Smash_Bros._Ultimate/daily/2018090800/2019030700"
+}

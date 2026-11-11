@@ -1,0 +1,62 @@
+{
+  "analysis_pointer": {
+    "analysis_id": "1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894",
+    "as_of": "2026-11-11",
+    "files": {
+      "analysis.json": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/analysis.json",
+      "comparisons.csv": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/comparisons.csv",
+      "findings.md": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/findings.md",
+      "manifest.json": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/manifest.json",
+      "predictions.csv": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/predictions.csv",
+      "protocol.md": "snapshots/1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894/protocol.md"
+    },
+    "files_sha256": {
+      "analysis.json": "5047e4a088d03b3368c085e9df4b8b3328d3f1bb7dc938ccc103106ed57def4c",
+      "comparisons.csv": "753842ee8558b256eebfe2669f0ea719a532b1049c91d15fd36dbf80516ac94f",
+      "findings.md": "9e087e63fef11958ee59ff8424535d56d7feacf7e95c7a5adc25f714f0b17019",
+      "manifest.json": "1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894",
+      "predictions.csv": "ab8c31658deff7084b28e1152da51be79c9b0731c46c182096d5a75474eea2a2",
+      "protocol.md": "b08fa32634cf666d38d03daa7dab0595020766674a2c29733d228d0b53d143b0"
+    },
+    "schema_version": 1,
+    "source_snapshot_id": "3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600"
+  },
+  "data_pointer": {
+    "as_of": "2026-11-11",
+    "csv": "snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/views.csv",
+    "dataset": "snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/dataset.json",
+    "files_sha256": {
+      "dataset.json": "2b38f36216317a6fa8c5736f5a09573813e362bc9c577b8370c9660f5482ec24",
+      "health.json": "363f6e42bf298f8d0758a8f52380ff541ab874477b15a1d2a66c3e7f6b75948c",
+      "manifest.json": "3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600",
+      "views.csv": "dd9caa39b0c3ea6695cdd74b27515292678f9d6d98cba0fdddbf264553e55aea"
+    },
+    "health": "snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/health.json",
+    "manifest": "snapshots/3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600/manifest.json",
+    "schema_version": 1,
+    "snapshot_id": "3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600"
+  },
+  "history": [
+    {
+      "analysis_id": "1e59803fed96ba12164a885877e4c66584048e6d4abbc8e8102e2d7b5a718894",
+      "as_of": "2026-11-11",
+      "at": "2026-11-11T17:13:08.969419+00:00",
+      "message": "",
+      "run_url": "",
+      "source_snapshot_id": "3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600",
+      "status": "validated"
+    },
+    {
+      "analysis_id": "eecd7c9115d459909921f127707ec5e308c64b58ac1abeb991d389b55777b0b7",
+      "as_of": "2026-11-11",
+      "at": "2026-11-11T17:12:21.816360+00:00",
+      "message": "",
+      "run_url": "",
+      "source_snapshot_id": "c75f9300863da33394ba3e9a7807657b81e47712d6ebd21822b1c3d38ed9ff9e",
+      "status": "validated"
+    }
+  ],
+  "schedule": "Daily at 12:23 UTC (GitHub may delay scheduled jobs)",
+  "schema_version": 1,
+  "title_audit_sha256": "c6a19ae87e3597e092c294d0f5464c467683524ac4725c0ba610ab73df338b32"
+}

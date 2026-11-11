@@ -137,6 +137,8 @@ def validate_config(config: object, event_config: object) -> None:
             raise PipelineError("Unrecognized release kind")
         if item.get("release_status") not in {"scheduled", "released"}:
             raise PipelineError("Unrecognized release status")
+        if item.get("article_policy", "current_title") not in {"current_title", "historical_title"}:
+            raise PipelineError("Unknown article title policy")
         check_https(item.get("release_source"))
     if not isinstance(event_config, dict) or event_config.get("schema_version") != 1:
         raise PipelineError("Unsupported event configuration")

@@ -14,6 +14,7 @@ import tempfile
 from scripts import analysis as a
 from scripts import check_release
 from scripts import pipeline as p
+from scripts import title_audit
 
 
 def create(root: Path, output: Path, as_of) -> dict:
@@ -29,13 +30,19 @@ def create(root: Path, output: Path, as_of) -> dict:
         for folder in ("scripts", "config", "docs", "dist", "data", "analysis"):
             shutil.copytree(root / folder, stage / folder, ignore=shutil.ignore_patterns("__pycache__", ".refresh.lock", "status.json"))
         source = p.refresh(stage, as_of)
+        title_audit.collect(stage)
+        title_audit.verify(stage)
         derived = a.run(stage)
+        from scripts.publication import record
+        record(stage, "validated")
         gate = check_release.check(stage)
         candidate = Path(temporary) / "candidate"
         candidate.mkdir()
         for folder in ("data", "analysis", "dist/data", "dist/analysis"):
             shutil.copytree(stage / folder, candidate / folder, ignore=shutil.ignore_patterns("status.json", ".refresh.lock"))
         (candidate / "docs").mkdir()
+        shutil.copyfile(stage / "dist/title-audit.json", candidate / "dist/title-audit.json")
+        shutil.copyfile(stage / "dist/publication.json", candidate / "dist/publication.json")
         shutil.copyfile(stage / "docs/FINDINGS.md", candidate / "docs/FINDINGS.md")
         report = {"status": "validated_candidate", "as_of": as_of.isoformat(),
                   "source_snapshot_id": source["snapshot_id"], "analysis_id": derived["analysis_id"],

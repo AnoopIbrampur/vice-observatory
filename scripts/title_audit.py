@@ -11,13 +11,13 @@ from urllib.parse import urlencode
 from scripts import pipeline as p
 
 LIMITATION = ("Current redirects and title-filtered move logs are a bounded audit, not a complete "
-              "historical title reconstruction. Aliases are not merged. Counts remain exact-title pageviews.")
+              "historical title reconstruction. Logs can include unrelated former occupants of a title. Aliases are not merged. Counts remain exact-title pageviews.")
 
 
 def fetch(params):
     url = "https://en.wikipedia.org/w/api.php?" + urlencode(params)
     result = subprocess.run(["curl", "--disable", "--silent", "--show-error", "--fail", "--max-time", "45",
-                             "--user-agent", p.USER_AGENT, url], capture_output=True, check=True)
+                             "--retry", "2", "--retry-delay", "2", "--user-agent", p.USER_AGENT, url], capture_output=True, check=True)
     value = json.loads(result.stdout)
     if "error" in value:
         raise p.PipelineError("MediaWiki rejected title audit")
@@ -29,8 +29,7 @@ def collect(root: Path):
     entries = []
     for series in config["series"]:
         params = dict(action="query", format="json", redirects=1, titles=series["article"],
-                      prop="info|revisions|redirects", rvdir="newer", rvlimit=1,
-                      rvprop="timestamp", rdlimit=500)
+                      prop="info|redirects", rdlimit=500)
         evidence, redirects, pages = [], [], []
         while True:
             url, raw, value = fetch(params)
@@ -89,7 +88,8 @@ def verify(root):
     if (root / "dist/title-audit.json").read_bytes() != p.encoded(report):
         raise p.PipelineError("Browser title audit differs")
     for entry in report["series"]:
-        if "configured_title_is_redirect" in entry["flags"]:
+        definition = next(s for s in config["series"] if s["id"] == entry["series_id"])
+        if "configured_title_is_redirect" in entry["flags"] and definition.get("article_policy") != "historical_title":
             raise p.PipelineError(f"Configure the canonical title before collecting: {entry['series_id']}")
         for evidence in entry["evidence"]:
             sha = evidence["sha256"]

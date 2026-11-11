@@ -1,5 +1,7 @@
 # Portfolio and interview copy
 
+Current expansion: 20 series, 4,545 daily observations at the November 11 checkpoint, 855 fixed retrospective targets, 26 sourced events, 88 tests, title-audit evidence and daily GitHub Actions/Pages publication with explicit last-good retention. No paid API keys. See [expansion protocol](EXPANSION.md) and [operations](OPERATIONS.md). Earlier measurements below describe the initial release.
+
 The live demo is now public and recruiter-accessible at https://vice-observatory-anoop.poeticskink11.chatgpt.site. The repository and case study are also public. No scheduled updates are active.
 
 ## Portfolio card

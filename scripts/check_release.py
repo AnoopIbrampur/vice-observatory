@@ -62,8 +62,15 @@ def contrast(foreground: str, background: str) -> float:
 
 
 def check(root: Path) -> dict:
+    from scripts import title_audit
+    title_audit.verify(root)
     source, _ = p.current_exports(root)
     derived = a.run(root, verify=True)
+    publication = p.read_json(root / "dist/publication.json")
+    if publication.get("data_pointer") != source or publication.get("analysis_pointer") != derived:
+        raise p.PipelineError("Publication checkpoint does not match current data and analysis")
+    if publication.get("title_audit_sha256") != p.digest((root / "dist/title-audit.json").read_bytes()):
+        raise p.PipelineError("Publication title audit checksum differs")
     verified_downloads = 0
     for folder, pointer, is_analysis in (("data", source, False), ("analysis", derived, True)):
         for name, relative in pointer_files(pointer, is_analysis).items():
@@ -105,15 +112,15 @@ def check(root: Path) -> dict:
         if ratio < threshold:
             raise p.PipelineError(f"Contrast below recorded threshold: {name}")
         ratios[name] = round(ratio, 2)
-    initial = [dist / "index.html", dist / "style.css", dist / "app.mjs", dist / "model.mjs", dist / "favicon.svg", dist / "data/current.json", dist / "analysis/current.json", dist / "data" / source["dataset"], dist / "analysis" / derived["files"]["analysis.json"]]
+    initial = [dist / "index.html", dist / "style.css", dist / "app.mjs", dist / "model.mjs", dist / "favicon.svg", dist / "publication.json", dist / "title-audit.json", dist / "data" / source["dataset"], dist / "analysis" / derived["files"]["analysis.json"]]
     total = sum(path.stat().st_size for path in initial)
     compressed = sum(len(gzip.compress(path.read_bytes(), mtime=0)) for path in initial)
-    if total > 1_200_000 or compressed > 300_000:
-        raise p.PipelineError("Initial payload exceeds the 1.2 MB raw / 300 KB gzip budgets")
+    if total > 2_500_000 or compressed > 300_000:
+        raise p.PipelineError("Initial payload exceeds the 2.5 MB raw / 300 KB gzip budgets")
     return {"status": "passed", "source_snapshot_id": source["snapshot_id"], "analysis_id": derived["analysis_id"],
             "verified_download_files": verified_downloads, "initial_request_count_including_favicon": len(initial),
             "initial_bytes": total, "estimated_gzip_bytes": compressed,
-            "budgets": {"raw_bytes": 1_200_000, "gzip_bytes": 300_000}, "contrast_ratios": ratios,
+            "budgets": {"raw_bytes": 2_500_000, "gzip_bytes": 300_000}, "contrast_ratios": ratios,
             "note": "Gzip is an estimate, not an assertion that the preview/host enables compression. Color-pair checks are not a complete accessibility audit."}
 
 

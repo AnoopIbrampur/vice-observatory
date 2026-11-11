@@ -223,7 +223,8 @@
       "start_date": "2018-06-09",
       "end_date": "2018-12-06",
       "release_source": "https://blog.playstation.com/2018/09/07/marvels-spider-man-swings-into-stores/",
-      "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits."
+      "notes": "Original PS4 launch. Deliberately retain launch-era exact title Spider-Man (2018 video game), which now redirects. Visible move logs show this title was adopted in June 2017; current canonical title would measure a different historical title series. No alias summation; not a complete move-chain reconstruction.",
+      "article_policy": "historical_title"
     },
     {
       "id": "last-of-us-2",

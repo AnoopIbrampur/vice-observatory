@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {parseState,stateQuery,selectedDates,selectedGames,comparisonAvailability,segments,safeEvidence,escapeHtml,loadBundle} from '../dist/model.mjs';
+import {parseState,stateQuery,selectedDates,selectedGames,comparisonAvailability,segments,safeEvidence,escapeHtml,loadBundle,loadPublished,filterEvents} from '../dist/model.mjs';
 
 const root=fileURLToPath(new URL('../dist/',import.meta.url));
 async function localFetch(url) {
@@ -43,7 +43,7 @@ test('unsafe evidence schemes and credentials are rejected',()=>{
 });
 test('actual committed snapshots load together with browser SHA-256 verification',async()=>{
   const bundle=await loadBundle(localFetch);
-  assert.equal(bundle.data.series.length,4);
+  assert.equal(bundle.data.series.length,20);
   assert.equal(bundle.data.health.observation_count,bundle.data.series.reduce((total,series)=>total+series.observations.length,0));
   assert.ok(bundle.analysis.benchmark.pooled.scored_days>0);
   for(const series of bundle.data.series)assert.ok(series.observations.every(row=>row.date<bundle.data.as_of));
@@ -75,4 +75,39 @@ test('requests have a bounded timeout signal',async()=>{
   let requests=0;
   await loadBundle(async(url,options)=>{assert.ok(options.signal instanceof AbortSignal);requests++;return localFetch(url);});
   assert.equal(requests,4);
+});
+
+test('expanded titles and event filters survive a shared URL',()=>{
+  const state=parseState('?games=elden-ring,totk,smash,ghost,rdr2&events=totk&kind=trailer&status=occurred&q=launch');
+  assert.equal(state.games.length,4);assert.equal(state.events,'totk');
+  assert.deepEqual(parseState('?'+stateQuery(state)),state);
+});
+test('event search intersects title, kind, status and text without mutating source',()=>{
+  const events=[{id:'a',series_id:'gta-vi',kind:'trailer',status:'occurred',label:'Trailer 2',verification:'Publisher verified',date:'2025-05-06'},
+    {id:'b',series_id:'gta-vi',kind:'release',status:'scheduled',label:'Launch',verification:'Scheduled',date:'2026-11-19'}];
+  assert.equal(filterEvents(events,{series:'all',kind:'trailer',status:'occurred',query:'PUBLISHER'}).length,1);
+  assert.equal(filterEvents(events,{query:'no matching words'}).length,0);assert.equal(events[0].id,'a');
+});
+test('publication checkpoint binds data, analysis and title audit together',async()=>{
+  const bundle=await loadPublished(localFetch);
+  assert.equal(bundle.fallback,false);assert.equal(bundle.audit.series.length,20);
+  assert.equal(bundle.publication.data_pointer.snapshot_id,bundle.analysis.source_snapshot_id);
+});
+test('remote outage selects an explicitly marked verified bundled fallback',async()=>{
+  const bundle=await loadPublished((url,opts)=>url.startsWith('https:')?Promise.reject(new Error('offline')):localFetch(url,opts),'https://example.org');
+  assert.equal(bundle.fallback,true);assert.equal(bundle.base,'.');assert.match(bundle.remoteError,/offline/);
+});
+test('corrupt remote data cannot be displayed and falls back as one complete bundle',async()=>{
+  const fetcher=async url=>{
+    const local=url.replace('https://example.org','.');const response=await localFetch(local);
+    if(url.startsWith('https:')&&url.endsWith('/title-audit.json'))response.arrayBuffer=async()=>new TextEncoder().encode('{}').buffer;
+    return response;
+  };
+  const bundle=await loadPublished(fetcher,'https://example.org');
+  assert.equal(bundle.fallback,true);assert.match(bundle.remoteError,/integrity/);
+});
+test('corrupt bundled audit fails closed when no verified fallback exists',async()=>{
+  await assert.rejects(()=>loadPublished(async url=>{
+    const response=await localFetch(url);if(url.endsWith('/title-audit.json'))response.arrayBuffer=async()=>new TextEncoder().encode('{}').buffer;return response;
+  }),/integrity/);
 });

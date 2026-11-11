@@ -12,3 +12,5 @@ Purposive, source-verifiable, large console/PC games from 2017–2023: retain th
 
 ## Title audit boundary
 Current canonical identity, page creation timestamp, incoming redirects, and visible title-filtered move logs are preserved with response hashes. These do not reconstruct all historical names, deleted logs or every move chain. Exact-title histories stay separate; aliases are not added together or treated as unique readers. A complete requested date window is not proof of complete game-attention coverage.
+
+Identity correction before benchmark inspection: Spider-Man retains its configured launch-era title, now a redirect, under an explicit historical_title policy. The current canonical title was briefly acquired during identity review but is not used by the final cohort; that intermediate snapshot is preserved. Selection and scoring rules are unchanged. Title-filtered move logs can include unrelated pages that once occupied a name (including GTA VI logs predating the current article); they are warning evidence, not page-ID move chains.

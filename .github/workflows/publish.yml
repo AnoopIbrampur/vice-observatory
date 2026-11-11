@@ -1,0 +1,80 @@
+name: Publish daily observatory
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 12 * * *'
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: 'Acquire new Wikimedia observations before publishing'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: public-observatory
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Validate last good checkout
+        run: python -m scripts.check_release
+      - name: Refresh in isolation
+        id: refresh
+        if: github.event_name == 'schedule' || inputs.refresh == true
+        continue-on-error: true
+        env:
+          PUBLICATION_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m scripts.publication refresh
+      - name: Verify complete publication
+        run: |
+          python -m unittest discover -s tests
+          node --test tests/dashboard.test.mjs
+          python -m scripts.check_release
+          python -m scripts.title_audit verify
+          python -m scripts.smoke_http
+      - name: Preserve refreshed observations and attempt history
+        if: github.event_name == 'schedule' || inputs.refresh == true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data analysis dist/data dist/analysis dist/publication.json dist/title-audit.json docs/FINDINGS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: record validated daily refresh or retained last-good snapshot'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist
+      - name: Deploy verified static publication
+        id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      - name: Read back the deployed checkpoint
+        env:
+          PAGE_URL: ${{ steps.deploy.outputs.page_url }}
+        run: python -m scripts.verify_publication "$PAGE_URL"
+      - name: Surface acquisition failure after publishing the retained snapshot
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo 'Refresh failed. Last good data and the failed attempt record were published.'
+          exit 1
