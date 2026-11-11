@@ -135,6 +135,7 @@ async function start() {
     $('share').addEventListener('click',async()=>{syncURL();try{await navigator.clipboard.writeText(location.href);toast('View link copied.');}catch{toast('Copy the current address from your browser to share this view.');}});
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{drawAttention(true);drawComparison();},120);});
     $('loading').hidden=true;$('application').hidden=false;
+    if(location.hash)requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView({behavior:'instant',block:'start'}));
   } catch(error) {
     console.error('Snapshot load failed:',error.message);$('application').hidden=true;$('loading').hidden=true;$('error-message').textContent=error.message+' You can inspect the public source data or retry.';$('error').hidden=false;
   }
