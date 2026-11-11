@@ -12,6 +12,7 @@ from datetime import date, timedelta
 import io
 import json
 from pathlib import Path
+from math import fsum
 from statistics import fmean
 import sys
 
@@ -140,10 +141,13 @@ def score(rows: list[dict]) -> dict:
     metrics = {}
     for method in METHODS:
         errors = [row[f"{method}_absolute_error"] for row in rows]
+        # Python 3.12 changed float sum accumulation. fsum gives the same
+        # result across supported versions; retain exact integer totals when possible.
+        total_error = sum(errors) if all(type(error) is int for error in errors) else fsum(errors)
         metrics[method] = {
             "mae": fmean(errors) if errors else None,
-            "absolute_error_total": sum(errors),
-            "wape": sum(errors) / actual_total if rows and actual_total else None,
+            "absolute_error_total": total_error,
+            "wape": total_error / actual_total if rows and actual_total else None,
         }
     return {"scored_days": len(rows), "actual_views_total": actual_total, "methods": metrics}
 

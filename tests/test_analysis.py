@@ -120,6 +120,14 @@ class ComparisonTests(unittest.TestCase):
 
 
 class ForecastTests(unittest.TestCase):
+    def test_error_total_uses_accurate_version_independent_accumulation(self):
+        # Naive float accumulation loses the two one-view errors after 1e16.
+        rows = [{"actual_views": 1, "yesterday_absolute_error": 1,
+                 "trailing_week_absolute_error": error} for error in [1e16, 1.0, 1.0]]
+        result = a.score(rows)
+        self.assertEqual(result["methods"]["trailing_week"]["absolute_error_total"], 10000000000000002.0)
+        self.assertEqual(result["methods"]["yesterday"]["absolute_error_total"], 3)
+
     def test_linear_series_independently_calculated_mae_and_wape(self):
         series, values = sample_series()
         rows, excluded = a.predictions(series, values, RELEASE + timedelta(days=91))

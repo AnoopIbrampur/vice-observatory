@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-11-11",
+  "baseline_relative_days": [
+    -28,
+    -8
+  ],
+  "benchmark_relative_days": [
+    -14,
+    30
+  ],
+  "comparison_relative_days": [
+    -90,
+    90
+  ],
+  "engine_sha256": "2b25bfed8641b3c3cf4bf8f576955a492adac030c605906d38f6103c193c3af2",
+  "methods": [
+    "yesterday",
+    "trailing_week"
+  ],
+  "protocol_path": "docs/ANALYSIS_PROTOCOL.md",
+  "protocol_sha256": "22eb66bbf1f3cebeefaf4223b978d85a0e325488370c1dfb955c666ce4e6830c",
+  "schema_version": 1,
+  "source_snapshot_id": "73ecfa4562de20fb39627963ab85f8e2cf666ba825697af6c90de454f5590415"
+}
