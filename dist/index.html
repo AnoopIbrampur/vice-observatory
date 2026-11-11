@@ -7,8 +7,8 @@
   <meta name="description" content="An independent GTA VI launch-attention observatory. Explore real Wikipedia pageviews, compare release windows, and inspect every source.">
   <title>Vice Observatory — The wait, in numbers.</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./app.mjs"></script>
+  <link rel="stylesheet" href="./style.css?v=7">
+  <script type="module" src="./app.mjs?v=7"></script>
 </head>
 <body>
 <a class="skip" href="#overview">Skip to dashboard</a>
@@ -59,6 +59,21 @@
       <p class="section-intro">Search sourced announcements, trailers and releases. Dates have sources; changes in attention don’t prove cause and effect.</p>
       <div class="toolbar"><div class="field"><label for="event-search">Search events</label><input id="event-search" type="search" placeholder="Trailer, pre-load, date…"></div><div class="field"><label for="event-kind">Event type</label><select id="event-kind"><option value="all">All types</option><option value="trailer">Trailers</option><option value="announcement">Announcements</option><option value="release">Original launches</option><option value="rerelease">Re-releases</option></select></div><div class="field"><label for="event-status">Verification status</label><select id="event-status"><option value="all">All statuses</option><option value="occurred">Occurred</option><option value="scheduled">Scheduled</option></select></div></div><p id="event-count" class="caption" role="status"></p>
       <ol id="events" class="events"></ol>
+      <section id="investigation" class="panel investigation" aria-labelledby="investigation-title" hidden>
+        <div class="panel-heading"><div><p class="eyebrow">EVENT INVESTIGATION / EVIDENCE IN CONTEXT</p><h3 id="investigation-title" tabindex="-1"></h3><p id="investigation-subtitle"></p></div><button id="close-investigation" class="button secondary" type="button">Close investigation</button></div>
+        <p id="investigation-status" class="notice" role="status"></p>
+        <div id="investigation-content">
+          <div id="investigation-metrics" class="metrics"></div>
+          <div class="legend"><span><i class="swatch pink"></i>Daily views</span><span><i class="swatch mint dashed"></i>Trailing 7-day mean</span><span><i class="event-swatch"></i>Event day</span></div>
+          <div class="chart-wrap"><svg id="event-chart" class="chart" viewBox="0 0 1000 340" role="img" aria-labelledby="event-chart-title event-chart-description"></svg></div>
+          <p class="caption">Context: 14 days before through 14 days after. Shaded windows mark days −7 to −1 and 0 to +6, matching the fixed comparison. Unobserved days stay empty. Trailing means include the selected day and six earlier days.</p>
+          <div class="investigation-evidence"><article><h4>What the source verifies</h4><p id="investigation-verification"></p><a id="investigation-source" target="_blank" rel="noopener">Open publisher evidence ↗</a></article><article><h4>Other events in this window</h4><div id="investigation-nearby"></div><p class="caption">Other announcements, article-title changes and unrelated news can affect this signal. Timing does not establish causation.</p></article></div>
+          <p id="investigation-title-note" class="caption"></p>
+          <details><summary>View all 29 event-context dates</summary><div id="investigation-table" class="table-wrap" tabindex="0" role="region" aria-label="Event investigation observations"></div></details>
+          <p id="investigation-identity" class="caption identity"></p>
+          <button id="share-event" class="button secondary" type="button">Copy event link ↗</button>
+        </div>
+      </section>
     </section>
     <section id="method" aria-labelledby="method-title">
       <div class="section-heading"><div><p class="eyebrow">04 / SHOW YOUR WORK</p><h2 id="method-title">The evidence is part of the project.</h2></div></div>

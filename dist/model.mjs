@@ -16,6 +16,7 @@ export function parseState(search) {
   return {range:allowed('range', ['30','90','365','all'], '90'), metric:allowed('metric', ['views','mean','both'], 'both'),
     mode:allowed('mode', ['raw','index'], 'index'), originals:params.get('originals') === '1',
     events:allowed('events', [...IDS,'all'], 'gta-vi'),
+    event:/^[a-z][a-z0-9-]{0,63}$/.test(params.get('event')||'') ? params.get('event') : '',
     kind:allowed('kind',['all','trailer','announcement','release','rerelease'],'all'), status:allowed('status',['all','occurred','scheduled'],'all'), query:(params.get('q')||'').slice(0,200),
     games:params.get('games') === 'none' ? [] : parsed.length ? [...new Set(parsed)].slice(0,4) : [...DEFAULT_IDS]};
 }
@@ -23,6 +24,7 @@ export function stateQuery(state) {
   const params = new URLSearchParams();
   for (const key of ['range','metric','mode','events','kind','status']) params.set(key, state[key]);
   if(state.query)params.set('q',state.query);
+  if(state.event)params.set('event',state.event);
   params.set('games', state.games.length ? state.games.join(',') : 'none');
   if (state.originals) params.set('originals','1');
   return params.toString();
@@ -96,6 +98,27 @@ export function filterEvents(events, {series='gta-vi',kind='all',status='all',qu
     (kind==='all'||event.kind===kind)&&(status==='all'||event.status===status)&&
     (!search||`${event.label} ${event.verification} ${event.date}`.toLocaleLowerCase('en-US').includes(search)))
     .sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
+}
+
+// The chart adds context without changing the fixed backend effect windows.
+// Always use calendar dates: missing/future observations stay null.
+export function eventInvestigation(analysis, eventId) {
+  const event=analysis.events.find(item=>item.id===eventId);
+  if(!event)return null;
+  const series=analysis.series.find(item=>item.id===event.series_id);
+  if(!series)return null;
+  const observations=new Map(series.daily.map(row=>[row.date,row]));
+  const stamp=Date.parse(event.date+'T00:00:00Z');
+  const points=Array.from({length:29},(_,index)=>{
+    const relative_day=index-14,date=new Date(stamp+relative_day*DAY).toISOString().slice(0,10);
+    const row=observations.get(date);
+    const status=date>=analysis.as_of?'future':row?'observed':date<series.summary.observed_start||date>series.summary.observed_end?'outside_coverage':'missing';
+    return {date,relative_day,state:status,views:status==='observed'?row.views:null,
+      trailing_7_day_mean:status==='observed'?row.trailing_7_day_mean:null};
+  });
+  const nearby=analysis.events.filter(item=>item.series_id===series.id&&item.id!==event.id&&item.date>=points[0].date&&item.date<=points.at(-1).date)
+    .sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id));
+  return {event,series,points,nearby};
 }
 
 export async function loadPublished(fetcher=fetch, remote='') {

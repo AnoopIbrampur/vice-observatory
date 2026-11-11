@@ -19,3 +19,6 @@ Completed phase tags: `phase-0`, `phase-1`, `phase-2`, `phase-3`, `phase-4`, `ph
 
 ## Phase 6 — Expanded observatory
 20 series (19 historical releases), 26 sourced events, 855 fixed benchmark targets, bounded title audit, daily publication with last-good retention, and cloud readback. See [expansion protocol](EXPANSION.md). Existing phase tags remain immutable.
+
+## Phase 7 — Portfolio feature and event investigations
+Source-linked event investigations and integration into the existing public portfolio, including a dedicated architecture/case-study page. See [verification report](PHASE_7.md).

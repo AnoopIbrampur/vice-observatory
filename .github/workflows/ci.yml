@@ -38,6 +38,7 @@ jobs:
         run: |
           node --check dist/app.mjs
           node --check dist/model.mjs
+          node --check dist/investigation.mjs
           node --test tests/dashboard.test.mjs
       - name: Offline release gate
         run: python -m scripts.check_release

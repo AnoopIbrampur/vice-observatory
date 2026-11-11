@@ -1,17 +1,19 @@
-import {IDS,COLORS,DASHES,DAY,number,percent,dateLabel,compact,escapeHtml as e,parseState,stateQuery,selectedDates,selectedGames,comparisonAvailability,segments,safeEvidence,loadBundle,loadPublished,filterEvents} from './model.mjs';
+import {IDS,COLORS,DASHES,DAY,number,percent,dateLabel,compact,escapeHtml as e,parseState,stateQuery,selectedDates,selectedGames,comparisonAvailability,segments,safeEvidence,loadBundle,loadPublished,filterEvents} from './model.mjs?v=7';
+
+import {createEventInvestigator} from './investigation.mjs?v=7';
 
 const $ = id => document.getElementById(id);
 const NS = 'http://www.w3.org/2000/svg';
 const state = parseState(location.search);
-let bundle, vi, visibleDates = [], cursorIndex = 0, toastTimer;
+let bundle, vi, visibleDates = [], cursorIndex = 0, toastTimer, investigator;
 const shortDate = value => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});
 function node(tag,attrs={},text) {const el=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs)) el.setAttribute(key,String(value));if(text!=null)el.textContent=text;return el;}
 function table(headers,rows,caption) {return `<table><caption>${e(caption)}</caption><thead><tr>${headers.map(label=>`<th scope="col">${e(label)}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>`<tr>${row.map(value=>`<td>${e(value)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;}
-function syncURL() {history.replaceState(null,'',`${location.pathname}?${stateQuery(state)}${location.hash}`);}
+function syncURL(hash=location.hash,push=false) {history[push?'pushState':'replaceState'](null,'',`${location.pathname}?${stateQuery(state)}${hash}`);}
 function toast(text) {clearTimeout(toastTimer);$('toast').textContent=text;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
 
 function scaffold(svg,title,description,minX,maxX,maxY,xLabel,yLabel) {
-  svg.replaceChildren(node('title',{id:svg.id==='attention-chart'?'attention-title':'comparison-title'},title),node('desc',{id:svg.id==='attention-chart'?'attention-description':'comparison-description'},description));
+  svg.replaceChildren(node('title',{id:svg.id==='attention-chart'?'attention-title':svg.id==='comparison-chart'?'comparison-title':'event-chart-title'},title),node('desc',{id:svg.id==='attention-chart'?'attention-description':svg.id==='comparison-chart'?'comparison-description':'event-chart-description'},description));
   const width=Math.max(280,Math.round(svg.parentElement.clientWidth)),height=width<600?280:340;
   svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
   const left=width<600?46:65,right=width-18,top=30,bottom=height-45;
@@ -100,7 +102,7 @@ function renderEvents() {
   $('event-filter').value=state.events;$('event-kind').value=state.kind;$('event-status').value=state.status;$('event-search').value=state.query;
   const events=filterEvents(bundle.analysis.events,{series:state.events,kind:$('event-kind').value,status:$('event-status').value,query:$('event-search').value});
   $('event-count').textContent=`${events.length} matching events. Seven complete days on each side are required for a measured change.`;
-  $('events').innerHTML=events.length?events.map(event=>`<li><time class="event-date" datetime="${e(event.date)}">${e(dateLabel(event.date))}</time><div><span class="event-tag ${event.status==='scheduled'?'scheduled':''}">${event.status==='scheduled'?'Scheduled · not observed':event.kind==='rerelease'?'Console re-release':event.kind==='announcement'?'Announcement':event.kind==='trailer'?'Trailer':'Original launch'}</span><h3>${e(event.label)}</h3><p class="caption">${e(event.verification)}</p><p class="caption">Before: ${event.before.observed_days}/7 days · After: ${event.after.observed_days}/7 days. ${e(event.interpretation)}</p><a href="${e(safeEvidence(event.source_url))}" target="_blank" rel="noopener">Publisher source ↗</a></div><div class="event-effect">${event.analysis_status==='available'?e(percent(event.percent_change)):'—'}<small>${event.analysis_status==='available'?'7-day mean change<br>before vs after':event.status==='scheduled'?'Awaiting observed data':'Incomplete comparison window'}</small></div></li>`).join(''):'<li>No matching events. Try a different title, clear the search, or choose all event types.</li>';
+  $('events').innerHTML=events.length?events.map(event=>`<li><time class="event-date" datetime="${e(event.date)}">${e(dateLabel(event.date))}</time><div><span class="event-tag ${event.status==='scheduled'?'scheduled':''}">${event.status==='scheduled'?'Scheduled · not observed':event.kind==='rerelease'?'Console re-release':event.kind==='announcement'?'Announcement':event.kind==='trailer'?'Trailer':'Original launch'}</span><h3>${e(event.label)}</h3><p class="caption">${e(event.verification)}</p><p class="caption">Before: ${event.before.observed_days}/7 days · After: ${event.after.observed_days}/7 days. ${e(event.interpretation)}</p><a href="${e(safeEvidence(event.source_url))}" target="_blank" rel="noopener">Publisher source ↗</a><a class="event-investigate" data-event="${e(event.id)}" href="${e(investigator.href(event.id))}" aria-label="Investigate ${e(event.label)}">Investigate event <span aria-hidden="true">↗</span></a></div><div class="event-effect">${event.analysis_status==='available'?e(percent(event.percent_change)):'—'}<small>${event.analysis_status==='available'?'7-day mean change<br>before vs after':event.status==='scheduled'?'Awaiting observed data':'Incomplete comparison window'}</small></div></li>`).join(''):'<li>No matching events. Try a different title, clear the search, or choose all event types.</li>';
 }
 function renderEvidence() {
   const {data,analysis,dataPointer,analysisPointer}=bundle,bench=analysis.benchmark;
@@ -125,7 +127,8 @@ async function start() {
     const eventFilter=$('event-filter');
     for(const game of bundle.analysis.series.filter(game=>game.id!=='gta-vi')){const option=document.createElement('option');option.value=game.id;option.textContent=game.label;eventFilter.append(option);}
     if(!['all',...bundle.analysis.series.map(game=>game.id)].includes(state.events))state.events='gta-vi';
-    renderOverview();renderComparison();renderEvents();renderEvidence();
+    investigator=createEventInvestigator({bundle,state,table,scaffold,drawLine,node,syncURL,toast});
+    renderOverview();renderComparison();renderEvents();renderEvidence();investigator.render();
     for(const [id,key] of [['event-kind','kind'],['event-status','status'],['event-search','query']])$(id).addEventListener(id==='event-search'?'input':'change',event=>{state[key]=event.target.value.slice(0,200);syncURL();renderEvents();});
     $('range').addEventListener('change',event=>{state.range=event.target.value;syncURL();drawAttention();});
     $('metric').addEventListener('change',event=>{state.metric=event.target.value;syncURL();drawAttention();});
@@ -133,7 +136,8 @@ async function start() {
     $('originals').addEventListener('change',event=>{state.originals=event.target.checked;if(state.originals)state.games=state.games.filter(id=>bundle.analysis.series.find(game=>game.id===id)?.release_kind==='original_launch');syncURL();renderComparison();});
     $('event-filter').addEventListener('change',event=>{state.events=event.target.value;syncURL();renderEvents();});
     $('share').addEventListener('click',async()=>{syncURL();try{await navigator.clipboard.writeText(location.href);toast('View link copied.');}catch{toast('Copy the current address from your browser to share this view.');}});
-    let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{drawAttention(true);drawComparison();},120);});
+    let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{drawAttention(true);drawComparison();investigator.draw();},120);});
+    window.addEventListener('popstate',()=>{Object.assign(state,parseState(location.search));renderOverview();renderComparison();renderEvents();investigator.render();requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView({behavior:'instant',block:'start'}));});
     $('loading').hidden=true;$('application').hidden=false;
     if(location.hash)requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView({behavior:'instant',block:'start'}));
   } catch(error) {

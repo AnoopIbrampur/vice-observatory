@@ -2,7 +2,7 @@
 
 An independent GTA VI launch-attention observatory, built from public Wikimedia pageviews and source-linked publisher announcements. No paid APIs or API keys.
 
-**Status:** Expansion release. **20 series**, **4,545 actual daily observations**, **855 retrospectively scored predictions**, **88 passing tests**, verified CI, and a public live demo.
+**Status:** Expansion release. **20 series**, **4,545 actual daily observations**, **855 retrospectively scored predictions**, **95 passing tests**, verified CI, and a public live demo.
 
 **[Daily GitHub Pages mirror](https://anoopibrampur.github.io/vice-observatory/)** · **[Live dashboard](https://vice-observatory-anoop.poeticskink11.chatgpt.site)** (public, no login required) · **[Case study](docs/CASE_STUDY.md)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Portfolio copy](docs/PORTFOLIO_COPY.md)**
 
@@ -20,7 +20,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 
 Open [http://127.0.0.1:8765/](http://127.0.0.1:8765/) in a modern browser. No build, npm install, API key, or paid service is needed. Serve over localhost or HTTPS; opening the HTML with `file://` is unsupported.
 
-The interface includes 26 sourced events with searchable type/status filters and window coverage, an exact-title identity audit, daily publication history, and time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
+The interface includes shareable event investigations with 29-day context charts, fixed before/after summaries, publisher evidence and nearby events; 26 sourced events with searchable type/status filters and window coverage, an exact-title identity audit, daily publication history, and time-window filters, daily/mean views, keyboard date inspection, raw/indexed launch comparisons, release selectors, a source-linked event timeline, data tables, shareable views, methodology, and downloads. See [Phase 3 verification](docs/PHASE_3.md) and [design decisions](docs/DESIGN.md).
 
 ## Reliability and operating workflows
 

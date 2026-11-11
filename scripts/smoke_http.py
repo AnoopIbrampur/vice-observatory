@@ -20,7 +20,7 @@ class QuietHandler(SimpleHTTPRequestHandler):
 def check(root: Path) -> dict:
     source = p.read_json(root / "dist/data/current.json")
     derived = p.read_json(root / "dist/analysis/current.json")
-    files = {"index.html": None, "case-study.html": None, "app.mjs": None, "model.mjs": None, "style.css": None, "favicon.svg": None,
+    files = {"index.html": None, "case-study.html": None, "app.mjs": None, "model.mjs": None, "investigation.mjs": None, "style.css": None, "favicon.svg": None,
              "data/current.json": None, "analysis/current.json": None, "publication.json": None,
              "title-audit.json": p.read_json(root / "dist/publication.json")["title_audit_sha256"]}
     for folder, pointer, is_analysis in (("data", source, False), ("analysis", derived, True)):

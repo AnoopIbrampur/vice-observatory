@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from urllib.parse import urlsplit
 
 from scripts import analysis as a
 from scripts import pipeline as p
@@ -87,7 +88,8 @@ def check(root: Path) -> dict:
         if set(page.labels + page.anchors) - page.ids:
             raise p.PipelineError(f"A label or in-page link has no target in {filename}")
         for asset in page.assets:
-            if not asset.startswith("./") or ".." in Path(asset).parts or not (dist / asset).is_file():
+            path = urlsplit(asset).path
+            if not asset.startswith("./") or ".." in Path(path).parts or not (dist / path).is_file():
                 raise p.PipelineError(f"Nonlocal or missing startup asset: {asset}")
     css = (dist / "style.css").read_text()
     if re.search(r"@import|url\([\"']?https?://", css):
@@ -112,7 +114,7 @@ def check(root: Path) -> dict:
         if ratio < threshold:
             raise p.PipelineError(f"Contrast below recorded threshold: {name}")
         ratios[name] = round(ratio, 2)
-    initial = [dist / "index.html", dist / "style.css", dist / "app.mjs", dist / "model.mjs", dist / "favicon.svg", dist / "publication.json", dist / "title-audit.json", dist / "data" / source["dataset"], dist / "analysis" / derived["files"]["analysis.json"]]
+    initial = [dist / "index.html", dist / "style.css", dist / "app.mjs", dist / "model.mjs", dist / "investigation.mjs", dist / "favicon.svg", dist / "publication.json", dist / "title-audit.json", dist / "data" / source["dataset"], dist / "analysis" / derived["files"]["analysis.json"]]
     total = sum(path.stat().st_size for path in initial)
     compressed = sum(len(gzip.compress(path.read_bytes(), mtime=0)) for path in initial)
     if total > 2_500_000 or compressed > 300_000:
