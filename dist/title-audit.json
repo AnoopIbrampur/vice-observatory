@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T17:13:05.707961+00:00",
+  "checked_at": "2026-11-11T17:18:48.622593+00:00",
   "limitation": "Current redirects and title-filtered move logs are a bounded audit, not a complete historical title reconstruction. Logs can include unrelated former occupants of a title. Aliases are not merged. Counts remain exact-title pageviews.",
   "schema_version": 1,
   "series": [

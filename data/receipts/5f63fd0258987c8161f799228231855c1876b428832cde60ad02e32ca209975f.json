@@ -1,0 +1,16 @@
+{
+  "byte_count": 28895,
+  "fetched_at": "2026-11-11T17:18:39.761103+00:00",
+  "http_status": 200,
+  "payload_sha256": "16742d47c1a376289339913e34c3aaeb494774d6514e1aa1de4d74379f01c46c",
+  "raw_path": "raw/16742d47c1a376289339913e34c3aaeb494774d6514e1aa1de4d74379f01c46c.json",
+  "requested_end": "2020-09-17",
+  "requested_start": "2020-03-21",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:18:39 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/The_Last_of_Us_Part_II/daily/2020032100/2020091700"
+}

@@ -1,0 +1,16 @@
+{
+  "byte_count": 26741,
+  "fetched_at": "2026-11-11T17:18:38.252746+00:00",
+  "http_status": 200,
+  "payload_sha256": "05498cea26eba20d60e0920d2a351449d35826cf79ab4d0186808f17f4f00c33",
+  "raw_path": "raw/05498cea26eba20d60e0920d2a351449d35826cf79ab4d0186808f17f4f00c33.json",
+  "requested_end": "2022-05-26",
+  "requested_start": "2021-11-27",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 11 Nov 2026 17:18:38 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Elden_Ring/daily/2021112700/2022052600"
+}

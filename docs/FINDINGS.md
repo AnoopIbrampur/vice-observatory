@@ -1,6 +1,6 @@
 # Phase 2 findings and retrospective benchmark
 
-Analysis date: 2026-11-11 (UTC; current day excluded). Source snapshot: `3dc86465b32d1ae3d2c121d0502cbfd29b940b124143a543701c605a55e85600`.
+Analysis date: 2026-11-11 (UTC; current day excluded). Source snapshot: `c2fd5742df7a1944f244a586bff8192a6952ba8041c438526c75b1b95fc34fe0`.
 
 Generated from verified saved observations under the fixed [analysis protocol](https://github.com/AnoopIbrampur/vice-observatory/blob/main/docs/ANALYSIS_PROTOCOL.md). Exact protocol bytes are archived alongside each analysis snapshot. This is descriptive analysis and a retrospective benchmark, not a prospective forecast record.
 
