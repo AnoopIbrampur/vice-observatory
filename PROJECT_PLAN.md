@@ -1,6 +1,6 @@
 # Vice Observatory — project plan
 
-Status: planning. Initial source probe and project setup completed; feature implementation paused for this plan.
+Status: Phases 0 and 1 complete. Source audit and reproducible data foundation are implemented; analysis and dashboard phases remain. See `docs/PHASES.md` for checkpoints and `docs/PHASE_1.md` for verification evidence.
 
 ## Objective
 

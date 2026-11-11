@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-11-11",
+  "collected_at": "2026-11-11T07:30:57.706094+00:00",
+  "complete": true,
+  "manifest_sha256": "73ecfa4562de20fb39627963ab85f8e2cf666ba825697af6c90de454f5590415",
+  "observation_count": 1649,
+  "schema_version": 1,
+  "series": [
+    {
+      "complete_requested_window": true,
+      "coverage_fraction": 1.0,
+      "fetched_at": "2026-11-11T07:30:57.284098+00:00",
+      "first_observed": "2023-11-01",
+      "last_observed": "2026-11-10",
+      "missing_days": 0,
+      "observation_age_days": 1,
+      "observations": 1106,
+      "payload_sha256": "62247f39884b7d6cecd57bf01b2767463cd23d9ba3db5afa726000ce018948d0",
+      "rolling": true,
+      "series_id": "gta-vi"
+    },
+    {
+      "complete_requested_window": true,
+      "coverage_fraction": 1.0,
+      "fetched_at": "2026-11-11T07:30:57.403174+00:00",
+      "first_observed": "2021-12-15",
+      "last_observed": "2022-06-13",
+      "missing_days": 0,
+      "observation_age_days": 1612,
+      "observations": 181,
+      "payload_sha256": "3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784",
+      "rolling": false,
+      "series_id": "gta-v-2022"
+    },
+    {
+      "complete_requested_window": true,
+      "coverage_fraction": 1.0,
+      "fetched_at": "2026-11-11T07:30:57.589540+00:00",
+      "first_observed": "2018-07-28",
+      "last_observed": "2019-01-24",
+      "missing_days": 0,
+      "observation_age_days": 2848,
+      "observations": 181,
+      "payload_sha256": "13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2",
+      "rolling": false,
+      "series_id": "rdr2"
+    },
+    {
+      "complete_requested_window": true,
+      "coverage_fraction": 1.0,
+      "fetched_at": "2026-11-11T07:30:57.706094+00:00",
+      "first_observed": "2020-09-11",
+      "last_observed": "2021-03-10",
+      "missing_days": 0,
+      "observation_age_days": 2072,
+      "observations": 181,
+      "payload_sha256": "c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e",
+      "rolling": false,
+      "series_id": "cyberpunk"
+    }
+  ],
+  "series_count": 4
+}

@@ -1,0 +1,151 @@
+{
+  "acquisitions": [
+    {
+      "payload_sha256": "62247f39884b7d6cecd57bf01b2767463cd23d9ba3db5afa726000ce018948d0",
+      "raw_path": "raw/62247f39884b7d6cecd57bf01b2767463cd23d9ba3db5afa726000ce018948d0.json",
+      "receipt_path": "receipts/829ad0f823b136e5ac4f16be1efa5b5b125ec6da05a872b03331902866b756fd.json",
+      "receipt_sha256": "829ad0f823b136e5ac4f16be1efa5b5b125ec6da05a872b03331902866b756fd",
+      "series_id": "gta-vi"
+    },
+    {
+      "payload_sha256": "3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784",
+      "raw_path": "raw/3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784.json",
+      "receipt_path": "receipts/ebe621f59c7261211ad410f040bf04cac3c005dab4982a28e1879fb9e87e6661.json",
+      "receipt_sha256": "ebe621f59c7261211ad410f040bf04cac3c005dab4982a28e1879fb9e87e6661",
+      "series_id": "gta-v-2022"
+    },
+    {
+      "payload_sha256": "13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2",
+      "raw_path": "raw/13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2.json",
+      "receipt_path": "receipts/383c78a7d54f3661085911866c4ea1643a0b8c82ba7d8bdee3f220310be3e237.json",
+      "receipt_sha256": "383c78a7d54f3661085911866c4ea1643a0b8c82ba7d8bdee3f220310be3e237",
+      "series_id": "rdr2"
+    },
+    {
+      "payload_sha256": "c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e",
+      "raw_path": "raw/c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e.json",
+      "receipt_path": "receipts/e5af6067788233c756a18283be6a8591f1c7c45c927cc1c7a711a81580dcdd90.json",
+      "receipt_sha256": "e5af6067788233c756a18283be6a8591f1c7c45c927cc1c7a711a81580dcdd90",
+      "series_id": "cyberpunk"
+    }
+  ],
+  "as_of": "2026-11-11",
+  "config": {
+    "access": "all-access",
+    "agent": "user",
+    "baseline_days": [
+      -28,
+      -8
+    ],
+    "granularity": "daily",
+    "project": "en.wikipedia.org",
+    "schema_version": 1,
+    "series": [
+      {
+        "article": "Grand_Theft_Auto_VI",
+        "end_date": null,
+        "id": "gta-vi",
+        "label": "Grand Theft Auto VI",
+        "notes": "Exact article-title series; earlier titles and redirects are not merged. Scheduled release date last checked 2026-11-11. Passing this date does not automatically verify that a launch occurred.",
+        "release_date": "2026-11-19",
+        "release_kind": "original_launch",
+        "release_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "release_status": "scheduled",
+        "start_date": "2023-11-01"
+      },
+      {
+        "article": "Grand_Theft_Auto_V",
+        "end_date": "2022-06-13",
+        "id": "gta-v-2022",
+        "label": "GTA V · 2022 console re-release",
+        "notes": "PS5/Xbox Series X|S re-release, not the original 2013 launch. The Wikipedia article measures attention to the whole game, not only these platforms.",
+        "release_date": "2022-03-15",
+        "release_kind": "console_rerelease",
+        "release_source": "https://ir.take2games.com/node/28526/pdf",
+        "release_status": "released",
+        "start_date": "2021-12-15"
+      },
+      {
+        "article": "Red_Dead_Redemption_2",
+        "end_date": "2019-01-24",
+        "id": "rdr2",
+        "label": "Red Dead Redemption 2",
+        "notes": "Original console launch. PC release is a different event.",
+        "release_date": "2018-10-26",
+        "release_kind": "original_launch",
+        "release_source": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+        "release_status": "released",
+        "start_date": "2018-07-28"
+      },
+      {
+        "article": "Cyberpunk_2077",
+        "end_date": "2021-03-10",
+        "id": "cyberpunk",
+        "label": "Cyberpunk 2077",
+        "notes": "Launch across PC and the then-current console editions; not a later dedicated console upgrade.",
+        "release_date": "2020-12-10",
+        "release_kind": "original_launch",
+        "release_source": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+        "release_status": "released",
+        "start_date": "2020-09-11"
+      }
+    ]
+  },
+  "event_config": {
+    "checked_on": "2026-11-11",
+    "events": [
+      {
+        "date": "2025-11-06",
+        "id": "gta-vi-date-update-2025",
+        "kind": "announcement",
+        "label": "November 2026 launch date announced",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "status": "occurred",
+        "verification": "Publisher announcement, independently corroborated by dated Take-Two material. The linked announcement is JavaScript-rendered and was not fully extractable."
+      },
+      {
+        "date": "2026-11-19",
+        "id": "gta-vi-scheduled-release",
+        "kind": "release",
+        "label": "GTA VI scheduled launch",
+        "series_id": "gta-vi",
+        "source_url": "https://ir.take2games.com/node/32311/pdf",
+        "status": "scheduled",
+        "verification": "Dated publisher press release explicitly states November 19, 2026."
+      },
+      {
+        "date": "2022-03-15",
+        "id": "gta-v-console-release-2022",
+        "kind": "rerelease",
+        "label": "GTA V PS5 / Xbox Series console re-release",
+        "series_id": "gta-v-2022",
+        "source_url": "https://ir.take2games.com/node/28526/pdf",
+        "status": "occurred",
+        "verification": "Publisher release dated March 15, 2022."
+      },
+      {
+        "date": "2018-10-26",
+        "id": "rdr2-console-launch",
+        "kind": "release",
+        "label": "Red Dead Redemption 2 console launch",
+        "series_id": "rdr2",
+        "source_url": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+        "status": "occurred",
+        "verification": "Publisher announcement date visible in indexed result; official trailer also confirms October 26, 2018. Full page extraction unavailable."
+      },
+      {
+        "date": "2020-12-10",
+        "id": "cyberpunk-launch",
+        "kind": "release",
+        "label": "Cyberpunk 2077 launch",
+        "series_id": "cyberpunk",
+        "source_url": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+        "status": "occurred",
+        "verification": "Directly readable publisher announcement dated December 10, 2020."
+      }
+    ],
+    "schema_version": 1
+  },
+  "schema_version": 1
+}
