@@ -29,3 +29,5 @@ The writer path was exercised immediately, without waiting for the next schedule
 - Sites deployment: appgdep_6af4a3b0b250819183a45381b72607c2
 
 Existing phase tags and intermediate immutable snapshots are preserved. Events remain manually verified; a scheduled release never becomes an occurred event just because a date passes. Automatic refreshes refetch historical histories as well as GTA VI, so long-term archive growth remains an operational limitation.
+
+Final shared-link fix and verification: GitHub source c5a6547c0a8495de8f1920af7550c3d9a89efea2; [CI](https://github.com/AnoopIbrampur/vice-observatory/actions/runs/43067371857) and [publication](https://github.com/AnoopIbrampur/vice-observatory/actions/runs/43067372078) both succeeded. Final Sites source b6948a7145452ae952c7dad33b64a893864abfce, saved version appgprj_6af416aed3948191bfe69c871154b0bb~appgver_4f6535450af48191bd88e7f4b0279d25, deployment appgdep_6af4a48479a48191a4985ac6aac0342d succeeded. Mobile deep links restored the search/type filters, showed one matching Trailer 2 event, and positioned the timeline below the sticky header. Desktop and mobile had no page overflow.

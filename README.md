@@ -10,7 +10,7 @@ The source repository and hosted demo are public. Anonymous requests verified bo
 
 [![Verify project](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml/badge.svg)](https://github.com/AnoopIbrampur/vice-observatory/actions/workflows/ci.yml)
 
-![Verified desktop dashboard](docs/screenshots/desktop.jpg)
+![Verified desktop dashboard](docs/screenshots/expansion-live-desktop.jpg)
 
 ## Open the dashboard locally
 

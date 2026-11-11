@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "ci_run": 43067371857,
+  "publish_run": 43067372078,
+  "refresh_run": 43066862434,
+  "workflow_state": "active",
+  "schedule_utc": "23 12 * * *",
+  "pages_url": "https://anoopibrampur.github.io/vice-observatory/",
+  "sites_url": "https://vice-observatory-anoop.poeticskink11.chatgpt.site",
+  "sites_deployment_id": "appgdep_6af4a48479a48191a4985ac6aac0342d",
+  "source_snapshot_id": "c2fd5742df7a1944f244a586bff8192a6952ba8041c438526c75b1b95fc34fe0",
+  "analysis_id": "75e06b386e5be834a45d5d8be5a86aab71ff70820e0868a0ae343724e8102e8c",
+  "python_tests": 67,
+  "javascript_tests": 21,
+  "browser": {
+    "viewports": [
+      375,
+      1440
+    ],
+    "page_overflow": false,
+    "restored_deep_link": true,
+    "remote_snapshot_loaded": true
+  }
+}
