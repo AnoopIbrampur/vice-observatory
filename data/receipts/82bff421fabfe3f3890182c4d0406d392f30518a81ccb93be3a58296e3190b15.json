@@ -1,0 +1,16 @@
+{
+  "byte_count": 28070,
+  "fetched_at": "2026-11-12T20:09:16.062608+00:00",
+  "http_status": 200,
+  "payload_sha256": "3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784",
+  "raw_path": "raw/3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784.json",
+  "requested_end": "2022-06-13",
+  "requested_start": "2021-12-15",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 12 Nov 2026 20:09:15 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Grand_Theft_Auto_V/daily/2021121500/2022061300"
+}

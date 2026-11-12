@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T17:18:48.622593+00:00",
+  "checked_at": "2026-11-12T20:09:32.440567+00:00",
   "limitation": "Current redirects and title-filtered move logs are a bounded audit, not a complete historical title reconstruction. Logs can include unrelated former occupants of a title. Aliases are not merged. Counts remain exact-title pageviews.",
   "schema_version": 1,
   "series": [
@@ -9,7 +9,7 @@
       "created_at": "2022-02-11T04:11:05Z",
       "evidence": [
         {
-          "sha256": "b1bfce161f61f54fc65311bcc80b7ee8638733d01f708cd8696ef5d8d0a67ac7",
+          "sha256": "337edb7af0687488ef18f67c5f0c7fc9fafccaf980a993b9e71dae5442036549",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Grand_Theft_Auto_VI&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -390,7 +390,7 @@
       "created_at": "2012-08-11T04:09:41Z",
       "evidence": [
         {
-          "sha256": "6e22bd60f4d811d97f8580317082f3bd4452e771c5938b18f9f9c1fdb5ffd237",
+          "sha256": "e5986af35a6690368f5c9fd4f0a7babdbc9332a7fb6d6fc72b4fb390bad8bfec",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Cyberpunk_2077&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -431,7 +431,7 @@
       "created_at": "2019-06-09T21:22:10Z",
       "evidence": [
         {
-          "sha256": "8263ecad48dd63ef102445c29b442a7270adad11e68ce256bd84c822c1587f9a",
+          "sha256": "7e6f4d52198af5e3283e1dce51a1356b7f1616ad18834f4bda2788f5a511c058",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Elden_Ring&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -857,7 +857,7 @@
       "created_at": "2015-06-16T02:40:06Z",
       "evidence": [
         {
-          "sha256": "18a84d41f11b51b9a13c1a7ee97caed90cb781cc3c4be15fef07a38154476cef",
+          "sha256": "469737f5faa025492cd53f95fd07556e4a82f3b62f6d5d95f61faa174b8f079f",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Zero_Dawn&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -890,7 +890,7 @@
       "created_at": "2020-06-11T21:11:43Z",
       "evidence": [
         {
-          "sha256": "0071c47ef2fa8b368a175e248afe2cde4f47ce0c94f5cc3bc5cc3e783eb59b61",
+          "sha256": "a80a447bd6916f22ce15037cbe79abea6c3486c8b2123d78ce55924ffed8e9e3",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Forbidden_West&prop=info%7Credirects&rdlimit=500"
         },
         {
