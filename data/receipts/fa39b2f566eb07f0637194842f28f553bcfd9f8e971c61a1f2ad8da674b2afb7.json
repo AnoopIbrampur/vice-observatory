@@ -1,0 +1,16 @@
+{
+  "byte_count": 27948,
+  "fetched_at": "2026-11-13T19:53:21.700291+00:00",
+  "http_status": 200,
+  "payload_sha256": "1b92b03a5680e808dd9bf795e2542bfbf6dd3aeb07b7611f45dd4a35367df9f3",
+  "raw_path": "raw/1b92b03a5680e808dd9bf795e2542bfbf6dd3aeb07b7611f45dd4a35367df9f3.json",
+  "requested_end": "2020-10-15",
+  "requested_start": "2020-04-18",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 13 Nov 2026 19:53:21 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Ghost_of_Tsushima/daily/2020041800/2020101500"
+}

@@ -1,0 +1,16 @@
+{
+  "byte_count": 28264,
+  "fetched_at": "2026-11-13T19:53:21.881297+00:00",
+  "http_status": 200,
+  "payload_sha256": "16ba5abf1fc7fbe8c35f5b7e25f15523d4c759eba6d74ce51b94844f3106aad5",
+  "raw_path": "raw/16ba5abf1fc7fbe8c35f5b7e25f15523d4c759eba6d74ce51b94844f3106aad5.json",
+  "requested_end": "2018-01-25",
+  "requested_start": "2017-07-29",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 13 Nov 2026 19:53:21 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Super_Mario_Odyssey/daily/2017072900/2018012500"
+}

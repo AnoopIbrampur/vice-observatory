@@ -1,0 +1,16 @@
+{
+  "byte_count": 27487,
+  "fetched_at": "2026-11-13T19:53:21.373143+00:00",
+  "http_status": 200,
+  "payload_sha256": "c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e",
+  "raw_path": "raw/c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e.json",
+  "requested_end": "2021-03-10",
+  "requested_start": "2020-09-11",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 13 Nov 2026 19:53:21 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Cyberpunk_2077/daily/2020091100/2021031000"
+}

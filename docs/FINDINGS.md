@@ -1,6 +1,6 @@
 # Phase 2 findings and retrospective benchmark
 
-Analysis date: 2026-11-12 (UTC; current day excluded). Source snapshot: `428acf126541a3ee4b4a157731276284cb55a2bb38ccec3fd8f47e1c3a0ec902`.
+Analysis date: 2026-11-13 (UTC; current day excluded). Source snapshot: `4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648`.
 
 Generated from verified saved observations under the fixed [analysis protocol](https://github.com/AnoopIbrampur/vice-observatory/blob/main/docs/ANALYSIS_PROTOCOL.md). Exact protocol bytes are archived alongside each analysis snapshot. This is descriptive analysis and a retrospective benchmark, not a prospective forecast record.
 
@@ -10,7 +10,7 @@ The latest value and week change below refer to each series' own final observed 
 
 | Series | Last observed | Daily views | Trailing 7-day mean | Change vs previous complete 7 days |
 | --- | --- | ---: | ---: | ---: |
-| Grand Theft Auto VI | 2026-11-11 | 62,961 | 41,131.1 | 82.7% |
+| Grand Theft Auto VI | 2026-11-12 | 73,739 | 47,571.7 | 102.6% |
 | GTA V · 2022 console re-release | 2022-06-13 | 4,124 | 4,720.6 | 7.9% |
 | Red Dead Redemption 2 | 2019-01-24 | 11,805 | 13,517.6 | -12.3% |
 | Cyberpunk 2077 | 2021-03-10 | 5,294 | 5,533.0 | -4.5% |
@@ -31,7 +31,7 @@ The latest value and week change below refer to each series' own final observed 
 | The Last of Us Part II | 2020-09-17 | 6,750 | 6,315.9 | -7.6% |
 | Death Stranding | 2020-02-06 | 5,326 | 5,464.0 | 2.2% |
 
-GTA VI's complete-week comparison uses 2026-11-05 through 2026-11-11 against 2026-10-29 through 2026-11-04. It measures attention to this article only.
+GTA VI's complete-week comparison uses 2026-11-06 through 2026-11-12 against 2026-10-30 through 2026-11-05. It measures attention to this article only.
 
 ## Release comparison availability
 
@@ -60,7 +60,7 @@ Index = 100 × daily views / mean views on release-relative days -28 through -8 
 | The Last of Us Part II | 2020-06-19 (released) | original_launch | 21/21 | 15,778.2 | available |
 | Death Stranding | 2019-11-08 (released) | original_launch | 21/21 | 14,407.4 | available |
 
-GTA VI has 98 unobserved future dates in the fixed -90 to +90 comparison range. They contain nulls, not extrapolated values. Its scheduled release is not marked as having occurred.
+GTA VI has 97 unobserved future dates in the fixed -90 to +90 comparison range. They contain nulls, not extrapolated values. Its scheduled release is not marked as having occurred.
 
 ## Event-window associations
 
@@ -69,7 +69,7 @@ Compare seven days before an event against event day through day +6. Scheduled e
 | Event | Date | Status | Before coverage | After coverage | Mean change |
 | --- | --- | --- | ---: | ---: | ---: |
 | [November 2026 launch date announced](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) | 2025-11-06 | available | 7/7 | 7/7 | 261.6% |
-| [GTA VI scheduled launch](https://ir.take2games.com/node/32311/pdf) | 2026-11-19 | scheduled | 0/7 | 0/7 | Unavailable |
+| [GTA VI scheduled launch](https://ir.take2games.com/node/32311/pdf) | 2026-11-19 | scheduled | 1/7 | 0/7 | Unavailable |
 | [GTA V PS5 / Xbox Series console re-release](https://ir.take2games.com/node/28526/pdf) | 2022-03-15 | available | 7/7 | 7/7 | 12.4% |
 | [Red Dead Redemption 2 console launch](https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available) | 2018-10-26 | available | 7/7 | 7/7 | 155.9% |
 | [Cyberpunk 2077 launch](https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/) | 2020-12-10 | available | 7/7 | 7/7 | 88.7% |
@@ -93,7 +93,7 @@ Compare seven days before an event against event day through day +6. Scheduled e
 | [GTA VI Trailer 2](https://www.rockstargames.com/VI/trailer-2) | 2025-05-06 | available | 7/7 | 7/7 | 107.3% |
 | [GTA VI extended gameplay look](https://www.rockstargames.com/VI/launch-trailer) | 2026-08-27 | available | 7/7 | 7/7 | 116.8% |
 | [GTA VI launch trailer](https://www.rockstargames.com/VI/launch-trailer) | 2026-10-15 | available | 7/7 | 7/7 | 60.7% |
-| [GTA VI pre-load announcement](https://www.rockstargames.com/VI/launch-trailer) | 2026-11-10 | incomplete | 7/7 | 2/7 | Unavailable |
+| [GTA VI pre-load announcement](https://www.rockstargames.com/VI/launch-trailer) | 2026-11-10 | incomplete | 7/7 | 3/7 | Unavailable |
 
 ## Historical forecasting benchmark
 

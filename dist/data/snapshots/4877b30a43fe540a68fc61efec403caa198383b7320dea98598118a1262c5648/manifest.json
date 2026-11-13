@@ -1,0 +1,666 @@
+{
+  "acquisitions": [
+    {
+      "payload_sha256": "2c9e2b83e86df0cbcdfb49d07a9b2bf65697b598b5524e99ae15f856e2234949",
+      "raw_path": "raw/2c9e2b83e86df0cbcdfb49d07a9b2bf65697b598b5524e99ae15f856e2234949.json",
+      "receipt_path": "receipts/f03bcc8b866bf7764be11c0c54df99e0092c0e547e44f6a03e3a966f457213a4.json",
+      "receipt_sha256": "f03bcc8b866bf7764be11c0c54df99e0092c0e547e44f6a03e3a966f457213a4",
+      "series_id": "gta-vi"
+    },
+    {
+      "payload_sha256": "3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784",
+      "raw_path": "raw/3886080cce55522011960d09a6fadba2ca3b3eca4dcc4e61f00a9265f2911784.json",
+      "receipt_path": "receipts/55e7ca7dccfce0e331e8cd3573a0d99871326b9cd084cd5fb34565ecfcac1b03.json",
+      "receipt_sha256": "55e7ca7dccfce0e331e8cd3573a0d99871326b9cd084cd5fb34565ecfcac1b03",
+      "series_id": "gta-v-2022"
+    },
+    {
+      "payload_sha256": "13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2",
+      "raw_path": "raw/13f9135fb0fb702c0b731d67ae15d3a62961d1cbed467643121a17175334a2e2.json",
+      "receipt_path": "receipts/2e9612fc0bd3cbc5b220c700117c86c1e110605d0c2008d7083992fd62bc9130.json",
+      "receipt_sha256": "2e9612fc0bd3cbc5b220c700117c86c1e110605d0c2008d7083992fd62bc9130",
+      "series_id": "rdr2"
+    },
+    {
+      "payload_sha256": "c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e",
+      "raw_path": "raw/c9911e286dd7aa68c1027562a9de63a77c678e6ec8d51113fc8244007aaaa82e.json",
+      "receipt_path": "receipts/7ac2a15779bab89fb1fc7b7903ae7f25e9dadeefd7a1ad05f2fe6d7c1f323caa.json",
+      "receipt_sha256": "7ac2a15779bab89fb1fc7b7903ae7f25e9dadeefd7a1ad05f2fe6d7c1f323caa",
+      "series_id": "cyberpunk"
+    },
+    {
+      "payload_sha256": "05498cea26eba20d60e0920d2a351449d35826cf79ab4d0186808f17f4f00c33",
+      "raw_path": "raw/05498cea26eba20d60e0920d2a351449d35826cf79ab4d0186808f17f4f00c33.json",
+      "receipt_path": "receipts/5cd321ce809b87555b2d22a9cfe1e38d79678ca9835fc2db0d72d895e83d04d7.json",
+      "receipt_sha256": "5cd321ce809b87555b2d22a9cfe1e38d79678ca9835fc2db0d72d895e83d04d7",
+      "series_id": "elden-ring"
+    },
+    {
+      "payload_sha256": "1b92b03a5680e808dd9bf795e2542bfbf6dd3aeb07b7611f45dd4a35367df9f3",
+      "raw_path": "raw/1b92b03a5680e808dd9bf795e2542bfbf6dd3aeb07b7611f45dd4a35367df9f3.json",
+      "receipt_path": "receipts/fa39b2f566eb07f0637194842f28f553bcfd9f8e971c61a1f2ad8da674b2afb7.json",
+      "receipt_sha256": "fa39b2f566eb07f0637194842f28f553bcfd9f8e971c61a1f2ad8da674b2afb7",
+      "series_id": "ghost"
+    },
+    {
+      "payload_sha256": "16ba5abf1fc7fbe8c35f5b7e25f15523d4c759eba6d74ce51b94844f3106aad5",
+      "raw_path": "raw/16ba5abf1fc7fbe8c35f5b7e25f15523d4c759eba6d74ce51b94844f3106aad5.json",
+      "receipt_path": "receipts/4a93d87a7e3cc3a4150fc61673d6d5ecf975d38c250019e858337bd1c29f0fb6.json",
+      "receipt_sha256": "4a93d87a7e3cc3a4150fc61673d6d5ecf975d38c250019e858337bd1c29f0fb6",
+      "series_id": "odyssey"
+    },
+    {
+      "payload_sha256": "59268136a6a9e619c6955368ea4b404516822cdbb29603c8cabe21f34e6ab431",
+      "raw_path": "raw/59268136a6a9e619c6955368ea4b404516822cdbb29603c8cabe21f34e6ab431.json",
+      "receipt_path": "receipts/6e0538ebd14bead96b21c5aa3cdce42475f57fb57c24cdbb2fae0d141cc3b3e5.json",
+      "receipt_sha256": "6e0538ebd14bead96b21c5aa3cdce42475f57fb57c24cdbb2fae0d141cc3b3e5",
+      "series_id": "botw"
+    },
+    {
+      "payload_sha256": "2886c02daad6bd634d08e68419dde934560f987ec42055e8147cf7cde350aced",
+      "raw_path": "raw/2886c02daad6bd634d08e68419dde934560f987ec42055e8147cf7cde350aced.json",
+      "receipt_path": "receipts/c175ee384084bd46955982f404b6d44cfedd3e512f4a0e0c34814b45151b369d.json",
+      "receipt_sha256": "c175ee384084bd46955982f404b6d44cfedd3e512f4a0e0c34814b45151b369d",
+      "series_id": "totk"
+    },
+    {
+      "payload_sha256": "8c04317458fd3a165920ebbb3abe5fbcac61539c16fe9578964e543b492c5966",
+      "raw_path": "raw/8c04317458fd3a165920ebbb3abe5fbcac61539c16fe9578964e543b492c5966.json",
+      "receipt_path": "receipts/fd0c2066a4721e4bd49012356c401785e2950615bbebc1e9055c212bbdb120b1.json",
+      "receipt_sha256": "fd0c2066a4721e4bd49012356c401785e2950615bbebc1e9055c212bbdb120b1",
+      "series_id": "animal-crossing"
+    },
+    {
+      "payload_sha256": "b4363da12efc776974a8bb255ea03b3477908065fd4c9913c680b1b27ab3de60",
+      "raw_path": "raw/b4363da12efc776974a8bb255ea03b3477908065fd4c9913c680b1b27ab3de60.json",
+      "receipt_path": "receipts/a29fea6e496f3e8b614e9932e9d398aff6ec97d4064e7c46907a91442c617dfc.json",
+      "receipt_sha256": "a29fea6e496f3e8b614e9932e9d398aff6ec97d4064e7c46907a91442c617dfc",
+      "series_id": "smash"
+    },
+    {
+      "payload_sha256": "9e27cdecb00e3d6d27065cd8d6d11d6d0caf4f6648699e8b8e9fb2849968bc9f",
+      "raw_path": "raw/9e27cdecb00e3d6d27065cd8d6d11d6d0caf4f6648699e8b8e9fb2849968bc9f.json",
+      "receipt_path": "receipts/9ee068a0f3c6381fa4cb95235605650e1ab5919a1950fac072ce0633afc7a20c.json",
+      "receipt_sha256": "9ee068a0f3c6381fa4cb95235605650e1ab5919a1950fac072ce0633afc7a20c",
+      "series_id": "splatoon-3"
+    },
+    {
+      "payload_sha256": "d176ec6431b4c4b8af2968479ee23f3401eed3a4a67df353c743f4055d47e6e5",
+      "raw_path": "raw/d176ec6431b4c4b8af2968479ee23f3401eed3a4a67df353c743f4055d47e6e5.json",
+      "receipt_path": "receipts/411618307003e5eb8ad8cbfdd50529e9a448cb2303770c58de8d758d33070109.json",
+      "receipt_sha256": "411618307003e5eb8ad8cbfdd50529e9a448cb2303770c58de8d758d33070109",
+      "series_id": "luigi-3"
+    },
+    {
+      "payload_sha256": "ab3c2f7eee0a1bf969e9f5498c4faa374435957d247cac30d0aaee4d246a8907",
+      "raw_path": "raw/ab3c2f7eee0a1bf969e9f5498c4faa374435957d247cac30d0aaee4d246a8907.json",
+      "receipt_path": "receipts/22f8372b8ca460914bb8b174b6054410fc016dac75c81ea070961e0d452d06fc.json",
+      "receipt_sha256": "22f8372b8ca460914bb8b174b6054410fc016dac75c81ea070961e0d452d06fc",
+      "series_id": "horizon-zero"
+    },
+    {
+      "payload_sha256": "bf56de5fd603d7c6b1388032698000551a21e48f9ba8421bf43e3ec7d4191d65",
+      "raw_path": "raw/bf56de5fd603d7c6b1388032698000551a21e48f9ba8421bf43e3ec7d4191d65.json",
+      "receipt_path": "receipts/a92ff24c1b3863adc788d81f8c3f89d9c54956beeb9e8415072eed1e607fc3e2.json",
+      "receipt_sha256": "a92ff24c1b3863adc788d81f8c3f89d9c54956beeb9e8415072eed1e607fc3e2",
+      "series_id": "horizon-west"
+    },
+    {
+      "payload_sha256": "7de5e1748a33fdf4bd5c7fbf796b5af9438f0f78c37d0c51d41227abbd247b43",
+      "raw_path": "raw/7de5e1748a33fdf4bd5c7fbf796b5af9438f0f78c37d0c51d41227abbd247b43.json",
+      "receipt_path": "receipts/b78bb6b7e01c62355c9e81523e6e06cb023010d4b23124d469cebe646b26c97a.json",
+      "receipt_sha256": "b78bb6b7e01c62355c9e81523e6e06cb023010d4b23124d469cebe646b26c97a",
+      "series_id": "god-of-war"
+    },
+    {
+      "payload_sha256": "b9fb72912ba1b550f6649a936a7f76435ef211606713ba49ee123ff9cb3ca0dd",
+      "raw_path": "raw/b9fb72912ba1b550f6649a936a7f76435ef211606713ba49ee123ff9cb3ca0dd.json",
+      "receipt_path": "receipts/187d665493a3e40c4928f5bfc546f20aea8ff926d297f0cfbfbe0632d39931c6.json",
+      "receipt_sha256": "187d665493a3e40c4928f5bfc546f20aea8ff926d297f0cfbfbe0632d39931c6",
+      "series_id": "ragnarok"
+    },
+    {
+      "payload_sha256": "ac27067381ffbcfd51edefac7f70a9a623b054dea1402cec542c92ef0142c03c",
+      "raw_path": "raw/ac27067381ffbcfd51edefac7f70a9a623b054dea1402cec542c92ef0142c03c.json",
+      "receipt_path": "receipts/207f3cb25a04939f4a74d4fa4ef0154929ed18d89a6b7cd5e57866969a8fa972.json",
+      "receipt_sha256": "207f3cb25a04939f4a74d4fa4ef0154929ed18d89a6b7cd5e57866969a8fa972",
+      "series_id": "spider-man"
+    },
+    {
+      "payload_sha256": "16742d47c1a376289339913e34c3aaeb494774d6514e1aa1de4d74379f01c46c",
+      "raw_path": "raw/16742d47c1a376289339913e34c3aaeb494774d6514e1aa1de4d74379f01c46c.json",
+      "receipt_path": "receipts/7ac43dd492d89f776278a105b0e12b5620959827fa7de37dbdb921b98eed926f.json",
+      "receipt_sha256": "7ac43dd492d89f776278a105b0e12b5620959827fa7de37dbdb921b98eed926f",
+      "series_id": "last-of-us-2"
+    },
+    {
+      "payload_sha256": "af5aed4158742c4a13fdf6681b64fd41a032e643f68ede4c2e26439afa055f2f",
+      "raw_path": "raw/af5aed4158742c4a13fdf6681b64fd41a032e643f68ede4c2e26439afa055f2f.json",
+      "receipt_path": "receipts/c10ab9cbf9c83ea3b57286f5fa9c5ab28418c8e9e9da80fd7e2f83261fc0e087.json",
+      "receipt_sha256": "c10ab9cbf9c83ea3b57286f5fa9c5ab28418c8e9e9da80fd7e2f83261fc0e087",
+      "series_id": "death-stranding"
+    }
+  ],
+  "as_of": "2026-11-13",
+  "config": {
+    "access": "all-access",
+    "agent": "user",
+    "baseline_days": [
+      -28,
+      -8
+    ],
+    "granularity": "daily",
+    "project": "en.wikipedia.org",
+    "schema_version": 1,
+    "series": [
+      {
+        "article": "Grand_Theft_Auto_VI",
+        "end_date": null,
+        "id": "gta-vi",
+        "label": "Grand Theft Auto VI",
+        "notes": "Exact article-title series; earlier titles and redirects are not merged. Scheduled release date last checked 2026-11-11. Passing this date does not automatically verify that a launch occurred.",
+        "release_date": "2026-11-19",
+        "release_kind": "original_launch",
+        "release_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "release_status": "scheduled",
+        "start_date": "2023-11-01"
+      },
+      {
+        "article": "Grand_Theft_Auto_V",
+        "end_date": "2022-06-13",
+        "id": "gta-v-2022",
+        "label": "GTA V · 2022 console re-release",
+        "notes": "PS5/Xbox Series X|S re-release, not the original 2013 launch. The Wikipedia article measures attention to the whole game, not only these platforms.",
+        "release_date": "2022-03-15",
+        "release_kind": "console_rerelease",
+        "release_source": "https://ir.take2games.com/node/28526/pdf",
+        "release_status": "released",
+        "start_date": "2021-12-15"
+      },
+      {
+        "article": "Red_Dead_Redemption_2",
+        "end_date": "2019-01-24",
+        "id": "rdr2",
+        "label": "Red Dead Redemption 2",
+        "notes": "Original console launch. PC release is a different event.",
+        "release_date": "2018-10-26",
+        "release_kind": "original_launch",
+        "release_source": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+        "release_status": "released",
+        "start_date": "2018-07-28"
+      },
+      {
+        "article": "Cyberpunk_2077",
+        "end_date": "2021-03-10",
+        "id": "cyberpunk",
+        "label": "Cyberpunk 2077",
+        "notes": "Launch across PC and the then-current console editions; not a later dedicated console upgrade.",
+        "release_date": "2020-12-10",
+        "release_kind": "original_launch",
+        "release_source": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+        "release_status": "released",
+        "start_date": "2020-09-11"
+      },
+      {
+        "article": "Elden_Ring",
+        "end_date": "2022-05-26",
+        "id": "elden-ring",
+        "label": "Elden Ring",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2022-02-25",
+        "release_kind": "original_launch",
+        "release_source": "https://www.bandainamcoent.com/news/elden-ring-now-available-adventure-arrives-for-the-brave",
+        "release_status": "released",
+        "start_date": "2021-11-27"
+      },
+      {
+        "article": "Ghost_of_Tsushima",
+        "end_date": "2020-10-15",
+        "id": "ghost",
+        "label": "Ghost of Tsushima",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2020-07-17",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2020/07/16/ghost-of-tsushima-the-road-to-launch/",
+        "release_status": "released",
+        "start_date": "2020-04-18"
+      },
+      {
+        "article": "Super_Mario_Odyssey",
+        "end_date": "2018-01-25",
+        "id": "odyssey",
+        "label": "Super Mario Odyssey",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2017-10-27",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.co.jp/ir/pdf/2017/171030_4e.pdf",
+        "release_status": "released",
+        "start_date": "2017-07-29"
+      },
+      {
+        "article": "The_Legend_of_Zelda:_Breath_of_the_Wild",
+        "end_date": "2017-06-01",
+        "id": "botw",
+        "label": "Zelda: Breath of the Wild",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2017-03-03",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+        "release_status": "released",
+        "start_date": "2016-12-03"
+      },
+      {
+        "article": "The_Legend_of_Zelda:_Tears_of_the_Kingdom",
+        "end_date": "2023-08-10",
+        "id": "totk",
+        "label": "Zelda: Tears of the Kingdom",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2023-05-12",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html",
+        "release_status": "released",
+        "start_date": "2023-02-11"
+      },
+      {
+        "article": "Animal_Crossing:_New_Horizons",
+        "end_date": "2020-06-18",
+        "id": "animal-crossing",
+        "label": "Animal Crossing: New Horizons",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2020-03-20",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/ph/switch/acba/products/soft.html",
+        "release_status": "released",
+        "start_date": "2019-12-21"
+      },
+      {
+        "article": "Super_Smash_Bros._Ultimate",
+        "end_date": "2019-03-07",
+        "id": "smash",
+        "label": "Super Smash Bros. Ultimate",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2018-12-07",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/US/store/products/super-smash-bros-ultimate-switch/",
+        "release_status": "released",
+        "start_date": "2018-09-08"
+      },
+      {
+        "article": "Splatoon_3",
+        "end_date": "2022-12-08",
+        "id": "splatoon-3",
+        "label": "Splatoon 3",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2022-09-09",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Splatoon-3-1924751.html",
+        "release_status": "released",
+        "start_date": "2022-06-11"
+      },
+      {
+        "article": "Luigi's_Mansion_3",
+        "end_date": "2020-01-29",
+        "id": "luigi-3",
+        "label": "Luigi’s Mansion 3",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2019-10-31",
+        "release_kind": "original_launch",
+        "release_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Luigi-s-Mansion-3-1437312.html",
+        "release_status": "released",
+        "start_date": "2019-08-02"
+      },
+      {
+        "article": "Horizon_Zero_Dawn",
+        "end_date": "2017-05-29",
+        "id": "horizon-zero",
+        "label": "Horizon Zero Dawn",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits. North American first release; other regions followed on different dates.",
+        "release_date": "2017-02-28",
+        "release_kind": "original_launch",
+        "release_source": "https://sonyinteractive.com/en/press-releases/horizon-zero-dawn-surpasses-76-million-sales-worldwide/",
+        "release_status": "released",
+        "start_date": "2016-11-30"
+      },
+      {
+        "article": "Horizon_Forbidden_West",
+        "end_date": "2022-05-19",
+        "id": "horizon-west",
+        "label": "Horizon Forbidden West",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2022-02-18",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2022/02/17/horizon-forbidden-west-is-available-tonight/",
+        "release_status": "released",
+        "start_date": "2021-11-20"
+      },
+      {
+        "article": "God_of_War_(2018_video_game)",
+        "end_date": "2018-07-19",
+        "id": "god-of-war",
+        "label": "God of War (2018)",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2018-04-20",
+        "release_kind": "original_launch",
+        "release_source": "https://www.playstation.com/en-us/games/god-of-war/",
+        "release_status": "released",
+        "start_date": "2018-01-20"
+      },
+      {
+        "article": "God_of_War_Ragnarök",
+        "end_date": "2023-02-07",
+        "id": "ragnarok",
+        "label": "God of War Ragnarök",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2022-11-09",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2022/07/06/god-of-war-ragnarok-launches-november-9-new-cg-trailer-revealed/",
+        "release_status": "released",
+        "start_date": "2022-08-11"
+      },
+      {
+        "article": "Spider-Man_(2018_video_game)",
+        "article_policy": "historical_title",
+        "end_date": "2018-12-06",
+        "id": "spider-man",
+        "label": "Marvel’s Spider-Man (2018)",
+        "notes": "Original PS4 launch. Deliberately retain launch-era exact title Spider-Man (2018 video game), which now redirects. Visible move logs show this title was adopted in June 2017; current canonical title would measure a different historical title series. No alias summation; not a complete move-chain reconstruction.",
+        "release_date": "2018-09-07",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2018/09/07/marvels-spider-man-swings-into-stores/",
+        "release_status": "released",
+        "start_date": "2018-06-09"
+      },
+      {
+        "article": "The_Last_of_Us_Part_II",
+        "end_date": "2020-09-17",
+        "id": "last-of-us-2",
+        "label": "The Last of Us Part II",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2020-06-19",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2020/05/06/watch-the-new-the-last-of-us-part-ii-story-trailer/",
+        "release_status": "released",
+        "start_date": "2020-03-21"
+      },
+      {
+        "article": "Death_Stranding",
+        "end_date": "2020-02-06",
+        "id": "death-stranding",
+        "label": "Death Stranding",
+        "notes": "Original console launch; later ports and upgrades excluded. Exact English article title only; see title audit for identity and historical coverage limits.",
+        "release_date": "2019-11-08",
+        "release_kind": "original_launch",
+        "release_source": "https://blog.playstation.com/2019/09/24/introducing-the-limited-edition-death-stranding-ps4-pro-bundle/",
+        "release_status": "released",
+        "start_date": "2019-08-10"
+      }
+    ]
+  },
+  "event_config": {
+    "checked_on": "2026-11-11",
+    "events": [
+      {
+        "date": "2025-11-06",
+        "id": "gta-vi-date-update-2025",
+        "kind": "announcement",
+        "label": "November 2026 launch date announced",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "status": "occurred",
+        "verification": "Publisher announcement, independently corroborated by dated Take-Two material. The linked announcement is JavaScript-rendered and was not fully extractable."
+      },
+      {
+        "date": "2026-11-19",
+        "id": "gta-vi-scheduled-release",
+        "kind": "release",
+        "label": "GTA VI scheduled launch",
+        "series_id": "gta-vi",
+        "source_url": "https://ir.take2games.com/node/32311/pdf",
+        "status": "scheduled",
+        "verification": "Dated publisher press release explicitly states November 19, 2026."
+      },
+      {
+        "date": "2022-03-15",
+        "id": "gta-v-console-release-2022",
+        "kind": "rerelease",
+        "label": "GTA V PS5 / Xbox Series console re-release",
+        "series_id": "gta-v-2022",
+        "source_url": "https://ir.take2games.com/node/28526/pdf",
+        "status": "occurred",
+        "verification": "Publisher release dated March 15, 2022."
+      },
+      {
+        "date": "2018-10-26",
+        "id": "rdr2-console-launch",
+        "kind": "release",
+        "label": "Red Dead Redemption 2 console launch",
+        "series_id": "rdr2",
+        "source_url": "https://www.rockstargames.com/newswire/article/4k412883895ka4/red-dead-redemption-2-now-available",
+        "status": "occurred",
+        "verification": "Publisher announcement date visible in indexed result; official trailer also confirms October 26, 2018. Full page extraction unavailable."
+      },
+      {
+        "date": "2020-12-10",
+        "id": "cyberpunk-launch",
+        "kind": "release",
+        "label": "Cyberpunk 2077 launch",
+        "series_id": "cyberpunk",
+        "source_url": "https://www.cdprojekt.com/en/media/news/cyberpunk-2077-is-out-now/",
+        "status": "occurred",
+        "verification": "Directly readable publisher announcement dated December 10, 2020."
+      },
+      {
+        "date": "2022-02-25",
+        "id": "elden-ring-launch",
+        "kind": "release",
+        "label": "Elden Ring original launch",
+        "series_id": "elden-ring",
+        "source_url": "https://www.bandainamcoent.com/news/elden-ring-now-available-adventure-arrives-for-the-brave",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2020-07-17",
+        "id": "ghost-launch",
+        "kind": "release",
+        "label": "Ghost of Tsushima original launch",
+        "series_id": "ghost",
+        "source_url": "https://blog.playstation.com/2020/07/16/ghost-of-tsushima-the-road-to-launch/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2017-10-27",
+        "id": "odyssey-launch",
+        "kind": "release",
+        "label": "Super Mario Odyssey original launch",
+        "series_id": "odyssey",
+        "source_url": "https://www.nintendo.co.jp/ir/pdf/2017/171030_4e.pdf",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2017-03-03",
+        "id": "botw-launch",
+        "kind": "release",
+        "label": "Zelda: Breath of the Wild original launch",
+        "series_id": "botw",
+        "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2023-05-12",
+        "id": "totk-launch",
+        "kind": "release",
+        "label": "Zelda: Tears of the Kingdom original launch",
+        "series_id": "totk",
+        "source_url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2020-03-20",
+        "id": "animal-crossing-launch",
+        "kind": "release",
+        "label": "Animal Crossing: New Horizons original launch",
+        "series_id": "animal-crossing",
+        "source_url": "https://www.nintendo.com/ph/switch/acba/products/soft.html",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2018-12-07",
+        "id": "smash-launch",
+        "kind": "release",
+        "label": "Super Smash Bros. Ultimate original launch",
+        "series_id": "smash",
+        "source_url": "https://www.nintendo.com/US/store/products/super-smash-bros-ultimate-switch/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2022-09-09",
+        "id": "splatoon-3-launch",
+        "kind": "release",
+        "label": "Splatoon 3 original launch",
+        "series_id": "splatoon-3",
+        "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Splatoon-3-1924751.html",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2019-10-31",
+        "id": "luigi-3-launch",
+        "kind": "release",
+        "label": "Luigi’s Mansion 3 original launch",
+        "series_id": "luigi-3",
+        "source_url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Luigi-s-Mansion-3-1437312.html",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2017-02-28",
+        "id": "horizon-zero-launch",
+        "kind": "release",
+        "label": "Horizon Zero Dawn original launch",
+        "series_id": "horizon-zero",
+        "source_url": "https://sonyinteractive.com/en/press-releases/horizon-zero-dawn-surpasses-76-million-sales-worldwide/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2022-02-18",
+        "id": "horizon-west-launch",
+        "kind": "release",
+        "label": "Horizon Forbidden West original launch",
+        "series_id": "horizon-west",
+        "source_url": "https://blog.playstation.com/2022/02/17/horizon-forbidden-west-is-available-tonight/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2018-04-20",
+        "id": "god-of-war-launch",
+        "kind": "release",
+        "label": "God of War (2018) original launch",
+        "series_id": "god-of-war",
+        "source_url": "https://www.playstation.com/en-us/games/god-of-war/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2022-11-09",
+        "id": "ragnarok-launch",
+        "kind": "release",
+        "label": "God of War Ragnarök original launch",
+        "series_id": "ragnarok",
+        "source_url": "https://blog.playstation.com/2022/07/06/god-of-war-ragnarok-launches-november-9-new-cg-trailer-revealed/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2018-09-07",
+        "id": "spider-man-launch",
+        "kind": "release",
+        "label": "Marvel’s Spider-Man (2018) original launch",
+        "series_id": "spider-man",
+        "source_url": "https://blog.playstation.com/2018/09/07/marvels-spider-man-swings-into-stores/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2020-06-19",
+        "id": "last-of-us-2-launch",
+        "kind": "release",
+        "label": "The Last of Us Part II original launch",
+        "series_id": "last-of-us-2",
+        "source_url": "https://blog.playstation.com/2020/05/06/watch-the-new-the-last-of-us-part-ii-story-trailer/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2019-11-08",
+        "id": "death-stranding-launch",
+        "kind": "release",
+        "label": "Death Stranding original launch",
+        "series_id": "death-stranding",
+        "source_url": "https://blog.playstation.com/2019/09/24/introducing-the-limited-edition-death-stranding-ps4-pro-bundle/",
+        "status": "occurred",
+        "verification": "Publisher source confirms release date; checked 2026-11-11. Regional and platform qualification is in the series notes."
+      },
+      {
+        "date": "2023-12-04",
+        "id": "gta-vi-trailer-1",
+        "kind": "trailer",
+        "label": "GTA VI Trailer 1",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+        "status": "occurred",
+        "verification": "Current publisher video index dates Trailer 1 December 4; older standalone video page shows December 5. Day-level attribution is ambiguous; use index date and do not interpret one-day timing as causal."
+      },
+      {
+        "date": "2025-05-06",
+        "id": "gta-vi-trailer-2",
+        "kind": "trailer",
+        "label": "GTA VI Trailer 2",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/VI/trailer-2",
+        "status": "occurred",
+        "verification": "Publisher video page explicitly dates May 6, 2025."
+      },
+      {
+        "date": "2026-08-27",
+        "id": "gta-vi-extended-look",
+        "kind": "trailer",
+        "label": "GTA VI extended gameplay look",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+        "status": "occurred",
+        "verification": "Publisher video index explicitly dates extended look August 27, 2026."
+      },
+      {
+        "date": "2026-10-15",
+        "id": "gta-vi-launch-trailer",
+        "kind": "trailer",
+        "label": "GTA VI launch trailer",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+        "status": "occurred",
+        "verification": "Publisher video page explicitly dates October 15, 2026."
+      },
+      {
+        "date": "2026-11-10",
+        "id": "gta-vi-preload",
+        "kind": "announcement",
+        "label": "GTA VI pre-load announcement",
+        "series_id": "gta-vi",
+        "source_url": "https://www.rockstargames.com/VI/launch-trailer",
+        "status": "occurred",
+        "verification": "Publisher video index explicitly dates pre-load announcement November 10, 2026; post window remains incomplete."
+      }
+    ],
+    "schema_version": 1
+  },
+  "schema_version": 1
+}

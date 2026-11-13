@@ -1,0 +1,16 @@
+{
+  "byte_count": 173073,
+  "fetched_at": "2026-11-13T19:53:20.874385+00:00",
+  "http_status": 200,
+  "payload_sha256": "2c9e2b83e86df0cbcdfb49d07a9b2bf65697b598b5524e99ae15f856e2234949",
+  "raw_path": "raw/2c9e2b83e86df0cbcdfb49d07a9b2bf65697b598b5524e99ae15f856e2234949.json",
+  "requested_end": "2026-11-12",
+  "requested_start": "2023-11-01",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 13 Nov 2026 19:53:20 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Grand_Theft_Auto_VI/daily/2023110100/2026111200"
+}
