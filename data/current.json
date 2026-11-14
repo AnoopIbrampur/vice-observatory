@@ -1,15 +1,15 @@
 {
-  "as_of": "2026-11-13",
-  "csv": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/views.csv",
-  "dataset": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/dataset.json",
+  "as_of": "2026-11-14",
+  "csv": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/views.csv",
+  "dataset": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/dataset.json",
   "files_sha256": {
-    "dataset.json": "6cc47b113600cb04cc61e1d3d2861724f5aaa9d694363634e86d525a7c753854",
-    "health.json": "bf4abaa2f1ffda9fdb4dac0a5add13a9b45882af02f49d5967d748b319f47a31",
-    "manifest.json": "4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648",
-    "views.csv": "fada3101b50847ba00174a08410d19286bec1894e1bf3686768b924a05f1bdf6"
+    "dataset.json": "54eb194e7e6122dfc5237ab5f886a090c915e19463790409353d3a59eecfc682",
+    "health.json": "f20e7e2fc4fdf83ebe59c36878927abaa8bd3a1cf570eaf5309327f013dc82b7",
+    "manifest.json": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78",
+    "views.csv": "3ee66058910f1eca255040f15afe7551ca01b3a447c3abbbea5ac4c65b87587d"
   },
-  "health": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/health.json",
-  "manifest": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/manifest.json",
+  "health": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/health.json",
+  "manifest": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/manifest.json",
   "schema_version": 1,
-  "snapshot_id": "4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648"
+  "snapshot_id": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78"
 }

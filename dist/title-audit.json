@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-13T19:53:35.766896+00:00",
+  "checked_at": "2026-11-14T18:19:37.550948+00:00",
   "limitation": "Current redirects and title-filtered move logs are a bounded audit, not a complete historical title reconstruction. Logs can include unrelated former occupants of a title. Aliases are not merged. Counts remain exact-title pageviews.",
   "schema_version": 1,
   "series": [
@@ -9,7 +9,7 @@
       "created_at": "2022-02-11T04:11:05Z",
       "evidence": [
         {
-          "sha256": "9bf19a80f645fa28658fe6382f6af2a5ade34658f33ba56c29c57ef766847414",
+          "sha256": "7238750630004086f34a8ffcf31339638095a98011fc13d9e7de9f08cbb5e12f",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Grand_Theft_Auto_VI&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -195,7 +195,7 @@
       "created_at": "2004-10-20T13:57:37Z",
       "evidence": [
         {
-          "sha256": "310520ab3df3ea692deb6edadbd11aa580ef055c4bc0cb7e68dc456a6bbb39b7",
+          "sha256": "cde1bc6053ca5d27b6e1d1b662f81d934420bf8d2534a4b3452689bf61d8e5b5",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Grand_Theft_Auto_V&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -300,7 +300,7 @@
       "created_at": "2016-10-17T20:08:39Z",
       "evidence": [
         {
-          "sha256": "07da50091faf41eadb65f36ca145992c96718892d9f16d41e13e39ed361b6408",
+          "sha256": "1a80f8c05ff7d223759e8c9b78474593f4c65028fe594e9491f1dbe93087fff8",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Red_Dead_Redemption_2&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -391,7 +391,7 @@
       "created_at": "2012-08-11T04:09:41Z",
       "evidence": [
         {
-          "sha256": "5efd8a9b0603edae7ff2a759d8c44a8f72d79845ab65a2bea09635cdf00be33b",
+          "sha256": "1ec4da7a70d37a9f4501aa7a2f3a0640cd9c46037a54664ee4451b51e5f880a8",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Cyberpunk_2077&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -432,7 +432,7 @@
       "created_at": "2019-06-09T21:22:10Z",
       "evidence": [
         {
-          "sha256": "709ce330359d98f270c61c4bd18d68015002493c7ed7f786506645a73027563e",
+          "sha256": "2b5cab665932b408eb595bd4837728e03479b6218bd25285f5641133ddca4ad3",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Elden_Ring&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -471,7 +471,7 @@
       "created_at": "2017-10-30T16:33:42Z",
       "evidence": [
         {
-          "sha256": "c50e9bf6e3687cccea3aa3ea8badaf164eb1ceff7053f100b390425f578c488e",
+          "sha256": "e510edf35abf5ff3a997249969eb8f57704dad72acc5b1cc4c648633a8b7e105",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Ghost_of_Tsushima&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -502,7 +502,7 @@
       "created_at": "2017-01-13T04:35:30Z",
       "evidence": [
         {
-          "sha256": "e473534323d6fff997e1a54611ada4b2f2c989ca08f5afa175e3ff15354d4fa3",
+          "sha256": "d1f0fc2310b5ddc322a9d3b29b0edab82f38c5313d0154affa33e5111dfcebd0",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Super_Mario_Odyssey&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -559,7 +559,7 @@
       "created_at": "2011-07-04T20:30:04Z",
       "evidence": [
         {
-          "sha256": "9fdebb4c0cdbf00d3d4ade5a02bb706fa1c06bb5504a4e55c63cdac444b067c6",
+          "sha256": "9ae9b76d7527cc076ca77f0bafe59669e0cdbb1a64e7cce7b8477a095b8caa98",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Legend_of_Zelda%3A_Breath_of_the_Wild&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -630,7 +630,7 @@
       "created_at": "2021-05-25T13:05:58Z",
       "evidence": [
         {
-          "sha256": "3e82ec72a54f0dece56800ce2a8b53eb0096a41a5db321883aadea531165d6b8",
+          "sha256": "727882d80b9c2bf17e799355768d975171aea30dc319857ac5e3a471f4f53fcb",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Legend_of_Zelda%3A_Tears_of_the_Kingdom&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -684,7 +684,7 @@
       "created_at": "2019-06-11T16:47:29Z",
       "evidence": [
         {
-          "sha256": "7637075caf2b21fc0adae86e9bf6343375d8cd8465a50c759ef4c152c28ba8c4",
+          "sha256": "a50ab9fff3eb5feb2b2743a64ff04cb762069039818a7607eb8ae50377a12095",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Animal_Crossing%3A_New_Horizons&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -735,7 +735,7 @@
       "created_at": "2018-06-12T16:22:10Z",
       "evidence": [
         {
-          "sha256": "dd5740938c9607f443b09870a3bc5386b5483d8cd359a705894baa40fc368d67",
+          "sha256": "e8e86d0e2ceec119e7ebc44b0dc7a268985bfe9911e8006c6fb0f992d79ff8c7",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Super_Smash_Bros._Ultimate&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -794,7 +794,7 @@
       "created_at": "2021-02-17T22:50:47Z",
       "evidence": [
         {
-          "sha256": "dff721387267007ed99691436acf1fd1f36cf35b033c314b1a24d1545a48b296",
+          "sha256": "cf7996e7dcd63d4bd26c8576ed677507543978c186e3214abbb3ea843c725486",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Splatoon_3&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -824,7 +824,7 @@
       "created_at": "2018-09-14T00:08:54Z",
       "evidence": [
         {
-          "sha256": "f20e8dda4d5a829b82e93e90af02c9659fcde934aa371122dba2b9e94559ee56",
+          "sha256": "2d565477b2d4a94c7df800bb505ec13d68f4b39649a66c7191bee2c95618e8ae",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Luigi%27s_Mansion_3&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -858,7 +858,7 @@
       "created_at": "2015-06-16T02:40:06Z",
       "evidence": [
         {
-          "sha256": "4c04a31511e6699f0ff1f274d5ecd73b0b152af5502df894dd03bd002148f993",
+          "sha256": "65983a64f370aa8531b1e5d92177e3ff96f807da474a9946bbb0e9a12bf61417",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Zero_Dawn&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -891,7 +891,7 @@
       "created_at": "2020-06-11T21:11:43Z",
       "evidence": [
         {
-          "sha256": "67ed90916ce39eb47a3aa7da28f609362f9ec02191e7b88580fb1653f5dcb3a3",
+          "sha256": "eedf6b7c953e1bf930d180b7d4a8e689f6172dd4e5269b241a2c64f013168e36",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Horizon_Forbidden_West&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -960,7 +960,7 @@
       "created_at": "2016-06-14T19:06:41Z",
       "evidence": [
         {
-          "sha256": "78a8dbdcea8c34a69673a4be4af50cd124ccaebfb4848a998702b327cf0a2601",
+          "sha256": "6690f29a2c1c60bf5762fe24687a3cac2256cc4542dcd4058f0e1ddc84fac49b",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=God_of_War_%282018_video_game%29&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -997,7 +997,7 @@
       "created_at": "2020-09-16T20:57:07Z",
       "evidence": [
         {
-          "sha256": "3c5e49430d88f084d4776f2d757f06f52e38d0885445920d044e2fbef757ba3b",
+          "sha256": "c702c069fbf3498b0a41d415662142a952d16503e6c43fbcf21f3761a7870e14",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=God_of_War_Ragnar%C3%B6k&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -1051,7 +1051,7 @@
       "created_at": "2016-06-19T08:51:11Z",
       "evidence": [
         {
-          "sha256": "c1ef7774d2b8326cf5552e66488b6d30f309178693afed1f6216534e149ec31a",
+          "sha256": "10be3838f52b8c01a259185acddcbc6a7e8344a1d63942b2b269745f1bf7ad6d",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Spider-Man_%282018_video_game%29&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -1165,7 +1165,7 @@
       "created_at": "2016-12-03T19:42:06Z",
       "evidence": [
         {
-          "sha256": "a0e7702183d8a98d81ab5c4929afcc0014f112f18b2420203f74f1b6b7f48b83",
+          "sha256": "775af9ec067d5bad5bb09cdb8ed1765a846e29ac7f371304f49de7cd78a0a312",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=The_Last_of_Us_Part_II&prop=info%7Credirects&rdlimit=500"
         },
         {
@@ -1217,7 +1217,7 @@
       "created_at": "2016-06-14T02:14:17Z",
       "evidence": [
         {
-          "sha256": "93760e32a69f5ee81a7b07c377b1576a924000a72778e6f1cc35fa7fc504441a",
+          "sha256": "d5d05a8cf8c3ae2cb7dcdc3b915c465261214130746764e59a12b4fe060c21f4",
           "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=Death_Stranding&prop=info%7Credirects&rdlimit=500"
         },
         {

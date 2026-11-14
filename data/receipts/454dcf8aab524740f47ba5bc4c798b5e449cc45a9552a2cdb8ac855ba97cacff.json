@@ -1,0 +1,16 @@
+{
+  "byte_count": 27612,
+  "fetched_at": "2026-11-14T18:19:25.301468+00:00",
+  "http_status": 200,
+  "payload_sha256": "af5aed4158742c4a13fdf6681b64fd41a032e643f68ede4c2e26439afa055f2f",
+  "raw_path": "raw/af5aed4158742c4a13fdf6681b64fd41a032e643f68ede4c2e26439afa055f2f.json",
+  "requested_end": "2020-02-06",
+  "requested_start": "2019-08-10",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 14 Nov 2026 18:19:25 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Death_Stranding/daily/2019081000/2020020600"
+}

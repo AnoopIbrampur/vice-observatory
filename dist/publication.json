@@ -1,42 +1,51 @@
 {
   "analysis_pointer": {
-    "analysis_id": "a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf",
-    "as_of": "2026-11-13",
+    "analysis_id": "e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d",
+    "as_of": "2026-11-14",
     "files": {
-      "analysis.json": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/analysis.json",
-      "comparisons.csv": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/comparisons.csv",
-      "findings.md": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/findings.md",
-      "manifest.json": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/manifest.json",
-      "predictions.csv": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/predictions.csv",
-      "protocol.md": "snapshots/a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf/protocol.md"
+      "analysis.json": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/analysis.json",
+      "comparisons.csv": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/comparisons.csv",
+      "findings.md": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/findings.md",
+      "manifest.json": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/manifest.json",
+      "predictions.csv": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/predictions.csv",
+      "protocol.md": "snapshots/e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d/protocol.md"
     },
     "files_sha256": {
-      "analysis.json": "1da3497f33572268a3c51a22588a51d7516d9730ec26786822984c3a982b638b",
-      "comparisons.csv": "92f3c7ee79a2010ce321718be93a160ef8b4c06de5be7f684fd6479a86828dae",
-      "findings.md": "82b4fb14837b9a81671fbcaadaf3f514eec0fb154574e1ad3408b658786cf675",
-      "manifest.json": "a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf",
+      "analysis.json": "5af0070a558228d742bec5cb13410b00b4856eb2621c299e3aacb642696b498e",
+      "comparisons.csv": "a10225b047f3127cdff76c77eaabef6c24d4142a054b17474867b31f2b9bd881",
+      "findings.md": "33a532571cd3d5f48eccd146d012d27fe22e86ecee564f035c30f9b0455d7cbb",
+      "manifest.json": "e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d",
       "predictions.csv": "ab8c31658deff7084b28e1152da51be79c9b0731c46c182096d5a75474eea2a2",
       "protocol.md": "b08fa32634cf666d38d03daa7dab0595020766674a2c29733d228d0b53d143b0"
     },
     "schema_version": 1,
-    "source_snapshot_id": "4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648"
+    "source_snapshot_id": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78"
   },
   "data_pointer": {
-    "as_of": "2026-11-13",
-    "csv": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/views.csv",
-    "dataset": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/dataset.json",
+    "as_of": "2026-11-14",
+    "csv": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/views.csv",
+    "dataset": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/dataset.json",
     "files_sha256": {
-      "dataset.json": "6cc47b113600cb04cc61e1d3d2861724f5aaa9d694363634e86d525a7c753854",
-      "health.json": "bf4abaa2f1ffda9fdb4dac0a5add13a9b45882af02f49d5967d748b319f47a31",
-      "manifest.json": "4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648",
-      "views.csv": "fada3101b50847ba00174a08410d19286bec1894e1bf3686768b924a05f1bdf6"
+      "dataset.json": "54eb194e7e6122dfc5237ab5f886a090c915e19463790409353d3a59eecfc682",
+      "health.json": "f20e7e2fc4fdf83ebe59c36878927abaa8bd3a1cf570eaf5309327f013dc82b7",
+      "manifest.json": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78",
+      "views.csv": "3ee66058910f1eca255040f15afe7551ca01b3a447c3abbbea5ac4c65b87587d"
     },
-    "health": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/health.json",
-    "manifest": "snapshots/4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648/manifest.json",
+    "health": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/health.json",
+    "manifest": "snapshots/83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78/manifest.json",
     "schema_version": 1,
-    "snapshot_id": "4877b30a43fe540a68fc61efec403caa198383b7320dea98598118a1262c5648"
+    "snapshot_id": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78"
   },
   "history": [
+    {
+      "analysis_id": "e2c11d19030df2f152eb0eff26400d69adc98b5f26b7a1a0b0f7008aa2304a6d",
+      "as_of": "2026-11-14",
+      "at": "2026-11-14T18:19:38.162494+00:00",
+      "message": "",
+      "run_url": "https://github.com/AnoopIbrampur/vice-observatory/actions/runs/43625927047",
+      "source_snapshot_id": "83275f99ebf7f06985b82d9955ada80f89add9662cd560ad9a2391e0b82a3f78",
+      "status": "validated"
+    },
     {
       "analysis_id": "a8940297ba5bb8730aa59b075545a6b5afd29c7d60d11ae2cdf8fc9637b9dfbf",
       "as_of": "2026-11-13",
@@ -85,5 +94,5 @@
   ],
   "schedule": "Daily at 12:23 UTC (GitHub may delay scheduled jobs)",
   "schema_version": 1,
-  "title_audit_sha256": "346583e58213064787b73cfd0fb23bb9a779f403b256162f5cb0cf3f8cfaa2a2"
+  "title_audit_sha256": "874237d599a48c8ce71131dabdbe717f51771af2ddd1f2b17626278953bf0db8"
 }

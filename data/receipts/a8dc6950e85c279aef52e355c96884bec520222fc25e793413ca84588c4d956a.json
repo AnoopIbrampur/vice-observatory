@@ -1,0 +1,16 @@
+{
+  "byte_count": 29959,
+  "fetched_at": "2026-11-14T18:19:24.472117+00:00",
+  "http_status": 200,
+  "payload_sha256": "7de5e1748a33fdf4bd5c7fbf796b5af9438f0f78c37d0c51d41227abbd247b43",
+  "raw_path": "raw/7de5e1748a33fdf4bd5c7fbf796b5af9438f0f78c37d0c51d41227abbd247b43.json",
+  "requested_end": "2018-07-19",
+  "requested_start": "2018-01-20",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 14 Nov 2026 18:19:24 GMT",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+  },
+  "schema_version": 1,
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/God_of_War_%282018_video_game%29/daily/2018012000/2018071900"
+}
